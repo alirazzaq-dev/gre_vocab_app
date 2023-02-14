@@ -1,14 +1,22 @@
 import Image from 'next/image'
-import { Box, Flex, Button, Tag, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
+import { useColorMode, Box, Flex, Button, Tag, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
+import { useState } from 'react'
+import SunIcon from '@/icons/SunIcon';
+import MoonIcon from '@/icons/MoonIcon';
 
+const Header = ({ handleShuffle }: {
+  handleShuffle: () => void,
+}) => {
 
-const Header = ({ handleShuffle }: { handleShuffle: () => void }) => {
+  const { toggleColorMode, colorMode } = useColorMode();
+
   return (
     <Flex p="20px" justify="space-between" border="0px solid red">
-      <Button>
-        Theme
+      <Button onClick={toggleColorMode}>
+        {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
       </Button>
+
+
       <Button onClick={handleShuffle}>
         Shuffle
       </Button>
@@ -16,13 +24,13 @@ const Header = ({ handleShuffle }: { handleShuffle: () => void }) => {
   )
 }
 
-const WordModal = ( { word, isOpen, onClose }: 
+const WordModal = ({ word, isOpen, onClose }:
   {
     word: string,
     isOpen: boolean,
     onClose: () => void
   }) => {
-  
+
 
   return (
     <>
@@ -30,7 +38,7 @@ const WordModal = ( { word, isOpen, onClose }:
         <ModalOverlay color="green" />
 
         <ModalContent>
-          <ModalHeader> { word } </ModalHeader>
+          <ModalHeader> {word} </ModalHeader>
           <ModalCloseButton />
 
           <ModalBody>
@@ -54,12 +62,11 @@ const WordModal = ( { word, isOpen, onClose }:
 export default function Home() {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   const [selectedWord, setSelectedWord] = useState("");
   const [words, setWords] = useState(
     [
-      "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
-      "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
+      "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+      "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
       "u", "v", "w", "x", "y", "z"
     ]
   )
@@ -84,9 +91,9 @@ export default function Home() {
   return (
     <Box>
       <Header handleShuffle={handleShuffle} />
-      <Flex>
+      <Flex w="100vw" flexWrap="wrap" border="0px solid red">
         {
-          words.map((word, key ) => {
+          words.map((word, key) => {
             return (
               <Box m="10px" key={key} cursor="pointer">
                 <Tag fontSize={16} onClick={() => handleSelect(word)}> {word} </Tag>
@@ -95,7 +102,7 @@ export default function Home() {
           })
         }
       </Flex>
-      
+
       <WordModal
         isOpen={isOpen}
         onClose={onClose}
