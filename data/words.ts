@@ -26,6 +26,15 @@ export const wordsData = [
         name: "Implausible",
         desc: "(of an argument or statement) not seeming reasonable or probable; failing to convince.",
         example: "this is a blatantly implausible claim"
+    },
+    {
+        name: "Contentious",
+        desc: "of an argument or statement) not seeming reasonable or probabl",
+        example: "a contentious issue"
     }
 
+
+
+
+    
   ]
