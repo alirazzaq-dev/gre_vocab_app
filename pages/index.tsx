@@ -9,7 +9,7 @@ export default function Home() {
   const {handleSelect, handleShuffle, selectedWord, modalDisclosure, words} = useWords();
 
   return (
-    <Box p="16px">
+    <Box p={{base: "5px", md: "16px"}}>
 
       <Header handleShuffle={handleShuffle} />
 
