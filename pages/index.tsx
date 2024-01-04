@@ -1,35 +1,46 @@
-import { Box, Flex, Tag } from '@chakra-ui/react'
+import { Box, Flex, Tag, useRadio } from '@chakra-ui/react'
 import Header from '@/Components/Header';
 import WordModal from '@/Components/Modals/WordModal';
 import useWords from '@/Components/Hooks/useWords';
+import { useRouter } from 'next/router';
 
 
 export default function Home() {
 
-  const {handleSelect, handleShuffle, selectedWord, modalDisclosure, words} = useWords();
+  const { chapters } = useWords();
+  const router = useRouter();
 
   return (
-    <Box p={{base: "5px", md: "16px"}}>
+    <Box>
 
-      <Header handleShuffle={handleShuffle} />
+      {
+        chapters.map((chapter, key) => {
+          return (
+            <Box key={key} border="1px solid grey" my="10px" p="10px" cursor="pointer"
+              onClick={() => {
+                // handleChapter(key)
+                router.push(`/Chapter/${key + 1}`)
+              }}
+            >
+              Chapter: {key + 1}
+              <Flex flexWrap="wrap">
+                {
+                  chapter.map((word, key) => {
+                    return (
+                      <Box m="10px" key={key} >
+                        <Tag p="10px" fontSize={16}> {word.word} </Tag>
+                      </Box>
+                    )
+                  })
+                }
+              </Flex>
+            </Box>
+          )
+        })
+      }
 
-      <Flex w="100vw" flexWrap="wrap" border="0px solid red">
-        {
-          words.map((word, key) => {
-            return (
-              <Box m="10px" key={key} cursor="pointer">
-                <Tag p="10px" fontSize={16} onClick={() => handleSelect(word)}> {word.name} </Tag>
-              </Box>
-            )
-          })
-        }
-        <WordModal
-          isOpen={modalDisclosure.isOpen}
-          onClose={modalDisclosure.onClose}
-          word={selectedWord}
-        />
 
-      </Flex>
+
 
 
     </Box>

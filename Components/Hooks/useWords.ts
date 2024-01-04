@@ -1,32 +1,25 @@
-import { Word, wordsData } from "@/data/words";
+import { Word, Chapter, chapters, Chapters } from "@/data/words";
 import { useDisclosure } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 const useWords = () => {
 
   const modalDisclosure = useDisclosure();
-  const [selectedWord, setSelectedWord] = useState<Word>();
-  const [words, setWords] = useState<Word[]>(wordsData)
+  // const [chapter, setChapter] = useState<Chapter>(chapters[0])
+  const [selectedWord, setSelectedWord] = useState<Word>(chapters[0][0]);
 
+  // const handleChapter = (chapter: number) => {
+  //   setChapter(chapters[chapter])
+  // }
 
-  const handleSelect = (word: Word) => {
+  const selectWord = (word: Word) => {
     setSelectedWord(word);
     modalDisclosure.onOpen();
   }
 
-  const handleShuffle = () => {
-    let shuffledWords = words;
-    setWords((oldWords) => {
-      shuffledWords = [...oldWords];
-      for (let i = shuffledWords.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
-      }
-      return shuffledWords
-    })
-  }
 
-  return { words, selectedWord, handleSelect, handleShuffle, modalDisclosure };
+
+  return { selectedWord, selectWord, modalDisclosure, chapters };
   
 };
 
