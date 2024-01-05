@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 const useWords = () => {
 
+
   const modalDisclosure = useDisclosure();
   // const [chapter, setChapter] = useState<Chapter>(chapters[0])
   const [selectedWord, setSelectedWord] = useState<Word>(chapters[0][0]);
@@ -20,7 +21,7 @@ const useWords = () => {
 
 
   return { selectedWord, selectWord, modalDisclosure, chapters };
-  
+
 };
 
 export default useWords;

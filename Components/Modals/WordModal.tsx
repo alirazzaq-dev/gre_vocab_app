@@ -11,17 +11,18 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const WordModal = ({ word, isOpen, onClose }:
+const WordModal = ({ word, isOpen, onClose, setFocus }:
   {
     word: Word,
     isOpen: boolean,
-    onClose: () => void
+    onClose: () => void;
+    setFocus: (value: React.SetStateAction<{ visible: boolean; index: number; }>) => void
   }) => {
 
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={() => { onClose(); setFocus((e) => ({ ...e, index: e.index++ })) }}>
         <ModalOverlay color="green" backdropFilter='blur(15px)' />
 
         <ModalContent minW={{ base: "300px", lg: "800px" }} minH="300px" my="auto">
