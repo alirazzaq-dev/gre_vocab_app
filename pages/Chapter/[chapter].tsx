@@ -52,7 +52,10 @@ const Chapter = (data: { chapterNumber: string }) => {
         <Box w="fit-content" border="0px solid red">
 
           <ButtonGroup variant='outline'>
-            <Button onClick={() => setFocus((e) => ({ index: 0, visible: !focus.visible }))}>
+            <Button
+              onClick={() => setFocus((e) => ({ index: 0, visible: !focus.visible }))}
+              bgColor={focus.visible ? "blue.500" : "grey.500"}
+            >
               Focus
             </Button>
             <Button onClick={() => shuffleChapter()}>
@@ -111,12 +114,12 @@ const Chapter = (data: { chapterNumber: string }) => {
         </Flex>
 
       </Box>
-      
+
       {
         focus.visible && (
           <Flex w="full" justify="center" mt="20px">
-            <Button onClick={() => setFocus((e) => ({...e, index:focus.index++}))}>
-                Next
+            <Button onClick={() => setFocus((e) => ({ ...e, index: focus.index++ }))}>
+              Next
             </Button>
           </Flex>
         )
