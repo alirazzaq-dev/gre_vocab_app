@@ -2,6 +2,8 @@ import { Word } from '@/data/words'
 import { Modal, Text, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Box, Flex, HStack, OrderedList, ListItem } from '@chakra-ui/react'
 import React from 'react'
 import { Configuration, OpenAIApi } from "openai";
+import { updateFocusModeNext } from '@/store/slice';
+import { useDispatch } from 'react-redux';
 // import Image from 'next/image';
 
 
@@ -11,18 +13,25 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const WordModal = ({ word, isOpen, onClose, setFocus }:
+const WordModal = ({ word, isOpen, onClose }:
   {
     word: Word,
     isOpen: boolean,
     onClose: () => void;
-    setFocus: (value: React.SetStateAction<{ visible: boolean; index: number; }>) => void
   }) => {
 
+  const dispatch = useDispatch();
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={() => { onClose(); setFocus((e) => ({ ...e, index: e.index++ })) }}>
+      <Modal
+        isOpen={isOpen}
+        onClose={() => {
+          onClose();
+          dispatch(updateFocusModeNext());
+        }
+        }
+      >
         <ModalOverlay color="green" backdropFilter='blur(15px)' />
 
         <ModalContent minW={{ base: "300px", lg: "800px" }} minH="300px" my="auto">
@@ -60,13 +69,6 @@ const WordModal = ({ word, isOpen, onClose, setFocus }:
             </HStack>
 
           </ModalBody>
-
-          {/* <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={onClose}>
-                Close
-              </Button>
-              <Button variant='ghost'>Secondary Action</Button>
-            </ModalFooter> */}
         </ModalContent>
       </Modal>
     </>

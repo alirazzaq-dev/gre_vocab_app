@@ -1,4 +1,3 @@
-export type Chapters = Chapter[];
 export type Chapter = Word[];
 
 export type Word = {
@@ -331,4 +330,4 @@ export const chapter1: Chapter = [
 
 ]
 
-export const chapters: Chapters = [chapter1]
+export const chapters: Chapter[] = [chapter1]

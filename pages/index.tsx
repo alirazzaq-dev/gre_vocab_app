@@ -1,13 +1,12 @@
-import { Box, Flex, Tag, useRadio } from '@chakra-ui/react'
-import Header from '@/Components/Header';
-import WordModal from '@/Components/Modals/WordModal';
-import useWords from '@/Components/Hooks/useWords';
+import { Box, Flex, Tag } from '@chakra-ui/react'
 import { useRouter } from 'next/router';
+import { RootState } from '@/store';
+import { useSelector } from 'react-redux';
 
 
 export default function Home() {
 
-  const { chapters } = useWords();
+  const chapters = useSelector((state: RootState) => state.chapters);
   const router = useRouter();
 
   return (
@@ -18,7 +17,6 @@ export default function Home() {
           return (
             <Box key={key} border="1px solid grey" my="10px" p="10px" cursor="pointer"
               onClick={() => {
-                // handleChapter(key)
                 router.push(`/Chapter/${key + 1}`)
               }}
             >

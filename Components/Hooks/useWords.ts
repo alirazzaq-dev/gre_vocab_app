@@ -1,4 +1,4 @@
-import { Word, Chapter, chapters, Chapters } from "@/data/words";
+import { Word, Chapter, chapters } from "@/data/words";
 import { useDisclosure } from "@chakra-ui/react";
 import React, { useState } from "react";
 
