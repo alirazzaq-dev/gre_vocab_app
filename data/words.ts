@@ -213,40 +213,118 @@ export const chapter1: Chapter = [
                 "His capricious decisions made it difficult for his colleagues to plan ahead.",
                 "She fell for his charming but ultimately capricious nature."
             ],
+    },
+    {
+        "word": "Acrimony",
+        "definition": "Bitterness and hostility; animosity or bad feeling.",
+        "urduMeaning": "تلخی (talkhi), دشمنی (dushmani), کدورت (kodorat)",
+        "exampleSentences":
+            [
+                "The acrimony between the rival political parties threatened to derail the peace talks.",
+                "Their divorce was finalized with a great deal of acrimony, leaving both parties emotionally wounded.",
+                "He tried to calm the acrimonious debate amongst his team members by focusing on finding solutions."
+            ],
+    },
+    {
+        "word": "Belligerent",
+        "definition": "Hostile and aggressive; eager or ready to fight.",
+        "urduMeaning": "جنگجو (jangjoo), لڑاکا (ladaka), جارحانہ (jarahanah)",
+        "exampleSentences":
+            [
+                "The belligerent tone of the letter sparked further outrage amongst the protestors.",
+                "He adopted a belligerent stance during the negotiations, refusing to compromise.",
+                "The security guard remained vigilant, watching out for any belligerent individuals causing trouble."
+            ],
+    },
+    {
+        "word": "Calumny",
+        "definition": "Defamation or slander; the act of making false and malicious statements about someone in order to damage their reputation.",
+        "urduMeaning": "غلط بیانی (ghalat bayani), بہتان (bayaan), الزام (ilzam)",
+        "exampleSentences": [
+            "Fearing slander, the aspiring inventor kept his groundbreaking creation a secret. (Image: A person looking over their shoulder cautiously, holding a blueprint rolled up under their arm.)",
+            "The politician's rival spread calumny about his personal life, hoping to sway voters in the upcoming election. (Image: A politician looking shocked and pointing at a newspaper headline with fabricated rumors.)",
+            "The online critic's anonymous blog post was filled with calumny, unfairly attacking the artist's work with exaggerated claims. (Image: A laptop screen with a negative review written in harsh language.)",
+            "Despite the hurtful calumny, the scientist remained focused on her research, determined to prove the truth and silence her detractors. (Image: A scientist working in a lab, ignoring a newspaper with negative headlines about her.)",
+            "The jury saw through the witness's false testimony, recognizing it as calumny aimed at discrediting the defendant. (Image: A courtroom scene with a witness looking uncomfortable while being questioned by a lawyer.)",
+        ]
+    },
+    {
+        "word": "Attenuate",
+        "definition": "To make or become weaker, thinner, or less intense; lessen or diminish.",
+        "urduMeaning": "کم کرنا (kam karna), کمزور کرنا (kamzor karna), ہلکا کرنا (halka karna)",
+        "exampleSentences":
+            [
+                "The doctor prescribed medication to attenuate the patient's pain.",
+                "As the sunlight filtered through the trees, the shadows attenuated, losing their sharpness.",
+                "Over time, the once vibrant tradition began to attenuate, fading into obscurity."
+            ],
+    },
+    {
+        "word": "Assimilate",
+        "definition": "To absorb or integrate into a larger group or culture; become similar to something else.",
+        "urduMeaning": "ملانا (milana), اپنا لینا (apna lena), جذب کرنا (jazb karna)",
+        "exampleSentences":
+            [
+                "The immigrant children quickly assimilated into their new school environment, making friends and learning the language.",
+                "New scientific discoveries are constantly being assimilated into textbooks, updating our understanding of the world.",
+                "She struggled to assimilate the complex legal document, needing help to decipher its meaning."
+            ],
+    },
+    {
+        "word": "Brevity",
+        "definition": "Conciseness and clarity in expression; the quality of being short and to the point.",
+        "urduMeaning": "اختصار (ikhtisaar), مختصری (mukhtasri), تلخیص (talkhees)",
+        "exampleSentences":
+            [
+                "The speaker's brevity kept the audience engaged and the message clear.",
+                "She valued brevity in her writing, preferring to communicate effectively with few words.",
+                "Despite the complex topic, the professor managed to explain it with admirable brevity."
+            ],
+    },
+    {
+        "word": "Circumspect",
+        "definition": "Cautious and wary; careful to consider all possible consequences before acting or speaking.",
+        "urduMeaning": "احتیاط سے (ehtiyat se), ہوشیار (hoshiyar), محتاط (mohtiyat)",
+        "exampleSentences":
+            [
+                "The diplomat was circumspect in his answers, not wanting to reveal any sensitive information.",
+                "She approached the new investment opportunity with circumspection, conducting thorough research before committing any funds.",
+                "His circumspect nature made him a valuable asset in high-stakes negotiations, as he was always mindful of potential risks."
+            ],
+    },
+    {
+        "word": "Abstruse",
+        "definition": "Difficult to understand; obscure or profound.",
+        "urduMeaning": "مشکل (mushkil), پیچیدہ (pechida), گہرا (gehra)",
+        "exampleSentences":
+            [
+                "The philosopher's writings were abstruse, filled with complex jargon and abstract concepts.",
+                "She struggled to comprehend the abstruse mathematical equations, seeking help from a tutor.",
+                "The artist's work was intentionally abstruse, challenging viewers to interpret its meaning."
+            ],
+    },
+    {
+        "word": "Arcane",
+        "definition": "Secret or mysterious; known or understood by very few people.",
+        "urduMeaning": "پوشیدہ (poshida), راز دار (raaz daar), گم راہ (gum raah)",
+        "exampleSentences":
+            [
+                "The ancient text contained arcane symbols, their meaning lost to time.",
+                "He was an expert in the arcane art of alchemy, able to transmute metals into gold.",
+                "The society held secret meetings filled with arcane rituals and practices."
+            ],
+    },
+    {
+        "word": "Circumvent",
+        "definition": "To find a way around an obstacle, rule, or difficulty; avoid or evade.",
+        "urduMeaning": "بچنا (bachna), گریز کرنا (griz karna), چکر دے کر (chakar day kar)",
+        "exampleSentences":
+            [
+                "The hackers circumvented the security system by exploiting a software vulnerability.",
+                "He tried to circumvent the traffic jam by taking a back road, but it ended up taking longer.",
+                "The athlete devised a strategy to circumvent his opponent's strengths and secure victory."
+            ],
     }
-
-
-
-
-
-
-    // {
-    //     name: "Cogent",
-    //     desc: "clear, logical, and convincing",
-    //     example: "they put forward cogent arguments for British membership"
-    // },
-    // {
-    //     name: "Bolster",
-    //     desc: "support or strengthen",
-    //     example: "the fall in interest rates is starting to bolster confidence"
-    // },
-    // {
-    //     name: "Vigilant",
-    //     desc: "keeping careful watch for possible danger or difficulties.",
-    //     example: "the burglar was spotted by vigilant neighbours"
-
-    // },
-    // {
-    //     name: "Implausible",
-    //     desc: "(of an argument or statement) not seeming reasonable or probable; failing to convince.",
-    //     example: "this is a blatantly implausible claim"
-    // },
-    // {
-    //     name: "Contentious",
-    //     desc: "of an argument or statement) not seeming reasonable or probabl",
-    //     example: "a contentious issue"
-    // }
-
 
 
 
