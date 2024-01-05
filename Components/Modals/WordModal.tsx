@@ -42,21 +42,23 @@ const WordModal = ({ isOpen, onClose }:
                 <Text>
                   Urdu Meaning: {word.urduMeaning}
                 </Text>
+
                 <Text>
                   Sentences:
-                  <OrderedList>
-                    {
-                      word.exampleSentences.map((sentence, key) => {
-                        return (
-                          <ListItem key={key} ml="10px">
-                            {sentence}
-                          </ListItem>
-                        )
-                      })
-                    }
-                  </OrderedList>
-
                 </Text>
+
+                <OrderedList>
+                  {
+                    word.exampleSentences.map((sentence, key) => {
+                      return (
+                        <ListItem key={key} ml="10px">
+                          {sentence}
+                        </ListItem>
+                      )
+                    })
+                  }
+                </OrderedList>
+
               </Box>
 
             </HStack>
