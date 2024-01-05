@@ -23,7 +23,7 @@ const Chapter = (data: { chapterNumber: string }) => {
   const { selectWord, selectedWord, modalDisclosure } = useWords();
   const [chapter, setChapter] = useState(chapters[Number(data.chapterNumber) - 1]);
 
-  const [fontSize, setFontSize] = useState(50);
+  const [fontSize, setFontSize] = useState(20);
 
   const [focus, setFocus] = useState({
     visible: false,
@@ -84,6 +84,7 @@ const Chapter = (data: { chapterNumber: string }) => {
                   <Box m="10px" key={key} cursor="pointer">
                     {
                       <Tag
+                        bgColor={focus.visible && focus.index === key ? "blue.500" : "grey.500"}
                         hidden={focus.visible && focus.index < key}
                         p="20px"
                         fontSize={fontSize}
@@ -110,6 +111,16 @@ const Chapter = (data: { chapterNumber: string }) => {
         </Flex>
 
       </Box>
+      
+      {
+        focus.visible && (
+          <Flex w="full" justify="center" mt="20px">
+            <Button onClick={() => setFocus((e) => ({...e, index:focus.index++}))}>
+                Next
+            </Button>
+          </Flex>
+        )
+      }
 
     </Box >
   )
