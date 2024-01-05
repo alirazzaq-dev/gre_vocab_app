@@ -1,26 +1,19 @@
-import { Word } from '@/data/words'
-import { Modal, Text, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Box, Flex, HStack, OrderedList, ListItem } from '@chakra-ui/react'
+import { Modal, Text, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Box, HStack, OrderedList, ListItem } from '@chakra-ui/react'
 import React from 'react'
-import { Configuration, OpenAIApi } from "openai";
 import { updateFocusModeNext } from '@/store/slice';
-import { useDispatch } from 'react-redux';
-// import Image from 'next/image';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '@/store';
 
-
-const configuration = new Configuration({
-  apiKey: "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",
-});
-
-const openai = new OpenAIApi(configuration);
-
-const WordModal = ({ word, isOpen, onClose }:
+const WordModal = ({ isOpen, onClose }:
   {
-    word: Word,
     isOpen: boolean,
     onClose: () => void;
-  }) => {
+  }
+) => {
 
   const dispatch = useDispatch();
+  const word = useSelector((state: RootState) => state.selectedWord);
+
 
   return (
     <>

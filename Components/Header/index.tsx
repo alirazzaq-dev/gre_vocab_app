@@ -2,7 +2,6 @@ import MoonIcon from '@/icons/MoonIcon';
 import SunIcon from '@/icons/SunIcon';
 import { useColorMode, Flex, Button, Slider, SliderFilledTrack, SliderThumb, SliderTrack, Text, HStack, ButtonGroup, Box } from '@chakra-ui/react';
 import React from 'react'
-import useWords from '../Hooks/useWords';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/store';
 import { changeFocusMode, setFontSize, shuffleChapter } from '@/store/slice';
@@ -45,15 +44,20 @@ const Header = () => {
 
             </Flex>
 
-            <HStack align="center" mt="16px">
-                <Text mr="5px"> Size </Text>
-                <Slider defaultValue={fontSize} min={10} max={50} onChange={(size) => dispatch(setFontSize(size))} >
-                    <SliderTrack>
-                        <SliderFilledTrack />
-                    </SliderTrack>
-                    <SliderThumb />
-                </Slider>
-            </HStack>
+            {
+                asPath.includes("Chapter") && (
+                    <HStack align="center" mt="16px">
+                        <Text mr="5px"> Size </Text>
+                        <Slider defaultValue={fontSize} min={10} max={50} onChange={(size) => dispatch(setFontSize(size))} >
+                            <SliderTrack>
+                                <SliderFilledTrack />
+                            </SliderTrack>
+                            <SliderThumb />
+                        </Slider>
+                    </HStack>
+                )
+            }
+
 
         </Box>
     )

@@ -1,17 +1,13 @@
-import useWords from '@/Components/Hooks/useWords';
 import WordModal from '@/Components/Modals/WordModal';
 import { RootState } from '@/store';
-import { updateFocusModeNext } from '@/store/slice';
-import { Box, Button, Flex, Tag, Text } from '@chakra-ui/react';
+import { setSelectedWord, updateFocusModeNext } from '@/store/slice';
+import { Box, Button, Flex, Tag, Text, useDisclosure } from '@chakra-ui/react';
 import { GetServerSideProps } from 'next';
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-
   const { chapter } = context.query as { chapter: string };
-
-
   return {
     props: {
       chapterNumber: chapter
@@ -26,9 +22,8 @@ const Chapter = (data: { chapterNumber: string }) => {
   const focusMode = useSelector((state: RootState) => state.focusMode);
   const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
   const dispatch = useDispatch();
+  const modalDisclosure = useDisclosure();
 
-  const { selectWord, selectedWord, modalDisclosure } = useWords();
-  
   return (
     <Box>
 
@@ -51,7 +46,8 @@ const Chapter = (data: { chapterNumber: string }) => {
                         p="20px"
                         fontSize={fontSize}
                         onClick={() => {
-                          selectWord(word)
+                          dispatch(setSelectedWord(word))
+                          modalDisclosure.onOpen()
                         }}
                       >
                         {word.word}
@@ -65,7 +61,6 @@ const Chapter = (data: { chapterNumber: string }) => {
             <WordModal
               isOpen={modalDisclosure.isOpen}
               onClose={modalDisclosure.onClose}
-              word={selectedWord}
             />
 
           </Flex>
@@ -77,7 +72,7 @@ const Chapter = (data: { chapterNumber: string }) => {
         focusMode.visible && (
           <Flex w="full" justify="center" mt="20px">
             <Button onClick={() => dispatch(updateFocusModeNext())}>
-            {/* <Button> */}
+              {/* <Button> */}
               Next
             </Button>
           </Flex>
