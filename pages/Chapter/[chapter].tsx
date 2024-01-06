@@ -1,7 +1,8 @@
 import WordModal from '@/Components/Modals/WordModal';
+import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
 import { setSelectedWord, updateFocusModeNext } from '@/store/slice';
-import { Box, Button, Flex, Tag, Text, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Flex, Tag, Text, Tooltip, useDisclosure } from '@chakra-ui/react';
 import { GetServerSideProps } from 'next';
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
@@ -18,17 +19,29 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 const Chapter = (data: { chapterNumber: string }) => {
 
-  const fontSize = useSelector((state: RootState) => state.fontSize);
-  const focusMode = useSelector((state: RootState) => state.focusMode);
-  const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
+  const { fontSize, focusMode, chapter } = useSelector((state: RootState) => (
+    {
+      fontSize: state.fontSize,
+      focusMode: state.focusMode,
+      chapter: state.chapters[Number(data.chapterNumber) - 1],
+    })
+  );
+
+  // const fontSize = useSelector((state: RootState) => state.fontSize);
+  // const focusMode = useSelector((state: RootState) => state.focusMode);
+  // const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
+
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
+  const sleep = (ms: number) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
   return (
     <Box>
 
       <Flex justify='space-between'>
-        <Text> Chapter : {data.chapterNumber} ({chapter.length} words)</Text>
+        <Text> Chapter : {data.chapterNumber} ({chapter.words.length} words)</Text>
       </Flex>
 
       <Box>
@@ -36,22 +49,25 @@ const Chapter = (data: { chapterNumber: string }) => {
           <Flex w="100vw" flexWrap="wrap" border="0px solid red">
 
             {
-              chapter.map((word, key) => {
+              chapter.words.map((word, key) => {
                 return (
                   <Box m="10px" key={key} cursor="pointer">
                     {
-                      <Tag
-                        bgColor={focusMode.visible && focusMode.index === key ? "blue.500" : "grey.500"}
-                        hidden={focusMode.visible && focusMode.index < key}
-                        p="20px"
-                        fontSize={fontSize}
-                        onClick={() => {
-                          dispatch(setSelectedWord(word))
-                          modalDisclosure.onOpen()
-                        }}
-                      >
-                        {word.word}
-                      </Tag>
+                      <Tooltip label={word.definition} fontSize={fontSize}>
+                        <Tag
+
+                          bgColor={focusMode.visible && focusMode.index === key ? "blue.500" : "grey.500"}
+                          hidden={focusMode.visible && focusMode.index < key}
+                          p="20px"
+                          fontSize={fontSize}
+                          onClick={() => {
+                            dispatch(setSelectedWord(word))
+                            modalDisclosure.onOpen()
+                          }}
+                        >
+                          {word.word}
+                        </Tag>
+                      </Tooltip>
                     }
                   </Box>
                 )
@@ -72,12 +88,23 @@ const Chapter = (data: { chapterNumber: string }) => {
         focusMode.visible && (
           <Flex w="full" justify="center" mt="20px">
             <Button onClick={() => dispatch(updateFocusModeNext())}>
-              {/* <Button> */}
               Next
             </Button>
           </Flex>
         )
       }
+
+      <Box>
+        {
+          !focusMode.visible && chapter.passages.length > 0 && (
+              <Box mt="20px">
+                <PassageAccordion passages={chapter.passages} />
+              </Box>
+          )
+        }
+      </Box>
+
+
 
     </Box >
   )
