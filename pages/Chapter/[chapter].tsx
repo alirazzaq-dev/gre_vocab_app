@@ -42,9 +42,9 @@ const Chapter = (data: { chapterNumber: string }) => {
   return (
     <Box>
 
-      <Flex justify='space-between'>
+      {/* <Flex justify='space-between'> */}
         <Text> Chapter : {data.chapterNumber} ({chapter.words.length} words)</Text>
-      </Flex>
+      {/* </Flex> */}
 
       {/* Focus Mode OFf */}
       <Box>
@@ -96,10 +96,11 @@ const Chapter = (data: { chapterNumber: string }) => {
               mx="auto"
               minH={{ base: "full", md: "400px" }}
               w={{ base: "300px", md: "400px" }}
+              fontSize={{base: "20px", md: "36px"}}
             >
               {
                 !focusMode.showMeaning && (
-                  <Center h={{ base: "300px", md: "400px" }} fontSize="36px">
+                  <Center h={{ base: "300px", md: "400px" }}>
                     {word.word}
                   </Center>
                 )
