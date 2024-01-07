@@ -97,6 +97,7 @@ const Chapter = (data: { chapterNumber: string }) => {
               minH={{ base: "full", md: "400px" }}
               w={{ base: "300px", md: "400px" }}
               fontSize={{base: "20px", md: "36px"}}
+              p={{base: "12px", md: "24px"}}
             >
               {
                 !focusMode.showMeaning && (
@@ -108,7 +109,7 @@ const Chapter = (data: { chapterNumber: string }) => {
 
               {
                 focusMode.showMeaning && (
-                  <Box h="full" fontSize="16px" p="24px">
+                  <Box h="full" fontSize="16px" >
                     <HStack>
                       <VStack >
 
