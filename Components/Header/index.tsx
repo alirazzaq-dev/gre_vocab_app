@@ -17,7 +17,7 @@ const Header = () => {
     const chapterNumber = Number(asPath.replace("/Chapter/", ""));
 
     return (
-        <Box p="20px">
+        <Box p={{base: "8px", md: "16px"}}>
             <Flex justify="space-between" border="0px solid red">
 
                 <Button onClick={toggleColorMode}>
