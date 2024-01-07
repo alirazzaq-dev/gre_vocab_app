@@ -32,7 +32,7 @@ const WordModal = ({ isOpen, onClose }:
         isOpen={isOpen}
         onClose={() => {
           onClose();
-          dispatch(updateFocusModeNext());
+          // dispatch(updateFocusModeNext());
         }
         }
       >

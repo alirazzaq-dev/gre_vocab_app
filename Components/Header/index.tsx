@@ -30,7 +30,7 @@ const Header = () => {
                             <ButtonGroup variant='outline'>
                                 <Button
                                     onClick={() => dispatch(changeFocusMode())}
-                                    bgColor={focusMode.visible ? "blue.500" : "grey.500"}
+                                    bgColor={focusMode.active ? "blue.500" : "grey.500"}
                                 >
                                     Focus
                                 </Button>
@@ -45,7 +45,7 @@ const Header = () => {
             </Flex>
 
             {
-                asPath.includes("Chapter") && (
+                !focusMode.active && asPath.includes("Chapter") && (
                     <HStack align="center" mt="16px">
                         <Text mr="5px"> Size </Text>
                         <Slider defaultValue={fontSize} min={10} max={50} onChange={(size) => dispatch(setFontSize(size))} >
