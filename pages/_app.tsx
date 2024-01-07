@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={theme}>
         <Provider store={store}>
           <Header />
-          <Box p={{ base: "10px", md: "20px" }}>
+          <Box p={{ base: "8px", md: "16px" }}>
             <Component {...pageProps} />
           </Box>
         </Provider>

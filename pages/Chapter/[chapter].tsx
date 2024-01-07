@@ -43,7 +43,9 @@ const Chapter = (data: { chapterNumber: string }) => {
     <Box>
 
       {/* <Flex justify='space-between'> */}
+      <Box>
         <Text> Chapter : {data.chapterNumber} ({chapter.words.length} words)</Text>
+      </Box>
       {/* </Flex> */}
 
       {/* Focus Mode OFf */}
