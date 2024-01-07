@@ -113,6 +113,10 @@ const Chapter = (data: { chapterNumber: string }) => {
                     <HStack>
                       <VStack >
 
+                      <Text w="full">
+                          Word: {word.word}
+                        </Text>
+
                         <Text w="full">
                           Description: {word.definition}
                         </Text>
