@@ -78,7 +78,6 @@ const Chapter = (data: { chapterNumber: string }) => {
             <Card
               mx="auto"
               minH={{ base: "full", md: "400px" }}
-              // minH="400px"
               w={{ base: "full", md: "400px" }}
               fontSize={{ base: "20px", md: "36px" }}
               p={{ base: "12px", md: "24px" }}
@@ -147,13 +146,15 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button onClick={() => dispatch(updateFocusModePrevious())}>
+              <Button boxSize="75px" onClick={() => dispatch(updateFocusModePrevious())}>
                 <IoChevronBack />
               </Button>
-              <Button onClick={() => { dispatch(updateFocusMeaning()) }}>
-                {focusMode.showMeaning ? "word" : "meaning"}
+              <Button boxSize="75px" onClick={() => { dispatch(updateFocusMeaning()) }}>
+                <Text fontSize="16px"> 
+                  {focusMode.showMeaning ? "word" : "meaning"}
+                </Text>
               </Button>
-              <Button onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
+              <Button boxSize="75px" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
                 <IoChevronForward />
               </Button>
             </HStack>

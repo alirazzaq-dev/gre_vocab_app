@@ -1,4 +1,4 @@
-import { chapter1 } from "./chapter1";
+import { chapter1, chapter2 } from "./chapter1";
 
 export type Chapter = {words: Word[], passages: Passage[]};
 
@@ -16,4 +16,7 @@ export type Passage = {
 
 
 
-export const chapters: Chapter[] = [chapter1]
+export const chapters: Chapter[] = [
+    chapter1,
+    chapter2
+]
