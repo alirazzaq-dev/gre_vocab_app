@@ -97,7 +97,7 @@ const Chapter = (data: { chapterNumber: string }) => {
                       <VStack >
 
                         <HStack w="full">
-                          <Text> Word: {word.word}</Text>
+                          <Text> {word.word}</Text>
                           <Center cursor="pointer" onClick={() => playAudio(word.word)}>
                             🔊
                           </Center>
@@ -146,15 +146,15 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button boxSize="75px" onClick={() => dispatch(updateFocusModePrevious())}>
+              <Button boxSize="20" onClick={() => dispatch(updateFocusModePrevious())}>
                 <IoChevronBack />
               </Button>
-              <Button boxSize="75px" onClick={() => { dispatch(updateFocusMeaning()) }}>
+              <Button boxSize="20" onClick={() => { dispatch(updateFocusMeaning()) }}>
                 <Text fontSize="16px"> 
                   {focusMode.showMeaning ? "word" : "meaning"}
                 </Text>
               </Button>
-              <Button boxSize="75px" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
+              <Button boxSize="20" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
                 <IoChevronForward />
               </Button>
             </HStack>

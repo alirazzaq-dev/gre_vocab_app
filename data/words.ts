@@ -14,8 +14,6 @@ export type Passage = {
     passage: string;
 }
 
-
-
 export const chapters: Chapter[] = [
     chapter1,
     chapter2
