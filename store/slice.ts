@@ -1,4 +1,4 @@
-import { Chapter, Word, chapters } from '@/data/words';
+import { Chapter, Word, chapters } from '@/data/chapters';
 import { createSlice, current } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 

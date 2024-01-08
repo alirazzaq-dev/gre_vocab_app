@@ -1,6 +1,6 @@
 import React from 'react'
 import { Accordion, Box, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from '@chakra-ui/react'
-import { Passage } from '@/data/words'
+import { Passage } from '@/data/chapters'
 
 const PassageAccordion = ({passages}:{passages: Passage[]}) => {
     return (

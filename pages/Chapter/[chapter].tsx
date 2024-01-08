@@ -42,7 +42,7 @@ const Chapter = (data: { chapterNumber: string }) => {
           !focusMode.active && chapter.words.map((word, key) => {
             return (
               <Box m="10px" key={key} cursor="pointer">
-                <Tooltip label={word.definition} fontSize={fontSize} mt="5px">
+                <Tooltip label={word.definition} placement='top' fontSize={fontSize} mt="5px">
                   <Tag
                     p="20px"
                     fontSize={fontSize}
@@ -146,15 +146,15 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button boxSize="20" onClick={() => dispatch(updateFocusModePrevious())}>
+              <Button w="20" onClick={() => dispatch(updateFocusModePrevious())}>
                 <IoChevronBack />
               </Button>
-              <Button boxSize="20" onClick={() => { dispatch(updateFocusMeaning()) }}>
-                <Text fontSize="16px"> 
+              <Button w="20" onClick={() => { dispatch(updateFocusMeaning()) }}>
+                <Text fontSize="16px">
                   {focusMode.showMeaning ? "word" : "meaning"}
                 </Text>
               </Button>
-              <Button boxSize="20" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
+              <Button w="20" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
                 <IoChevronForward />
               </Button>
             </HStack>

@@ -1,8 +1,21 @@
-import { Chapter } from "./words";
+import { Chapter } from "./chapters";
 
 
 export const chapter1: Chapter = {
-    passages: [],
+    passages: [
+        {
+            "title": "Unraveling the Tapestry of Human Interaction",
+            "passage": "The human experience is an intricate amalgamation of emotions, desires, and motivations. On the surface, social interactions may appear accessible, governed by seemingly benign conventions. Yet, beneath the apparent calm, a myriad of forces can abet in shaping our interactions, often in baffling and arduous ways.<br><br>From the aesthetic choices we make in clothing and body language to the subtle nuances of tone and inflection, we constantly emit signals that can be anticipated and interpreted by others. These interpretations, however, are rarely objective. Our own biases and ascribed identities can lead to asymmetry in understanding, creating opportunities for miscommunication and betrayal.<br><br>Understanding the complexities of human interaction requires venturing beyond the austere facade of social norms. It demands critical thinking, empathy, and a willingness to grapple with the antithetical forces that play within us and between us. Only then can we hope to navigate the arduous terrain of social life with altruistic intentions and build truly accessible connections."
+        },
+        {
+            "title": "Pushing the Boundaries of Scientific Inquiry",
+            "passage": "Scientific progress often begins with a simple assertion: a challenge to the apparent status quo, a belief in the existence of the anomalous. Driven by an insatiable ambition to unveil the hidden workings of the universe, scientists embark on arduous journeys of antidote-seeking, searching for solutions to the enigmas that beset our understanding.<br><br>The scientific method, while rigorous and amenable to replication, is itself not impervious to human biases and preconceived notions. Confirmation bias, for example, can lead researchers to unknowingly abet their own hypotheses, overlooking baffling data that may betray a different truth.<br><br>To push the boundaries of scientific inquiry, we must embrace acute observation, critical thinking, and a healthy dose of apathy towards established dogmas. By amplifying the voices of dissent and encouraging the exploration of atypical phenomena, we can create an environment where the antidote to ignorance is continuously sought and the light of understanding shines ever brighter, illuminating the hidden secrets of our world.",
+        },
+        {
+            "title": "The Enigmatic Power of Words",
+            "passage": "Words, those deceptively simple symbols, carry within them the power to captivate and befuddle, to illuminate and obscure. Their meanings, far from acute and fixed, are fluid and context-dependent, shaped by the nuances of tone, antithesis, and allusion.<br><br>A master communicator understands this inherent ambiguity. They wield words with the precision of a surgeon, carefully choosing each syllable to evoke the desired aesthetic response. They employ humor and irony to blunt harsh truths and amplify hidden meanings. They navigate the minefield of double entendre and cultural asymmetry with grace and clarity.<br><br>Yet, even the most skilled communicator can stumble upon the treacherous shoals of misunderstanding. A poorly chosen word, a misinterpreted bluntness, an abashed silence – any of these can lead to antagonism and irreparable fissures in connection.<br><br>The true power of language lies not in its ability to dictate meaning, but in its capacity to spark the fires of inquiry, beset us with questions, and ultimately, draw us closer to the antithetical perspectives that enrich our understanding of the world.",
+        }
+    ],
     words: [
         {
             "word": "Bitter",
@@ -270,263 +283,280 @@ export const chapter1: Chapter = {
                 "The soldier used a blunt knife to open the can of food in the absence of a proper opener.",
                 "The mountain peak had a blunt, almost rounded summit, contrasting with the surrounding jagged cliffs."
             ]
+        },
+        {
+            "word": "Boon",
+            "definition": "Something that is very helpful or beneficial.",
+            "urduMeaning": "رحمت، نفع، فائدہ",
+            "exampleSentences": [
+                "The invention of the printing press was a boon to the spread of knowledge.",
+                "The new medical treatment was a boon to patients suffering from the disease.",
+                "Winning the lottery was a boon to his financial situation."
+            ]
+        },
+        {
+            "word": "Averse",
+            "definition": "Strongly disliking or opposed to something.",
+            "urduMeaning": "نالائق، نفرت کرنا، مخالف ہونا",
+            "exampleSentences": [
+                "She is averse to public speaking and avoids it whenever possible.",
+                "He is averse to violence and believes in peaceful conflict resolution.",
+                "I am averse to seafood and never order it at restaurants."
+            ]
+        },
+        {
+            "word": "Ambition",
+            "definition": "A strong desire for success or achievement.",
+            "urduMeaning": "تمنا، آرزو، بلند حوصلگی",
+            "exampleSentences": [
+                "Her ambition is to become a doctor and help people in need.",
+                "He has the ambition to start his own business and be his own boss.",
+                "They both share the ambition to travel the world and experience different cultures."
+            ]
+        },
+        {
+            "word": "Atypical",
+            "definition": "Not typical or normal; unusual.",
+            "urduMeaning": "غیر معمولی، غیر روایتی",
+            "exampleSentences": [
+                "The patient's symptoms were atypical, which made diagnosis difficult.",
+                "His behavior was atypical for someone his age, raising concerns among his family.",
+                "The book offers an atypical perspective on the historical event, challenging traditional interpretations."
+            ]
+        },
+        {
+            "word": "Abash",
+            "definition": "To make someone feel ashamed or embarrassed.",
+            "urduMeaning": "شرمندہ کرنا، گھبرانے کے لئے مجبور کرنا",
+            "exampleSentences": [
+                "Her harsh criticism abashed him into silence.",
+                "The children were abashed by the scolding and hung their heads low.",
+                "He tried to make amends for his mistake, but it only abashed him further."
+            ]
+        },
+        {
+            "word": "Antithetical",
+            "definition": "Directly opposed or contradictory.",
+            "urduMeaning": "متضاد، مخالف",
+            "exampleSentences": [
+                "Their beliefs were antithetical, making it difficult for them to find common ground.",
+                "The author presents two antithetical views on the issue, leaving the reader to decide which one is right.",
+                "The success of good often depends on the presence of its antithetical counterpart, evil."
+            ]
+        },
+        {
+            "word": "Ambiguity",
+            "definition": "Lack of clarity or meaning; openness to more than one interpretation.",
+            "urduMeaning": "غیر وضاحت، ابہام",
+            "exampleSentences": [
+                "The politician's statement was full of ambiguity, leaving the public unsure of his position.",
+                "The poem's beauty lies in its ambiguity, allowing readers to find their own meaning in it.",
+                "The ambiguous terms in the contract led to a legal dispute."
+            ]
+        },
+        {
+            "word": "Altruistic",
+            "definition": "Unselfish concern for the welfare of others.",
+            "urduMeaning": "بے غرض، غیر پرست",
+            "exampleSentences": [
+                "She dedicated her life to altruistic causes, helping those in need without expecting anything in return.",
+                "His altruistic act of saving the child earned him the respect of the community.",
+                "While true altruism is rare, even small acts of kindness can make a difference."
+            ]
+        },
+
+        {
+            "word": "Acute",
+            "definition": "1. (Of something pointed or edged) Sharply pointed or keen. 2. (Of the senses) Extremely sharp or sensitive. 3. (Of pain or illness) Severe and intense. 4. (Of a situation) Difficult or critical.",
+            "urduMeaning": "1. (کسی نقطے دار یا کنار والی چیز کا) تیز یا کند۔ 2. (حواس کے بارے میں) انتہائی تیز یا حساس۔ 3. (درد یا بیماری کے بارے میں) شدید اور تیز۔ 4. (کسی صورتحال کے بارے میں) مشکل یا نازک۔",
+            "exampleSentences": [
+                "He examined the patient with an acute eye, carefully looking for any signs of illness. (Sense 2)",
+                "The company faces an acute financial crisis and may need to restructure its operations. (Sense 4)",
+                "The taste of chili flakes was acute on his tongue, making him cough. (Sense 3)",
+                "The mountain peak had an acute angle, making it dangerous to climb. (Sense 1)",
+            ]
+        },
+        {
+            "word": "Abstract",
+            "definition": "1. Not concrete or tangible; existing in thought or as an idea rather than as a material object. 2. Difficult to understand because it is not specific or concrete.",
+            "urduMeaning": "1. ٹھوس یا قابل لمس نہیں؛ خیال یا تصور کے طور پر موجود ہونا مادی چیز کے طور پر نہیں۔ 2. سمجھنا مشکل کیونکہ یہ مخصوص یا ٹھوس نہیں ہے۔",
+            "exampleSentences":
+                [
+                    "The artist's abstract paintings were open to interpretation, allowing viewers to find their own meaning. (Sense 1)",
+                    "The concept of time is abstract and difficult to fully grasp. (Sense 2)",
+                    "She struggled to understand the professor's abstract lecture on philosophy. (Sense 2)",
+                    "The poem used abstract imagery to convey complex emotions. (Sense 1)"
+                ]
+        },
+        {
+            "word": "Allusive",
+            "definition": "Indirectly referring to something; hinting at or suggesting something without mentioning it explicitly.",
+            "urduMeaning": "کسی چیز کا اشارہ دینا؛ کسی چیز کی طرف اشارہ یا تجویز کرنا اس کا صراحت سے ذکر کیے بغیر۔",
+            "exampleSentences":
+                [
+                    "His speech was full of allusive references to historical events, leaving some listeners confused. (Example)",
+                    "The author's use of alliteration in the poem was an allusive nod to a famous literary figure. (Example)",
+                    "Her cryptic remark was allusive, and we weren't sure what she meant by it. (Example)",
+                    "The painting contained several allusive symbols, each with a deeper meaning. (Example)"
+                ]
+        },
+        {
+            "word": "Aandid",
+            "definition": "1. Honest and sincere in expressing one's opinions or feelings. 2. Frank and open in speech or writing; not trying to hide anything.",
+            "urduMeaning": "1. اپنی رائے یا جذبات کا اظہار کرنے میں ایماندار اور مخلص۔ 2. تقریر یا تحریر میں صاف اور کھلا؛ کچھ چھپانے کی کوشش نہیں کرنا۔",
+            "exampleSentences":
+                [
+                    "He gave a candid interview about his struggles with addiction, hoping to inspire others. (Sense 1)",
+                    "Her candid feedback helped him improve his writing skills. (Sense 2)",
+                    "The judge asked for a candid assessment of the case from the jury. (Sense 2)",
+                    "He was known for his candid humor, often making jokes at his own expense. (Sense 1)"
+                ]
+        },
+        {
+            "word": "Bereft",
+            "definition": "Deprived of something or someone that is important or valued.",
+            "urduMeaning": "محروم، خالی ہاتھ",
+            "exampleSentences": [
+                "After the tragic accident, she was bereft of her family and felt utterly alone.",
+                "The war-torn town was bereft of resources and basic necessities.",
+                "He felt a deep sense of emptiness and loss, bereft of the joy he once knew."
+            ],
+        },
+        {
+            "word": "Antidote",
+            "definition": "A substance that counteracts the effects of a poison or harmful agent.",
+            "urduMeaning": "تریاق، زہر کا مداوا",
+            "exampleSentences": [
+                "The scientists frantically searched for an antidote to the deadly virus.",
+                "Milk can act as an antidote to food poisoning caused by certain plants.",
+                "Love is often seen as the antidote to hatred and despair."
+            ],
+        },
+        {
+            "word": "Aberration",
+            "definition": "A deviation from the normal or expected course; an anomaly.",
+            "urduMeaning": "انحراف، غیر معمولی بات",
+            "exampleSentences": [
+                "The birth of twins is a fascinating aberration from the usual single birth.",
+                "His erratic behavior was seen as an aberration from his normally calm and collected demeanor.",
+                "Scientists investigate meteor showers as potential aberrations in the Earth's orbit."
+            ],
+        },
+        {
+            "word": "Antithesis",
+            "definition": "A person or thing that is the complete opposite of another.",
+            "urduMeaning": "تضاد، مخالف",
+            "exampleSentences": [
+                "Good and evil are often seen as the antithesis of each other.",
+                "His introverted personality was the antithesis of her extroverted nature.",
+                "The author explored the concept of light and darkness as antitheses in his poem."
+            ],
+        },
+        {
+            "word": "Blending",
+            "definition": "1. To mix or combine two or more things together. 2. To merge smoothly or gradually.",
+            "urduMeaning": "1. دو یا دو سے زیادہ چیزوں کو آپس میں ملانا یا جوڑنا۔ 2. ہموار یا آہستہ آہستہ ضم ہونا۔",
+            "exampleSentences": [
+                "The artist used various techniques to blend colors in his painting.",
+                "Cultures blended over centuries, creating a unique heritage in the region.",
+                "Sunlight and shadow blended harmoniously on the hillside."
+            ],
+        },
+        {
+            "word": "Bifurcate",
+            "definition": "To divide into two branches or parts.",
+            "urduMeaning": "دو شاخوں یا حصوں میں تقسیم ہونا۔",
+            "exampleSentences":
+                [
+                    "The road bifurcated, leading travelers to different villages.",
+                    "The company's operations will bifurcate into separate divisions next year.",
+                    "The river bifurcated around a small island, creating a picturesque scene."
+                ],
+        },
+        {
+            "word": "Abundant",
+            "definition": "Present in large quantities; plentiful.",
+            "urduMeaning": "بڑی مقدار میں موجود؛ وافر۔",
+            "exampleSentences":
+                [
+                    "The farmer enjoyed an abundant harvest this season, with overflowing baskets of fruits and vegetables.",
+                    "The library boasts an abundant collection of books, catering to diverse interests.",
+                    "The rain brought abundant relief to the drought-stricken area."
+                ],
+        },
+        {
+            "word": "Antagonism",
+            "definition": "Strong hostility or opposition; hatred or rivalry.",
+            "urduMeaning": "شدید دشمنی یا مخالفت؛ نفرت یا رقابت۔",
+            "exampleSentences":
+                [
+                    "The movie portrayed a thrilling story of antagonism between two powerful families.",
+                    "The peace talks were hampered by deep-rooted antagonism between the opposing sides.",
+                    "He felt a surge of antagonism towards his competitor during the race."
+                ],
+        },
+        {
+            "word": "Adversary",
+            "definition": "An opponent or antagonist; someone who actively opposes or fights against another.",
+            "urduMeaning": "دشمن، حریف",
+            "exampleSentences":
+                [
+                    "In the superhero movie, the hero must face a powerful adversary who threatens the city.",
+                    "Political adversaries debated their different viewpoints during the election campaign.",
+                    "He considered his boss a stern adversary, making it challenging to negotiate for a raise."
+                ],
+        },
+        {
+            "word": "Barren",
+            "definition": "(Of land) Unproductive; incapable of supporting plant life, (Of a woman) Unable to bear children; sterile.",
+            "urduMeaning": `(زمین کے بارے میں) غیر پیداواری؛ پودوں کی زندگی کی حمایت کرنے سے قاصر۔,(عورت کے بارے میں) بچے پیدا کرنے سے قاصر؛ بانجھ"`,
+            "exampleSentences":
+                [
+                    "The traveler crossed a vast, barren desert landscape devoid of vegetation.",
+                    "The barren fields lay parched and empty under the scorching sun.",
+                    "After many years of trying, the couple sadly accepted their barren state."
+                ],
+        },
+        {
+            "word": "Arrogance",
+            "definition": "A feeling of exaggerated self-importance; an attitude of superiority. An offensive display of conceit or confidence.",
+            "urduMeaning": "خود پسندی کا بے جا احساس؛ برتری کا رویہ۔, غرور یا اعتماد کا توہین آمیز مظاہرہ۔",
+            "exampleSentences":
+                [
+                    "The politician's arrogant demeanor alienated many voters during the campaign.",
+                    "She warned him against the dangers of arrogance, as it could lead to his downfall.",
+                    "Despite his immense talent, the musician remained humble and avoided arrogance."
+                ],
+        },
+        {
+            "word": "Augment",
+            "definition": "To make something greater or larger; to increase in size, quantity, or strength. To add something to something else; to enhance or improve.",
+            "urduMeaning": "کسی چیز کو بڑا یا بڑا بنانا؛ حجم، مقدار یا طاقت میں اضافہ کرنا۔, کسی چیز میں کچھ شامل کرنا؛ بہتر یا بہتر بنانا۔",
+            "exampleSentences":
+                [
+                    "The company plans to augment its production capacity to meet the growing demand.",
+                    "Technology continues to augment our capabilities in various fields, from medicine to communication.",
+                    "Adding spices to the dish augmented its flavor and aroma, creating a delicious meal."
+                ],
+        },
+        {
+            "word": "Camouflage",
+            "definition": "The act of disguising oneself or something else by blending in with the surroundings. A disguise or covering used to conceal or hide.",
+            "urduMeaning":
+                "خود کو یا کسی اور چیز کو آس پاس کے ماحول کے ساتھ ہم آہنگ کرکے چھپانے کا عمل۔",
+            "exampleSentences":
+                [
+                    "Chameleons use camouflage to blend in with their surroundings and avoid predators.",
+                    "Soldiers wear camouflage clothing to remain hidden from enemies during wartime.",
+                    "The artist cleverly used camouflage techniques to create a hidden message in his painting."
+                ],
         }
 
-        // {
-        //   "word": "bitter",
-        //   "definition": "Having a sharp, acrid taste; showing strong resentment or hostility.",
-        //   "urduMeaning": "تلخ",
-        //   "exampleSentences": [
-        //     "The medicine had a bitter taste that lingered in his mouth.",
-        //     "Their bitter argument left a strained atmosphere in the room.",
-        //     "Despite the bitter cold, they continued their journey."
-        //   ]
-        // },
-        // {
-        //   "word": "archaic",
-        //   "definition": "Belonging to an earlier time; outdated or old-fashioned.",
-        //   "urduMeaning": "قدیم",
-        //   "exampleSentences": [
-        //     "The museum displayed an archaic collection of ancient artifacts.",
-        //     "Using an archaic language style may confuse modern readers.",
-        //     "The village retained its archaic charm with cobblestone streets and thatched roofs."
-        //   ]
-        // },
-        // {
-        //   "word": "censure",
-        //   "definition": "Strong criticism or disapproval, typically in a formal statement.",
-        //   "urduMeaning": "الزام",
-        //   "exampleSentences": [
-        //     "The committee issued a censure against the member for violating ethical standards.",
-        //     "His actions were met with widespread censure from the public.",
-        //     "The newspaper editorial expressed a sharp censure of the government's policies."
-        //   ]
-        // },
-        // {
-        //   "word": "captivate",
-        //   "definition": "To attract and hold the attention or interest of, as by beauty or excellence.",
-        //   "urduMeaning": "متاثر کرنا",
-        //   "exampleSentences": [
-        //     "The speaker captivated the audience with her eloquent speech.",
-        //     "The novel's intriguing plot captivated readers from the first page.",
-        //     "The art exhibition was designed to captivate visitors with its innovative displays."
-        //   ]
-        // },
-        // {
-        //   "word": "apparent",
-        //   "definition": "Clearly visible or understood; obvious.",
-        //   "urduMeaning": "ظاہر",
-        //   "exampleSentences": [
-        //     "The problem became apparent as soon as the experiment started.",
-        //     "His apparent indifference masked a deeper concern.",
-        //     "The apparent simplicity of the design concealed its intricate details."
-        //   ]
-        // },
-        // {
-        //     "word": "betray",
-        //     "definition": "To reveal or disclose in violation of confidence; to be unfaithful.",
-        //     "urduMeaning": "خیانت کرنا",
-        //     "exampleSentences": [
-        //       "His actions seemed to betray the trust his friends had placed in him.",
-        //       "The leaked documents were a clear attempt to betray company secrets.",
-        //       "Betraying a friend's confidence can lead to a breakdown of trust."
-        //     ]
-        //   },
-        //   {
-        //     "word": "benign",
-        //     "definition": "Kind and gentle; not harmful to health; having a favorable influence.",
-        //     "urduMeaning": "مہربان",
-        //     "exampleSentences": [
-        //       "Despite his stern appearance, the teacher had a benign influence on his students.",
-        //       "The doctor assured her that the tumor was benign and not cancerous.",
-        //       "His benign nature endeared him to everyone in the community."
-        //     ]
-        //   },
-        //   {
-        //     "word": "amalgamation",
-        //     "definition": "The action, process, or result of combining or uniting.",
-        //     "urduMeaning": "ملاپ",
-        //     "exampleSentences": [
-        //       "The amalgamation of different cultures in the city created a rich tapestry of diversity.",
-        //       "The company's success was attributed to the successful amalgamation of talented individuals.",
-        //       "The amalgamation of flavors in the dish made it a culinary delight."
-        //     ]
-        //   },
-        //   {
-        //     "word": "abet",
-        //     "definition": "To encourage, support, or assist, especially in wrongdoing.",
-        //     "urduMeaning": "مدد کرنا",
-        //     "exampleSentences": [
-        //       "Those who abet a crime can face legal consequences as accomplices.",
-        //       "It is essential for society to stand united against those who abet acts of violence.",
-        //       "The leader was accused of abetting corruption within the organization."
-        //     ]
-        //   },
-        //   {
-        //     "word": "aesthetic",
-        //     "definition": "Concerned with beauty or the appreciation of beauty; pleasing in appearance.",
-        //     "urduMeaning": "جمالیات",
-        //     "exampleSentences": [
-        //       "The artist focused on creating an aesthetic masterpiece that would evoke deep emotions.",
-        //       "The architectural design had a pleasing aesthetic that harmonized with the surrounding environment.",
-        //       "Her sense of aesthetic extended beyond visual arts to include music and literature."
-        //     ]
-        //   },
-        //   {
-        //     "word": "anticipated",
-        //     "definition": "Regarded as probable; expected or predicted.",
-        //     "urduMeaning": "متوقع",
-        //     "exampleSentences": [
-        //       "The long-anticipated sequel to the movie finally hit the theaters.",
-        //       "Despite the anticipated challenges, the team was well-prepared for the competition.",
-        //       "The anticipated changes in policy led to widespread discussions among the public."
-        //     ]
-        //   },
-        //   {
-        //     "word": "baffling",
-        //     "definition": "Confusing or perplexing; making comprehension difficult.",
-        //     "urduMeaning": "حیران کن",
-        //     "exampleSentences": [
-        //       "The complex instructions were baffling to most participants.",
-        //       "The sudden turn of events was baffling, leaving everyone in shock.",
-        //       "Solving the baffling mystery required a keen analytical mind."
-        //     ]
-        //   },
-        //   {
-        //     "word": "arduous",
-        //     "definition": "Demanding great effort or labor; strenuous.",
-        //     "urduMeaning": "کٹھن",
-        //     "exampleSentences": [
-        //       "The arduous climb to the mountain's summit was rewarded with breathtaking views.",
-        //       "Completing the marathon was an arduous task that required months of training.",
-        //       "The construction project posed an arduous challenge for the engineering team."
-        //     ]
-        //   },
-        //   {
-        //     "word": "assertion",
-        //     "definition": "A confident and forceful statement or declaration.",
-        //     "urduMeaning": "اظہار",
-        //     "exampleSentences": [
-        //       "The leader made a bold assertion about the company's future success.",
-        //       "Her assertion that honesty is the best policy resonated with the audience.",
-        //       "The court awaited the defendant's assertion of innocence during the trial."
-        //     ]
-        //   },
-        //   {
-        //     "word": "accessible",
-        //     "definition": "Easily approached, entered, or obtained; easy to understand or appreciate.",
-        //     "urduMeaning": "دستیاب",
-        //     "exampleSentences": [
-        //       "The new library was designed to be accessible to people with disabilities.",
-        //       "The professor made the complex subject matter more accessible through engaging lectures.",
-        //       "The information is readily accessible on the website for public reference."
-        //     ]
-        //   },
-        //   {
-        //     "word": "apathy",
-        //     "definition": "Lack of interest, enthusiasm, or concern; indifference.",
-        //     "urduMeaning": "بے پرواہی",
-        //     "exampleSentences": [
-        //       "The general apathy towards environmental issues is a cause for concern.",
-        //       "His apathy towards the team's performance disappointed the fans.",
-        //       "Overcoming apathy requires a collective effort to raise awareness and engagement."
-        //     ]
-        //   },
-        //   {
-        //     "word": "beset",
-        //     "definition": "Troubled or attacked on all sides; to surround or hem in.",
-        //     "urduMeaning": "گھیر لینا",
-        //     "exampleSentences": [
-        //       "The small village was beset by wolves during the harsh winter.",
-        //       "The company was beset with financial challenges due to economic downturns.",
-        //       "Despite being beset by obstacles, she persevered and achieved her goals."
-        //     ]
-        //   },
-        //   {
-        //     "word": "austere",
-        //     "definition": "Severe or strict in manner, attitude, or appearance; simple and plain.",
-        //     "urduMeaning": "سخت",
-        //     "exampleSentences": [
-        //       "The austere judge left little room for leniency in the courtroom.",
-        //       "The austere design of the monastery reflected the monks' commitment to simplicity.",
-        //       "His austere demeanor masked a compassionate and caring nature."
-        //     ]
-        //   },
-        //   {
-        //     "word": "amplify",
-        //     "definition": "To make larger, more powerful, or more intense; to increase the volume or strength.",
-        //     "urduMeaning": "توسیع دینا",
-        //     "exampleSentences": [
-        //       "The speaker used a microphone to amplify his voice and reach a larger audience.",
-        //       "The musician decided to amplify the melody by adding additional instruments.",
-        //       "Her storytelling skills were amplified by the vivid details she incorporated."
-        //     ]
-        //   },
-        //   {
-        //     "word": "anomalous",
-        //     "definition": "Deviation from what is standard, normal, or expected; unusual.",
-        //     "urduMeaning": "غیر معمولی",
-        //     "exampleSentences": [
-        //       "The scientist discovered an anomalous pattern in the experimental results.",
-        //       "The anomalous behavior of the device raised concerns among the researchers.",
-        //       "In an otherwise calm environment, his outburst was considered anomalous."
-        //     ]
-        //   },
-        //   {
-        //     "word": "asymmetry",
-        //     "definition": "Lack of equality or equivalence between parts; lack of symmetry.",
-        //     "urduMeaning": "تشاکل نہ ہونا",
-        //     "exampleSentences": [
-        //       "The artist intentionally introduced asymmetry in the painting to evoke a sense of dynamic movement.",
-        //       "The natural landscape displayed a certain beauty in its asymmetry.",
-        //       "The designer embraced the asymmetry in the fashion collection, creating unique and eye-catching pieces."
-        //     ]
-        //   },
-        //   {
-        //     "word": "bolster",
-        //     "definition": "Support or strengthen; a long, often cylindrical, cushion or pillow.",
-        //     "urduMeaning": "مدد فراہم کرنا",
-        //     "exampleSentences": [
-        //       "The new evidence helped bolster the case against the accused.",
-        //       "He sought to bolster his team's morale with encouraging words.",
-        //       "She added a bolster to the arrangement to enhance its visual appeal."
-        //     ]
-        //   },
-        //   {
-        //     "word": "amenable",
-        //     "definition": "Open and responsive to suggestion; easily persuaded or controlled.",
-        //     "urduMeaning": "مائل",
-        //     "exampleSentences": [
-        //       "The employee was amenable to new ideas and readily embraced change.",
-        //       "The politician proved amenable to compromise in order to reach bipartisan solutions.",
-        //       "The collaborative atmosphere made the team members more amenable to constructive feedback."
-        //     ]
-        //   },
-        //   {
-        //     "word": "ascribe",
-        //     "definition": "To attribute something to a particular cause or source.",
-        //     "urduMeaning": "نسبت دینا",
-        //     "exampleSentences": [
-        //       "Historians often ascribe the downfall of empires to a combination of internal and external factors.",
-        //       "She did not ascribe the success solely to her efforts but acknowledged the contributions of the entire team.",
-        //       "It is essential to carefully ascribe credit and responsibility in a collaborative project."
-        //     ]
-        //   },
-        //   {
-        //     "word": "blunt",
-        //     "definition": "Having a dull edge or point; straightforward and uncompromising.",
-        //     "urduMeaning": "کھچاکر",
-        //     "exampleSentences": [
-        //       "The knife was too blunt to cut through the tough meat.",
-        //       "His blunt remarks may have offended some, but they conveyed his honest opinion.",
-        //       "She preferred a blunt approach to problem-solving, addressing issues directly and honestly."
-        //     ]
-        //   }
     ]
 }
 
 
-export const chapter2: Chapter = {
+export const chapter0: Chapter = {
     passages: [
         {
             "title": "Political Intrigues",
