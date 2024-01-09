@@ -199,13 +199,14 @@ export const chapter1: Chapter = {
         },
         {
             "word": "Austere",
-            "definition": "(of a person, place, or style) Simple and plain; without unnecessary decoration or luxury.",
-            "urduMeaning": "سادہ (saada), سخت گیر (sakht gir), کفایت شعار (kafaat shiaar)",
+            "definition": "(of a person, place, or style) Simple and plain; without unnecessary decoration or luxury. second meaning: severe or strict in manner or attitude",
+            "urduMeaning": "سادہ (saada), سخت گیر (sakht gir), کفایت شعار (kafaat shiaar) second: سختی",
             "exampleSentences":
                 [
                     "The monastery had an austere atmosphere, with bare walls and minimal furnishings.",
                     "He preferred an austere lifestyle, focusing on experiences rather than material possessions.",
-                    "The minimalist painting conveyed a sense of austerity through its use of limited colors and shapes."
+                    "The minimalist painting conveyed a sense of austerity through its use of limited colors and shapes.",
+                    "Second: he was an austere man, with a rigidly puritanical outlook"
                 ],
         },
         {
@@ -401,7 +402,7 @@ export const chapter1: Chapter = {
                 ]
         },
         {
-            "word": "Aandid",
+            "word": "Candid",
             "definition": "1. Honest and sincere in expressing one's opinions or feelings. 2. Frank and open in speech or writing; not trying to hide anything.",
             "urduMeaning": "1. اپنی رائے یا جذبات کا اظہار کرنے میں ایماندار اور مخلص۔ 2. تقریر یا تحریر میں صاف اور کھلا؛ کچھ چھپانے کی کوشش نہیں کرنا۔",
             "exampleSentences":
