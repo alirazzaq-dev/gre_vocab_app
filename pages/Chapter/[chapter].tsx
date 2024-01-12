@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { IoChevronForward } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
 import { playAudio } from '@/utils';
+import useSwipe from "@/Components/Swipe/useSwipe";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { chapter } = context.query as { chapter: string };
@@ -29,6 +30,11 @@ const Chapter = (data: { chapterNumber: string }) => {
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
 
+  const swipeHandlers = useSwipe(
+    {
+      onSwipedLeft: () => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })),
+      onSwipedRight: () => dispatch(updateFocusModePrevious())
+    });
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -112,10 +118,11 @@ const Chapter = (data: { chapterNumber: string }) => {
         focusMode.active && chapter.words.map((word, key) => (
           <Box
             // border="1px solid red"
+            key={key}
             py={{ base: "8px", md: "10px" }}
             w="full"
-            key={key}
             display={key !== focusMode.index ? "none" : "block"}
+            {...swipeHandlers}
           >
             <Card
               mx="auto"
