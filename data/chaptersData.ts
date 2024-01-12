@@ -556,6 +556,619 @@ export const chapter1: Chapter = {
     ]
 }
 
+export const chapter2: Chapter = {
+    passages: [],
+    words: [
+        {
+            "word": "Decry",
+            "definition": "To publicly denounce or condemn.",
+            "urduMeaning": "علانية مذمت کرنا یا الزام لگانا۔",
+            "exampleSentences": [
+              "The politician vehemently decried the corruption rampant within the government.",
+              "Environmental activists decried the destruction of the rainforest for commercial logging.",
+              "His harsh and public decrying of her work deeply hurt the artist."
+            ]
+          },
+          {
+            "word": "Consolidate",
+            "definition": "To combine or unite into a single stronger unit.",
+            "urduMeaning": "کسی ایک مضبوط یونٹ میں شامل یا متحد کرنا۔",
+            "exampleSentences":
+            [
+              "The company sought to consolidate its market position by acquiring its smaller competitor.",
+              "After winning several battles, the king consolidated his hold on power.",
+              "The athlete used the rest period to consolidate her stamina for the final push."
+            ]
+          },
+          {
+            "word": "Deceptive",
+            "definition": "Giving the appearance of being something that it is not; misleading.",
+            "urduMeaning": "کسی ایسی چیز کا ظہور دے رہا ہے جو وہ نہیں ہے؛ گمراہ کن۔",
+            "exampleSentences":
+            [
+              "The seller's claims about the product's effectiveness turned out to be deceptive.",
+              "The politician's carefully crafted image seemed deceptive, hiding his true intentions.",
+              "The calm before the storm was a deceptive lull, masking the impending chaos."
+            ]
+          },
+          {
+            "word": "Contemporary",
+            "definition":"1. (Of a person) Living or existing at the same time; belonging to the present time. 2. (Of a thing) Of or belonging to the present or current period.",
+            "urduMeaning":
+            "1. (کسی شخص کے بارے میں) ایک ہی وقت میں رہنا یا موجود ہونا؛ موجودہ وقت سے متعلق۔ 2. (کسی چیز کے بارے میں) موجودہ یا موجودہ دور سے متعلق یا اس سے متعلق۔",
+            "exampleSentences":
+            [
+              "The artist explored contemporary social issues in his paintings.",
+              "The scientist made a groundbreaking discovery in the field of contemporary physics.",
+              "Contemporary fashion trends often draw inspiration from past styles with a modern twist."
+            ]
+          },
+          {
+            "word": "Curtail",
+            "definition": "To cut short or reduce the extent or duration of something.",
+            "urduMeaning": "کمزور کرنا یا کسی چیز کی حد یا دورانیہ کو کم کرنا۔",
+            "exampleSentences":
+            [
+              "The budget cuts forced the company to curtail its expansion plans.",
+              "The doctor advised him to curtail his drinking for health reasons.",
+              "The heavy rain curtailed their outdoor activities and forced them to stay indoors."
+            ]
+          },
+          {
+            "word": "Contradict",
+            "definition": "To express an opinion or statement that is contrary to another.",
+            "urduMeaning": "کسی اور کے برعکس رائے یا بیان ظاہر کرنا۔",
+            "exampleSentences":
+            [
+              "The scientist's findings contradicted the prevailing theory about the origin of the universe.",
+              "Your actions directly contradict your words, making it difficult to trust your intentions.",
+              "The two politicians constantly contradicted each other during the heated debate."
+            ],
+          },
+          {
+            "word": "Decay",
+            "definition": "The gradual process of decline or decomposition.",
+            "urduMeaning": "زوال یا گلنے کا بتدریج عمل۔",
+            "exampleSentences":
+            [
+              "The abandoned building slowly decayed, its walls crumbling and windows shattered.",
+              "The freshness of the flowers began to decay after a few days without water.",
+              "Neglecting your health can lead to physical and mental decay over time."
+            ],
+          },
+          {
+            "word": "Dearth",
+            "definition": "A severe shortage or scarcity of something.",
+            "urduMeaning": "کسی چیز کی شدید کمی یا قلت۔",
+            "exampleSentences":
+            [
+              "The drought resulted in a dearth of water resources, forcing strict rationing measures.",
+              "After the war, the country faced a dearth of food and medical supplies.",
+              "His lack of experience and qualifications created a dearth of suitable candidates for the job."
+            ],
+          },
+          {
+            "word": "Coherence",
+            "definition": "The quality of being clear, logical, and well-organized.",
+            "urduMeaning": "واضح، منطقی اور منظم ہونے کا معیار۔",
+            "exampleSentences":
+            [
+              "The writer's masterful storytelling maintained coherence throughout the complex novel.",
+              "The lack of coherence in the speaker's argument made it difficult to understand their point.",
+              "Striving for coherence in your thoughts and communication is essential for effective expression."
+            ],
+          },
+          {
+            "word": "Clumsy",
+            "definition": "Lacking skill or coordination; awkward.",
+            "urduMeaning": "مہارت یا ہم آہنگی کی کمی؛ بے ڈھنگا۔",
+            "exampleSentences":
+            [
+              "Her clumsy attempt to catch the falling vase only made it shatter further.",
+              "He felt awkward and clumsy navigating the unfamiliar social setting.",
+              "Practicing regularly can help overcome clumsiness and improve coordination."
+            ],
+          },
+          {
+            "word": "Daunting",
+            "definition": "Discouragingly difficult or challenging; intimidating.",
+            "urduMeaning": "ہمت ہارنے والا مشکل یا چیلنجنگ؛ ڈراؤنا",
+            "exampleSentences":
+            [
+              "Climbing Mount Everest was a daunting task that required years of training and preparation.",
+              "The prospect of speaking in front of a large audience felt daunting to the shy student.",
+              "The complexity of the medical case presented a daunting challenge to the doctors."
+            ],
+          },
+          {
+            "word": "Cumulative",
+            "definition": "Gradually increasing over time; growing in size or intensity.",
+            "urduMeaning": "آہستہ آہستہ بڑھنا؛ حجم یا شدت میں اضافہ ہونا",
+            "exampleSentences":
+            [
+              "The cumulative effects of air pollution are posing a serious threat to public health.",
+              "Small acts of kindness can have a cumulative positive impact on the community.",
+              "The scientist's research built upon the cumulative knowledge of previous studies."
+            ],
+          },
+          {
+            "word": "Confessional",
+            "definition": "Admitting to a fault or wrongdoing; revealing personal secrets or thoughts.",
+            "urduMeaning": "کسی غلطی یا غلط کام کا اعتراف؛ ذاتی راز یا خیالات کا انکشاف",
+            "exampleSentences":
+            [
+              "The writer's confessional novel explored themes of guilt and self-discovery.",
+              "In the confessional booth, the sinner sought forgiveness for their sins.",
+              "The therapist encouraged the patient to be open and confessional about their feelings."
+            ],
+          },
+          {
+            "word": "Constant",
+            "definition": "Unchanging or ever-present; always the same.",
+            "urduMeaning": "نہ بدلنے والا یا ہمیشہ موجود؛ ہمیشہ ایک جیسا",
+            "exampleSentences":
+            [
+              "The constant flow of the river provided a sense of peace and tranquility.",
+              "The laws of physics are constant and unchanging across the universe.",
+              "The artist strived to capture the constant change and movement of life in their paintings."
+            ],
+          },
+          {
+            "word": "Contemplation",
+            "definition": "The act of thinking deeply about something; thoughtful consideration.",
+            "urduMeaning": "کسی چیز کے بارے میں گہری سوچ؛ غور و فکر",
+            "exampleSentences":
+            [
+              "The philosopher spent hours in contemplation, seeking answers to life's mysteries.",
+              "The writer found inspiration for their work through quiet contemplation in nature.",
+              "The decision required careful contemplation and weighing of all options."
+            ],
+          },
+          {
+            "word": "Controversial",
+            "definition": "Causing or likely to cause disagreement or argument.",
+            "urduMeaning": "اختلاف یا بحث پیدا کرنے یا پیدا کرنے کا امکان۔",
+            "exampleSentences":
+            [
+              "The scientist's theory about the origins of the universe was highly controversial.",
+              "The politician's decision to raise taxes sparked a controversial debate.",
+              "Wearing jeans to a formal event would be considered controversial in some cultures."
+            ],
+          },
+          {
+            "word": "Cunning",
+            "definition": "Clever and skillful in achieving one's ends, especially in a way that deceives others.",
+            "urduMeaning": "اپنے مقاصد کو حاصل کرنے میں ہوشیار اور مہارت، خاص طور پر اس طرح سے جو دوسروں کو دھوکا دے۔",
+            "exampleSentences":
+            [
+              "The fox used its cunning to outsmart the farmer and steal the chickens.",
+              "The magician's cunning sleight of hand fooled the entire audience.",
+              "The negotiator displayed cunning diplomacy to reach a mutually beneficial agreement."
+            ],
+          },
+          {
+            "word": "Conventional",
+            "definition": "Conforming to the usual or accepted standards; traditional.",
+            "urduMeaning": "عام یا منظور شدہ معیاروں کے مطابق؛ روایتی۔",
+            "exampleSentences":
+            [
+              "The couple held a conventional wedding with all the customary ceremonies.",
+              "The author's writing style was considered conventional and conservative.",
+              "Wearing business attire is the conventional dress code for professional meetings."
+            ],
+          },
+          {
+            "word": "Concession",
+            "definition":
+            `
+            "1. (formal) (Of a government or authority) The act of admitting part of a claim made by an opponent or subordinate; an acknowledgment of error. ",
+              "2. A statement or act that admits some point in an argument.",
+              "3. Something granted or yielded to another in response to a demand or request."
+            `,
+            "urduMeaning":
+            `
+              "1. (سرکاری) (حکومت یا اتھارٹی کی طرف سے) کسی مخالف یا ماتحت کے ذریعے کیے گئے دعوے کے ایک حصے کو تسلیم کرنے کا عمل؛ غلطی کا اعتراف۔",
+              "2. ایک بیان یا عمل جو کسی دلیل میں کچھ نکتہ تسلیم کرتا ہے۔",
+              "3. کسی مطالبے یا درخواست کے جواب میں دوسرے کو دیا یا دیا گیا کچھ۔"
+            `,
+            "exampleSentences":
+            [
+              "After weeks of negotiations, the company made a minor concession to the workers' demands.",
+              "The scientist admitted that her experiment needed further research, conceding that some of the initial results might be inaccurate.",
+              "The peace treaty between the warring nations involved several concessions and compromises on both sides."
+            ],
+          },
+          {
+            "word": "Definitive",
+            "definition":
+            `
+              "1. Providing a final or conclusive answer; settling a matter beyond doubt.",
+              "2. Precisely defined or characterized; clear and unambiguous."
+              `,
+            "urduMeaning":
+            `
+              "1. حتمی یا حتمی جواب دینا؛ کسی معاملے کو بغیر کسی شک کے حل کرنا۔",
+              "2. واضح طور پر بیان کردہ یا بیان کردہ؛ واضح اور غیر مبہم."
+              `,
+            "exampleSentences":
+            [
+              "The scientist's groundbreaking discovery provided a definitive answer to the long-standing scientific question.",
+              "The judge's ruling was definitive, leaving no room for further appeal.",
+              "The author's clear and concise writing style used definitive language, leaving no room for misinterpretation."
+            ],
+        },
+        {
+            "word": "Deficient",
+            "definition": "Lacking a necessary or useful quality or element.",
+            "urduMeaning": "کسی ضروری یا مفید خوبی یا عنصر کی کمی ہونا۔",
+            "exampleSentences":
+            [
+              "The young plant was deficient in nutrients, causing it to grow stunted.",
+              "The company's new software was found to be deficient in security features.",
+              "The student's essay was criticized for being deficient in clarity and organization."
+            ],
+          },
+          {
+            "word": "Combative",
+            "definition": "Ready or likely to argue or fight; aggressive.",
+            "urduMeaning": "دلیل یا لڑائی کرنے کے لیے تیار یا امکان ہونا؛ جارحانہ۔",
+            "exampleSentences":
+            [
+              "The politician's combative attitude during the debate alienated many voters.",
+              "The two dogs engaged in a combative struggle for dominance.",
+              "The writer criticized the combative tone of the online conversation, urging more respectful dialogue."
+            ],
+          },
+          {
+            "word": "Compelling",
+            "definition": "Forcefully attracting attention or interest; irresistible.",
+            "urduMeaning": "دھیان یا دلچسپی کو زبردستی اپنی طرف متوجہ کرنا؛ ناقابل مزاحمت۔",
+            "exampleSentences":
+            [
+              "The scientist's presentation on climate change was so compelling that it moved the audience to take action.",
+              "The author's masterful storytelling created a compelling narrative that kept the reader hooked.",
+              "The speaker's passionate performance delivered a compelling argument for social justice."
+            ],
+          },
+          {
+            "word": "Conformity",
+            "definition": "The action of conforming to a prevailing standard or practice; compliance.",
+            "urduMeaning": "کسی غالب معیار یا عمل کے مطابق عمل کرنے کا عمل؛ تعمیل۔",
+            "exampleSentences":
+            [
+              "The pressure to conform to social norms can lead to a loss of individuality.",
+              "The company enforced strict dress code conformity among its employees.",
+              "The artist's work challenged traditional ideas of conformity, pushing boundaries and embracing originality."
+            ],
+          },
+          {
+            "word": "Conservative",
+            "definition":
+            `
+              "1. (Of a person or party) Adhering to traditional values and social institutions; opposed to change.",
+              "2. Avoiding unnecessary risk or expenditure; cautious."
+              `,
+            "urduMeaning":
+            `
+              "1. (کسی شخص یا جماعت کے بارے میں) روایتی اقدار اور سماجی اداروں سے جڑے رہنا؛ تبدیلی کی مخالفت کرنا۔",
+              "2. غیر ضروری خطر یا اخراجات سے گریز کرنا؛ محتاط."
+            `,
+            "exampleSentences":
+            [
+              "The conservative politician advocated for lower taxes and limited government intervention in the economy.",
+              "The investor took a conservative approach, choosing stable blue-chip stocks over risky ventures.",
+              "The museum's collection features works by conservative artists who adhered to traditional painting styles."
+            ],
+        },
+        {
+            "word": "Defensible",
+            "definition": "Capable of being defended or justified; reasonable and able to be supported with evidence.",
+            "urduMeaning": "دفاع یا جواز بنانے کے قابل؛ معقول اور ثبوت کے ساتھ سپورٹ کرنے کے قابل۔",
+            "exampleSentences":
+            [
+              "The scientist's research presented a defensible theory that challenged accepted dogma.",
+              "The lawyer built a strong and defensible case for her client's innocence.",
+              "The politician's decision, while controversial, was ultimately considered defensible in light of the circumstances."
+            ],
+          },
+          {
+            "word": "Comprehension",
+            "definition": "The act or ability of understanding something.",
+            "urduMeaning": "کسی چیز کو سمجھنے کا عمل یا صلاحیت۔",
+            "exampleSentences":
+            [
+              "Reading carefully is essential for comprehension of complex texts.",
+              "The teacher assessed the students' comprehension of the lesson material through a quiz.",
+              "Miscommunication can arise from a lack of comprehension of differing viewpoints."
+            ],
+          },
+          {
+            "word": "Cyclical",
+            "definition": "Recurring in a cycle or regular series of changes.",
+            "urduMeaning": "کسی سائیکل یا تغیرات کی باقاعدہ سیریز میں بار بار۔",
+            "exampleSentences":
+            [
+              "The seasons are a cyclical phenomenon, with distinct periods of heat, cold, and in-between.",
+              "The rise and fall of empires is a cyclical pattern observed throughout history.",
+              "The stock market experiences cyclical fluctuations, with periods of growth and decline."
+            ],
+          },
+          {
+            "word": "Constitute",
+            "definition":
+            `
+              "1. Form or compose by bringing together parts or elements.",
+              "2. Form the essential or characteristic part of something."
+            `,
+            "urduMeaning":
+            `
+              "1. اجزاء یا عناصر کو اکٹھا کرکے تشکیل دینا یا تشکیل دینا۔",
+              "2. کسی چیز کا ضروری یا خاص حصہ بننا۔"
+            `,
+            "exampleSentences":
+            [
+              "The individual atoms constitute the molecules that make up all matter.",
+              "The principles of fairness and justice constitute the foundation of a good society.",
+              "The team of scientists constituted a task force to study the effects of climate change."
+            ],
+          },
+          {
+            "word": "Consequential",
+            "definition": "Having or likely to have a significant effect or influence; important.",
+            "urduMeaning": "کسی اہم اثر یا اثر رکھنے یا رکھنے کا امکان؛ اہم۔",
+            "exampleSentences":
+            [
+              "The scientist's discovery had consequential implications for the field of medicine.",
+              "The voters' decision in the election will have consequential impacts on the country's future.",
+              "Even small actions can have consequential consequences, making it important to choose wisely."
+            ],
+          },
+          {
+            "word": "Comply",
+            "definition": "To act in accordance with a wish, request, or rule.",
+            "urduMeaning": "خواہش، درخواست، یا قاعدے کے مطابق عمل کرنا۔",
+            "exampleSentences": [
+              "The company was fined for failing to comply with safety regulations.",
+              "The students were asked to comply with the dress code.",
+              "The patient complied with the doctor's orders and took their medication."
+            ],
+          },
+          {
+            "word": "Consistent",
+            "definition": "Acting or done in the same way over time, especially so as to be fair or reliable.",
+            "urduMeaning": "وقت کے ساتھ اسی طرح سے کام کرنا یا کیا جانا، خاص طور پر منصفانہ یا قابل اعتماد ہونے کے لیے۔",
+            "exampleSentences": [
+              "The athlete's consistent performance earned her a place on the Olympic team.",
+              "The company's consistent growth has made it a leader in the industry.",
+              "The teacher's consistent feedback helped the students improve their writing skills."
+            ],
+          },
+          {
+            "word": "Compartmentalize",
+            "definition": "Divide into separate categories or sections, especially in a way that seems artificial or overly organized.",
+            "urduMeaning": "الگ الگ زمروں یا حصوں میں تقسیم کرنا، خاص طور پر اس طرح جو مصنوعی یا حد سے زیادہ منظم ہو۔",
+            "exampleSentences": [
+              "The therapist encouraged the patient to compartmentalize their work and personal life to reduce stress.",
+              "The scientist compartmentalized the research into different phases to make it more manageable.",
+              "The spy was able to compartmentalize their emotions and maintain a cover identity."
+            ],
+          },
+          {
+            "word": "Constrain",
+            "definition": "Limit or restrict the scope or extent of something.",
+            "urduMeaning": "کسی چیز کی وسعت یا حد کو محدود یا محدود کرنا۔",
+            "exampleSentences": [
+              "The budget constraints limited the company's ability to expand.",
+              "The time constraint forced the team to make some difficult choices.",
+              "The laws of physics constrain the speed at which objects can travel."
+            ],
+          },
+          {
+            "word": "Contentment",
+            "definition": "A state of happiness and satisfaction.",
+            "urduMeaning": "خوشی اور اطمینان کی حالت۔",
+            "exampleSentences": [
+              "The retiree found contentment in spending time with his family and pursuing his hobbies.",
+              "The artist found contentment in the creative process, regardless of the outcome.",
+              "The monk sought contentment through a simple and spiritual life."
+            ],
+          },
+          {
+            "word": "Cynical",
+            "definition": "Distrustful of the motives, sincerity, or goodness of others; believing that people are generally selfish and dishonest.",
+            "urduMeaning": "دوسروں کے عزائم، صداقت، یا بھلائی پر شک کرنا؛ یہ یقین کرنا کہ لوگ عام طور پر خود غرض اور بے ایمان ہوتے ہیں۔",
+            "exampleSentences":
+            [
+              "The writer's cynical novel explored the dark side of human nature.",
+              "The politician's cynical remarks alienated many voters who sought a more hopeful message.",
+              "Years of disappointment can sometimes lead to a cynical outlook on life."
+            ],
+          },
+          {
+            "word": "Condemn",
+            "definition": "To express strong disapproval of something or someone; to denounce.",
+            "urduMeaning": "کسی چیز یا کسی کی سخت ناگواری کا اظہار کرنا؛ رد کرنا۔",
+            "exampleSentences":
+            [
+              "The international community condemned the human rights abuses of the totalitarian regime.",
+              "The scientist's unethical research was condemned by his colleagues.",
+              "The judge condemned the criminal to life imprisonment for their heinous crimes."
+            ],
+          },
+          {
+            "word": "Consensus",
+            "definition": "A general agreement or opinion; a common understanding.",
+            "urduMeaning": "ایک عام اتفاق رائے یا رائے؛ ایک عام اتفاق رائے۔",
+            "exampleSentences":
+            [
+              "The team reached a consensus on the project plan after a lengthy discussion.",
+              "There was a growing consensus among scientists that climate change was a serious threat.",
+              "The public opinion poll showed a strong consensus in favor of educational reform."
+            ],
+          },
+          {
+            "word": "Cloaked",
+            "definition":
+            `
+              "1. Covered or hidden by a cloak or other garment.",
+              "2. Hidden or disguised; concealed."
+            `,
+            "urduMeaning":
+            `
+              "1. کسی گون یا دوسرے لباس سے ڈھکا یا چھپا ہوا۔",
+              "2. چھپا یا بھیس بدل لیا؛ چھپا ہوا۔"
+            `,
+            "exampleSentences":
+            [
+              "The ninja cloaked himself in darkness and crept into the enemy camp.",
+              "The truth about the politician's past was cloaked in secrecy.",
+              "The artist's work used symbolism to cloak deeper meanings about society."
+            ],
+          },
+          {
+            "word": "Conceive",
+            "definition":
+            `
+              "1. Form an idea or image of something in the mind; imagine.",
+              "2. Become pregnant.",
+              "3. Bring into existence; initiate."
+            `,
+            "urduMeaning":
+            `
+              "1. ذہن میں کسی چیز کا تصور یا تصویر قائم کرنا؛ تصور کرنا۔",
+              "2. حاملہ ہونا۔",
+              "3. وجود میں لانا؛ شروع کرنا۔"
+            `,
+            "exampleSentences":
+            [
+              "The scientist conceived a revolutionary new theory that challenged existing hypotheses.",
+              "The author conceived the storyline for his novel years before starting to write.",
+              "The company conceived a bold project to launch a satellite into space."
+            ],
+          },
+          {
+            "word": "Cliché",
+            "definition": "A phrase or expression that has been overused and lost its originality or freshness.",
+            "urduMeaning": "ایک فقرہ یا اظہار جو زیادہ استعمال کیا گیا ہے اور اپنی اصالت یا تازگی کھو چکا ہے۔",
+            "exampleSentences":
+            [
+              "The writer criticized the overuse of clichés in popular fiction.",
+              "Instead of using clichés, try to express yourself in your own unique voice.",
+              "The politician's speech was filled with tired clichés that failed to inspire the audience."
+            ],
+          },
+          {
+            "word": "Deepen",
+            "definition": "To make something more intense, profound, or significant.",
+            "urduMeaning": "کسی چیز کو زیادہ شدید، گہرا، یا اہم بنانا۔",
+            "exampleSentences":
+            [
+              "The conversation deepened as they shared their personal experiences.",
+              "Reading classic literature can deepen your understanding of human nature.",
+              "Meditation can help to deepen your connection to yourself and the world around you."
+            ],
+          },
+          {
+            "word": "Counterpart",
+            "definition": 
+            `
+              "A person or thing that corresponds to another; an equivalent.",
+              "The opposite or complementary part of something; a match."
+            `,
+            "urduMeaning": 
+            `
+                "ایک شخص یا چیز جو دوسرے سے مطابقت رکھتی ہے؛ مساوی۔",
+                "کسی چیز کا مخالف یا تکمیلی حصہ؛ میچ۔",   
+            `,
+            "exampleSentences":
+            [
+              "The scientist studied the properties of dark matter, the counterpart to regular matter.",
+              "The detective searched for the criminal's counterpart, hoping to find clues.",
+              "Yin and Yang represent the opposing and complementary counterparts in Chinese philosophy."
+            ],
+          },
+          {
+            "word": "Corroborate",
+            "definition": "To confirm or give support to (a statement or theory) with independent evidence.",
+            "urduMeaning": "(کسی بیان یا نظریہ) کو آزاد ثبوت کے ساتھ تائید یا سپورٹ دینا۔",
+            "exampleSentences":
+            [
+              "The witness's testimony corroborated the suspect's alibi.",
+              "New archaeological discoveries corroborated the historian's theory about the lost civilization.",
+              "Several studies have corroborated the link between exercise and good health."
+            ],
+          },
+          {
+            "word": "Contempt", "definition": "Feelings of intense dislike or disgust; scorn.",
+            "urduMeaning": " شدید ناپسند یا نفرت کے جذبات؛ حقارت۔",
+            "exampleSentences":
+            [
+              "The judge treated the defendant with contempt for showing disrespect to the court.",
+              "The politician's remarks were met with contempt from the audience.",
+              "Ignoring someone can be a subtle form of contempt."
+            ],
+          },
+          {
+            "word": "Contingent",
+            "definition": "Dependent on or happening only if something else happens.",
+            "urduMeaning": "کسی اور چیز کے ہونے پر منحصر یا صرف اس صورت میں ہوتا ہے۔",
+            "exampleSentences": [
+              "The company's plans were contingent on securing funding from investors.",
+              "The military's deployment was contingent on approval from the president.",
+              "The success of the experiment was contingent on a number of factors."
+            ],
+          },
+          {
+            "word": "Cursory",
+            "definition": "Hasty and superficial; not thorough",
+            "urduMeaning": "جلد بازی اور سطحی؛ مکمل نہیں",
+            "exampleSentences": [
+              "The detective gave the room a cursory glance before deciding it was empty.",
+              "The doctor conducted a cursory examination of the patient before ordering more tests.",
+              "I only had time for a cursory reading of the report before the meeting."
+            ],
+          },
+          {
+            "word": "Crust",
+            "definition": "The hard outer layer of something, especially bread or the earth.",
+            "urduMeaning": "کسی چیز کی سخت بیرونی تہہ، خاص طور پر روٹی یا زمین۔",
+            "exampleSentences": [
+              "The bread had a thick, crispy crust.",
+              "The earthquake caused a shift in the Earth's crust.",
+              "The pie had a flaky crust that was filled with delicious fruit."
+            ],
+          },
+          {
+            "word": "Convey",
+            "definition": 
+            `
+                "To transport or carry something from one place to another.",
+                "To communicate or express an idea or feeling.",
+            `,
+            "urduMeaning": 
+            `
+                "کسی چیز کو ایک جگہ سے دوسری جگہ منتقل یا لے جانا۔",
+                "کسی خیال یا احساس کو منتقل یا ظاہر کرنا۔",
+            `,
+            "exampleSentences": [
+              "The conveyor belt conveyed the packages to the loading dock.",
+              "The artist's paintings conveyed a sense of loneliness and despair.",
+              "It's important to convey your ideas clearly and concisely in a presentation."
+            ],
+          },
+          {
+            "word": "Cognitive",
+            "definition": "Relating to cognition; the mental process of acquiring knowledge and understanding through thought, experience, and the senses.",
+            "urduMeaning": "ادراک سے متعلق؛ فکر، تجربہ اور حواس کے ذریعے علم اور فہم حاصل کرنے کا ذہنی عمل۔",
+            "exampleSentences": [
+              "Cognitive development in children involves the growth of language, memory, and problem-solving skills.",
+              "Cognitive decline is a common symptom of Alzheimer's disease.",
+              "Cognitive therapy is a type of psychotherapy that focuses on changing unhelpful patterns of thinking."
+            ],
+          }
+        
+    ]
+}
 
 export const chapter0: Chapter = {
     passages: [

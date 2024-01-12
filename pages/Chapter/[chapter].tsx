@@ -1,10 +1,10 @@
 import WordModal from '@/Components/Modals/WordModal';
 import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
-import { setSelectedWord, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
+import { changeFocusMode, setSelectedWord, shuffleChapter, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
 import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, Tag, Text, Tooltip, VStack, useDisclosure } from '@chakra-ui/react';
 import { GetServerSideProps } from 'next';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { IoChevronForward } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
@@ -28,6 +28,48 @@ const Chapter = (data: { chapterNumber: string }) => {
 
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
+
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      switch (e.key) {
+        case "ArrowLeft":
+          dispatch(updateFocusModePrevious())
+          break;
+        case "ArrowRight":
+          dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))
+          break;
+        case " ":
+          dispatch(updateFocusMeaning())
+          break;
+        case "Shift":
+          dispatch(changeFocusMode())
+          break;
+        default:
+          break;
+      }
+      // if(e.key === "ArrowLeft"){
+      //   dispatch(updateFocusModePrevious())
+      // }
+      // else if(e.key === "ArrowRight"){
+      //   dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))
+      // }
+      // else if(e.key === " "){
+      //   dispatch(updateFocusMeaning())
+      // }
+      // else if(e.key === "Shift"){
+      //   dispatch(changeFocusMode())
+      // }      
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Don't forget to clean up
+    return function cleanup() {
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+  }, []);
+
 
   return (
     <Box border="0px solid red">
