@@ -1170,6 +1170,265 @@ export const chapter2: Chapter = {
     ]
 }
 
+export const chapter3: Chapter = {
+  passages: [],
+  words: [
+    {
+      "word": "Endanger",
+      "definition": "to expose to danger or harm",
+      "urduMeaning": "خطرے میں ڈالنا یا ڈالنا",
+      "exampleSentences": [
+        "The construction site's lack of safety measures could endanger the workers.",
+        "Smoking during pregnancy can endanger the health of the unborn child.",
+        "The decision to cut funding for the fire department could endanger the entire community."
+      ]
+    },
+    {
+      "word": "Disseminate",
+      "definition": "to spread widely, as in information",
+      "urduMeaning": "پھیلانا یا بھیجنا",
+      "exampleSentences": [
+        "The organization aims to disseminate knowledge about environmental conservation.",
+        "Social media platforms are powerful tools to disseminate information quickly.",
+        "The government's priority is to disseminate accurate information during emergencies."
+      ]
+    },
+    {
+      "word": "Dismissive",
+      "definition": "showing a lack of interest or concern; rejecting",
+      "urduMeaning": "لاتعلق یا ردکرنے والا",
+      "exampleSentences": [
+        "Her dismissive attitude towards new ideas hinders innovation in the team.",
+        "The manager was dismissive of the employee's suggestions without considering their potential.",
+        "Being dismissive of valid concerns can lead to a breakdown in communication."
+      ]
+    },
+    {
+      "word": "Drawn",
+      "definition": "looking tired, tense, or strained",
+      "urduMeaning": "تھکا ہوا یا زہریلا",
+      "exampleSentences": [
+        "After a long day of work, he appeared drawn and fatigued.",
+        "The stress of the situation left her looking drawn and pale.",
+        "The constant pressure at work made him drawn and gaunt."
+      ]
+    },
+    {
+      "word": "Elevate",
+      "definition": "to lift or raise something to a higher position",
+      "urduMeaning": "اونچا کرنا یا بلند کرنا",
+      "exampleSentences": [
+        "She used a platform to elevate herself and reach the top shelf.",
+        "The new project is expected to elevate the company's reputation in the industry.",
+        "Positive feedback can elevate an individual's confidence and motivation."
+      ]
+    },
+    {
+      "word": "Drought",
+      "definition": "a prolonged period of abnormally low rainfall, leading to a shortage of water",
+      "urduMeaning": "خشکی یا قحط",
+      "exampleSentences": [
+        "The region experienced a severe drought, affecting agriculture and water supply.",
+        "Efforts are being made to find sustainable solutions to mitigate the impact of droughts.",
+        "Farmers face significant challenges during a drought, leading to crop failures."
+      ]
+    },
+    {
+      "word": "Dynamism",
+      "definition": "vigor and energy; the quality of being characterized by vigorous activity and progress",
+      "urduMeaning": "تحریک اور توانائی",
+      "exampleSentences": [
+        "The dynamism of the young entrepreneur brought fresh ideas to the industry.",
+        "A leader's dynamism can inspire and motivate a team to achieve greater success.",
+        "In times of change, the dynamism of an organization is crucial for adaptation and growth."
+      ]
+    },
+    {
+      "word": "Deviate",
+      "definition": "to depart or swerve, especially from a standard or expected course",
+      "urduMeaning": "منحرف ہونا یا ہٹنا",
+      "exampleSentences": [
+        "It's important not to deviate from the established safety protocols.",
+        "Innovation often requires the courage to deviate from traditional approaches.",
+        "The project's success depends on the team's ability to deviate from outdated strategies."
+      ]
+    },
+    {
+      "word": "Endure",
+      "definition": "to suffer patiently; to tolerate or withstand hardship",
+      "urduMeaning": "صبر کرنا یا برداشت کرنا",
+      "exampleSentences": [
+        "The marathon runner had to endure the physical and mental challenges of the race.",
+        "Individuals who endure adversity often emerge stronger and more resilient.",
+        "Leaders must demonstrate the ability to endure challenges while guiding their teams."
+      ]
+    },
+    {
+      "word": "Empirical",
+      "definition": "based on observation, experience, or evidence; verifiable by observation or experience",
+      "urduMeaning": "تجرباتی یا حسی مبنی",
+      "exampleSentences": [
+        "Scientific theories should be supported by empirical evidence to be considered valid.",
+        "The decision-making process should be informed by both theoretical knowledge and empirical data.",
+        "Empirical studies have shown a correlation between exercise and mental well-being."
+      ]
+    },
+    {
+      "word": "Devoid",
+      "definition": "completely lacking or empty; entirely without",
+      "urduMeaning": "بے ہوش یا خالی",
+      "exampleSentences": [
+        "The abandoned house was devoid of any signs of life.",
+        "His speech was devoid of substance, leaving the audience unimpressed.",
+        "The remote village was often devoid of modern amenities."
+      ]
+    },
+    {
+      "word": "Deliberate",
+      "definition": "done consciously and intentionally; carefully weighed or considered",
+      "urduMeaning": "جان بوجھ کر یا سوچ سمجھ کر",
+      "exampleSentences": [
+        "The decision to implement the policy was deliberate and well-planned.",
+        "She spoke in a deliberate manner, choosing her words with precision.",
+        "The artist took deliberate steps to capture the essence of the scene in the painting."
+      ]
+    },
+    {
+      "word": "Enthralled",
+      "definition": "captivated or fascinated; completely absorbed or entranced",
+      "urduMeaning": "دلبر یا محو کرنا",
+      "exampleSentences": [
+        "The audience was enthralled by the mesmerizing performance of the magician.",
+        "She was completely enthralled by the novel and couldn't put it down.",
+        "His storytelling skills left the children enthralled and eager for more."
+      ]
+    },
+    {
+      "word": "Distinguish",
+      "definition": "to recognize or point out the difference between; to stand out as different or unique",
+      "urduMeaning": "پہچاننا یا مختلف کرنا",
+      "exampleSentences": [
+        "The detective could distinguish subtle details that others overlooked.",
+        "Her talent in music helped her distinguish herself among her peers.",
+        "The unique architecture of the building allowed it to distinguish itself in the cityscape."
+      ]
+    },
+    {
+      "word": "Exaggerate",
+      "definition": "to represent something as being larger, greater, better, or worse than it really is",
+      "urduMeaning": "مبالغہ کرنا یا زیادہ کہنا",
+      "exampleSentences": [
+        "It's common for people to exaggerate their achievements on resumes.",
+        "She tends to exaggerate the difficulties she faces to gain sympathy.",
+        "The fisherman was known to exaggerate the size of the fish he caught."
+      ]
+    },
+    {
+      "word": "Discard",
+      "definition": "to get rid of or throw away; to reject or dismiss as no longer useful or valuable",
+      "urduMeaning": "رد کرنا یا پھینکنا",
+      "exampleSentences": [
+        "It's essential to discard expired medications to ensure safety.",
+        "The team decided to discard the old equipment and invest in new technology.",
+        "She chose to discard negative thoughts and focus on the positive aspects of her life."
+      ]
+    },
+    {
+      "word": "Divergent",
+      "definition": "tending to be different or develop in different directions; deviating from a common point",
+      "urduMeaning": "مختلف یا منحرف",
+      "exampleSentences": [
+        "The opinions of the group became increasingly divergent as the discussion progressed.",
+        "Divergent paths led to diverse outcomes for the two friends.",
+        "In literature, a divergent plot can offer unexpected twists and turns."
+      ]
+    },
+    {
+      "word": "Erratic",
+      "definition": "unpredictable; irregular in pattern, movement, or behavior",
+      "urduMeaning": "غیر متوقع یا بے قاعدہ",
+      "exampleSentences": [
+        "The erratic behavior of the wild animal made it difficult to approach safely.",
+        "Her mood swings were erratic, causing confusion among her friends.",
+        "The stock market can be erratic, making investment decisions challenging."
+      ]
+    },
+    {
+      "word": "Exasperating",
+      "definition": "infuriating or intensely irritating; causing frustration or annoyance",
+      "urduMeaning": "غصہ انگیز یا تنازعہ",
+      "exampleSentences": [
+        "Dealing with the exasperating technical issues took a toll on the team's patience.",
+        "The constant delays were exasperating for the commuters.",
+        "His exasperating habit of interrupting others in meetings created tension in the workplace."
+      ]
+    },
+    {
+      "word": "Depict",
+      "definition": "to represent or portray in words or pictures; to describe or show",
+      "urduMeaning": "تشہیر یا تصویر کشی کرنا",
+      "exampleSentences": [
+        "The artist chose to depict the beauty of nature in his paintings.",
+        "The novel skillfully depicts the challenges faced by the protagonist.",
+        "Documentaries often depict real-life events to raise awareness and understanding."
+      ]
+    },
+    {
+      "word": "Entail",
+      "definition": "to involve or necessitate as a consequence; to require or impose",
+      "urduMeaning": "شامل ہونا یا ضروری ہونا",
+      "exampleSentences": [
+        "The new regulations may entail additional paperwork for businesses.",
+        "The ambitious project will entail collaboration among various departments.",
+        "Unexpected challenges can entail changes to the original plan."
+      ]
+    },
+    {
+      "word": "Demise",
+      "definition": "a person's death; the end or termination of existence or operation",
+      "urduMeaning": "انسان کی موت یا موت",
+      "exampleSentences": [
+        "The demise of the famous actor left fans in mourning.",
+        "The company's financial demise was attributed to poor management decisions.",
+        "Despite rumors of its demise, the traditional bookstore still thrives in some communities."
+      ]
+    },
+    {
+      "word": "Diffuse",
+      "definition": "to spread or scatter widely; to disperse or distribute",
+      "urduMeaning": "پھیلانا یا بکھیرنا",
+      "exampleSentences": [
+        "The scent of flowers began to diffuse throughout the room.",
+        "The organization aims to diffuse information about environmental conservation.",
+        "Efforts were made to diffuse tension and promote dialogue among conflicting parties."
+      ]
+    },
+    {
+      "word": "Diminished",
+      "definition": "made smaller or less; reduced in size, importance, or intensity",
+      "urduMeaning": "کم یا گھٹا ہوا",
+      "exampleSentences": [
+        "The storm's strength diminished as it moved away from the coast.",
+        "The artist felt that the smaller canvas diminished the impact of the painting.",
+        "The diminished resources posed a challenge to completing the project on schedule."
+      ]
+    },
+    {
+      "word": "Delicacy",
+      "definition": "the quality of being delicate, subtle, or sensitive; something pleasing and appealing",
+      "urduMeaning": "خوبصورتی یا نازکی",
+      "exampleSentences": [
+        "The delicacy of the music touched the hearts of the audience.",
+        "Preparing a soufflé requires precision and a delicate touch.",
+        "Cultural delicacies are often associated with special occasions and celebrations."
+      ]
+    }
+
+
+
+  ]
+}
+
 export const chapter0: Chapter = {
     passages: [
         {
