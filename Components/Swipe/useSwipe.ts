@@ -41,37 +41,7 @@ export default (input: SwipeInput): SwipeOutput => {
             input.onSwipedRight();
         }
 
-        //   if (isLeftSwipe || isRightSwipe)
-        //     console.log('swipe', isLeftSwipe ? 'left' : 'right');
-        // add your conditional logic here
     };
-
-
-
-    // const [touchStart, setTouchStart] = useState(0);
-    // const [touchEnd, setTouchEnd] = useState(0);
-
-    // const minSwipeDistance = 1;
-
-    // const onTouchStart = (e: TouchEvent) => {
-    //     setTouchEnd(0); // otherwise the swipe is fired even with usual touch events
-    //     setTouchStart(e.targetTouches[0].clientX);
-    // }
-
-    // const onTouchMove = (e: TouchEvent) => setTouchEnd(e.targetTouches[0].clientX);
-
-    // const onTouchEnd = () => {
-    //     if (!touchStart || !touchEnd) return;
-    //     const distance = touchStart - touchEnd;
-    //     const isLeftSwipe = distance > minSwipeDistance;
-    //     const isRightSwipe = distance < -minSwipeDistance;
-    //     if (isLeftSwipe) {
-    //         input.onSwipedLeft();
-    //     }
-    //     if (isRightSwipe) {
-    //         input.onSwipedRight();
-    //     }
-    // }
 
     return {
         onTouchStart,

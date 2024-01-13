@@ -1,8 +1,8 @@
 import WordModal from '@/Components/Modals/WordModal';
 import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
-import { changeFocusMode, setSelectedWord, shuffleChapter, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
-import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, Tag, Text, Tooltip, VStack, useDisclosure } from '@chakra-ui/react';
+import { changeFocusMode, setSelectedWord, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
+import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, ScaleFade, Tag, Text, Tooltip, VStack, useDisclosure } from '@chakra-ui/react';
 import { GetServerSideProps } from 'next';
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
@@ -10,6 +10,8 @@ import { IoChevronForward } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
 import { playAudio } from '@/utils';
 import useSwipe from "@/Components/Swipe/useSwipe";
+import { motion } from "framer-motion"
+
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { chapter } = context.query as { chapter: string };
@@ -26,6 +28,7 @@ const Chapter = (data: { chapterNumber: string }) => {
   const fontSize = useSelector((state: RootState) => state.fontSize);
   const focusMode = useSelector((state: RootState) => state.focusMode);
   const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
+  const [isOpen, setIsOpen] = useState(true);
 
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
@@ -124,67 +127,72 @@ const Chapter = (data: { chapterNumber: string }) => {
             display={key !== focusMode.index ? "none" : "block"}
             {...swipeHandlers}
           >
-            <Card
-              mx="auto"
-              minH={{ base: "full", md: "400px" }}
-              w={{ base: "full", md: "400px" }}
-              fontSize={{ base: "20px", md: "36px" }}
-              p={{ base: "12px", md: "24px" }}
+
+            <motion.div
+              initial={{ opacity: 0.5, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
             >
-              {
-                !focusMode.showMeaning && (
-                  <Center h={{ base: "300px", md: "400px" }}>
-                    {word.word}
-                  </Center>
-                )
-              }
+              <Card
+                mx="auto"
+                minH={{ base: "full", md: "400px" }}
+                w={{ base: "full", md: "400px" }}
+                fontSize={{ base: "20px", md: "36px" }}
+                p={{ base: "12px", md: "24px" }}
+              >
 
-              {
-                focusMode.showMeaning && (
-                  <Box h="full" fontSize="16px" >
-                    <HStack minH={{ base: "full", md: "400px" }}>
-                      <VStack >
+                {
+                  !focusMode.showMeaning && (
+                    <Center h={{ base: "300px", md: "400px" }}>
+                      {word.word}
+                    </Center>
+                  )
+                }
 
-                        <HStack w="full">
-                          <Text> {word.word}</Text>
-                          <Center cursor="pointer" onClick={() => playAudio(word.word)}>
-                            🔊
-                          </Center>
-                        </HStack>
+                {
+                  focusMode.showMeaning && (
+                    <Box h="full" fontSize="16px" >
+                      <HStack minH={{ base: "full", md: "400px" }}>
+                        <VStack >
 
-                        <Text w="full">
-                          Description: {word.definition}
-                        </Text>
+                          <HStack w="full">
+                            <Text> {word.word}</Text>
+                            <Center cursor="pointer" onClick={() => playAudio(word.word)}>
+                              🔊
+                            </Center>
+                          </HStack>
 
-                        <Text w="full">
-                          Urdu Meaning: {word.urduMeaning}
-                        </Text>
+                          <Text w="full">
+                            Description: {word.definition}
+                          </Text>
 
-                        <Text w="full">
-                          Sentences:
-                        </Text>
+                          <Text w="full">
+                            Urdu Meaning: {word.urduMeaning}
+                          </Text>
 
-                        <OrderedList w="full">
-                          {
-                            word.exampleSentences.map((sentence, key) => {
-                              return (
-                                <ListItem key={key} ml="10px">
-                                  {sentence}
-                                </ListItem>
-                              )
-                            })
-                          }
-                        </OrderedList>
+                          <Text w="full">
+                            Sentences:
+                          </Text>
 
-                      </VStack>
+                          <OrderedList w="full">
+                            {
+                              word.exampleSentences.map((sentence, key) => {
+                                return (
+                                  <ListItem key={key} ml="10px">
+                                    {sentence}
+                                  </ListItem>
+                                )
+                              })
+                            }
+                          </OrderedList>
+                        </VStack>
+                      </HStack>
+                    </Box>
+                  )
+                }
 
-                    </HStack>
+              </Card>
+            </motion.div>
 
-                  </Box>
-                )
-              }
-
-            </Card>
 
             <Text fontSize="12px" textAlign="center"> {key + 1} / {chapter.words.length} </Text>
 
@@ -195,15 +203,15 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button w="20" onClick={() => dispatch(updateFocusModePrevious())}>
+              <Button w="20" onClick={() => { dispatch(updateFocusModePrevious()); }}>
                 <IoChevronBack />
               </Button>
-              <Button w="20" onClick={() => { dispatch(updateFocusMeaning()) }}>
+              <Button w="20" onClick={() => { dispatch(updateFocusMeaning()); }}>
                 <Text fontSize="16px">
                   {focusMode.showMeaning ? "word" : "meaning"}
                 </Text>
               </Button>
-              <Button w="20" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
+              <Button w="20" onClick={() => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })); }}>
                 <IoChevronForward />
               </Button>
             </HStack>
