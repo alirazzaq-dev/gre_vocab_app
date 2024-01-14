@@ -2,7 +2,7 @@ import WordModal from '@/Components/Modals/WordModal';
 import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
 import { changeFocusMode, setSelectedWord, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
-import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, ScaleFade, Tag, Text, Tooltip, VStack, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, ScaleFade, Tag, Text, Tooltip, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
 import { GetServerSideProps } from 'next';
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
@@ -32,6 +32,8 @@ const Chapter = (data: { chapterNumber: string }) => {
 
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
+
+  const bg = useColorModeValue("primary.light", "primary.dark");
 
   const swipeHandlers = useSwipe(
     {
@@ -81,7 +83,7 @@ const Chapter = (data: { chapterNumber: string }) => {
 
 
   return (
-    <Box border="0px solid red">
+    <Box border="0px solid red" bg={bg} >
 
       <Box border="0px solid red">
         <Text> Chapter : {data.chapterNumber} ({chapter.words.length} words)</Text>
@@ -143,7 +145,9 @@ const Chapter = (data: { chapterNumber: string }) => {
                 {
                   !focusMode.showMeaning && (
                     <Center h={{ base: "300px", md: "400px" }}>
-                      {word.word}
+                      <Text fontSize="4xl" fontWeight={700}>
+                        {word.word}
+                      </Text>
                     </Center>
                   )
                 }
@@ -203,12 +207,12 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button w="20" onClick={() => { dispatch(updateFocusModePrevious()); }}>
+              <Button w="20"  onClick={() => { dispatch(updateFocusModePrevious()); }}>
                 <IoChevronBack />
               </Button>
               <Button w="20" onClick={() => { dispatch(updateFocusMeaning()); }}>
                 <Text fontSize="16px">
-                  {focusMode.showMeaning ? "word" : "meaning"}
+                  {focusMode.showMeaning ? "word" : "detail"}
                 </Text>
               </Button>
               <Button w="20" onClick={() => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })); }}>

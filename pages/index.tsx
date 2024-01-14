@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, useColorModeValue } from '@chakra-ui/react'
 import { useRouter } from 'next/router';
 import { RootState } from '@/store';
 import { useSelector } from 'react-redux';
@@ -8,9 +8,10 @@ export default function Home() {
 
   const chaptersCount = useSelector((state: RootState) => state.chapters.length);
   const router = useRouter();
+  const bg = useColorModeValue("primary.light", "primary.dark");
 
   return (
-    <Box>
+    <Box bg={bg}>
       {
         [...Array(chaptersCount)].map((_, key) => {
           return (
