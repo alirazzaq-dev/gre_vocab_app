@@ -1677,6 +1677,264 @@ export const chapter3: Chapter = {
   ]
 }
 
+export const chapter4: Chapter = {
+  passages: [],
+  words: [
+    {
+      "word": "Exposition",
+      "definition": "a comprehensive explanation or presentation of an idea, theory, or theme; a public exhibition or show",
+      "urduMeaning": "وضاحت یا تفصیل",
+      "exampleSentences": [
+        "The professor gave a detailed exposition of the scientific theory during the lecture.",
+        "The art gallery hosted an exposition featuring the works of local artists.",
+        "In literature, an exposition sets the stage by providing background information on the characters and plot."
+      ]
+    },
+    {
+      "word": "Glimpse",
+      "definition": "a brief and partial view or look; a momentary or incomplete sighting",
+      "urduMeaning": "جھلکا یا نظر",
+      "exampleSentences": [
+        "As the clouds parted, we caught a glimpse of the beautiful sunset.",
+        "The hikers were thrilled to get a glimpse of the elusive wildlife in the forest.",
+        "He managed to catch a glimpse of her before she disappeared into the crowd."
+      ]
+    },
+    {
+      "word": "Factitious",
+      "definition": "artificially created or produced; not natural; fake or contrived",
+      "urduMeaning": "مصنوعی یا جعلی",
+      "exampleSentences": [
+        "The jewelry was suspected to be factitious, as it lacked the genuine hallmarks.",
+        "His smile seemed factitious, betraying his true emotions.",
+        "The antique dealer was skilled at detecting factitious artifacts from genuine ones."
+      ]
+    },
+    {
+      "word": "Forestall",
+      "definition": "to prevent or hinder something from happening; to anticipate and take action in advance",
+      "urduMeaning": "روکنا یا پیش ہونا",
+      "exampleSentences": [
+        "The security measures were implemented to forestall any potential security threats.",
+        "Investors often try to forestall losses by diversifying their portfolios.",
+        "The team implemented a strategy to forestall the opponent's offensive moves."
+      ]
+    },
+    {
+      "word": "Impose",
+      "definition": "to establish or apply by authority; to force something on someone; to bring about through force or necessity",
+      "urduMeaning": "عائد کرنا یا فرض کرنا",
+      "exampleSentences": [
+        "The government decided to impose stricter regulations to address environmental concerns.",
+        "It's important not to impose one's beliefs on others but to foster open dialogue.",
+        "The economic crisis imposed hardships on the entire population."
+      ]
+    },
+    {
+      "word": "Grasp",
+      "definition": "to understand or comprehend fully; to seize or hold firmly",
+      "urduMeaning": "سمجھنا یا پکڑنا",
+      "exampleSentences": [
+        "It took a while for him to grasp the complexity of the scientific concept.",
+        "The student worked hard to grasp the fundamental principles of the subject.",
+        "She reached out to grasp the handrail to steady herself."
+      ]
+    },
+    {
+      "word": "Immune",
+      "definition": "resistant to or protected against a particular disease or condition; not affected or influenced by something",
+      "urduMeaning": "مضبوط یا محفوظ",
+      "exampleSentences": [
+        "Vaccination helps make individuals immune to certain infectious diseases.",
+        "Some people seem to be immune to stress and can handle pressure effectively.",
+        "The diplomat remained immune to the political pressure and made unbiased decisions."
+      ]
+    },
+    {
+      "word": "Hasten",
+      "definition": "to cause something to happen more quickly; to hurry or speed up",
+      "urduMeaning": "جلدی کرنا یا تیز کرنا",
+      "exampleSentences": [
+        "The manager decided to hasten the completion of the project to meet the deadline.",
+        "The urgent situation required them to hasten their response and take immediate action.",
+        "The cold weather seemed to hasten the arrival of winter."
+      ]
+    },
+    {
+      "word": "Impending",
+      "definition": "about to happen; imminent; looming in the near future",
+      "urduMeaning": "نزدیک یا قریب الوقت",
+      "exampleSentences": [
+        "Dark clouds on the horizon indicated the impending storm.",
+        "The team felt the pressure of the impending deadline for the project.",
+        "There was a sense of impending change in the air."
+      ]
+    },
+    {
+      "word": "Impair",
+      "definition": "to weaken, damage, or diminish the quality, value, or effectiveness of something",
+      "urduMeaning": "خراب یا کمزور کرنا",
+      "exampleSentences": [
+        "Lack of sleep can impair cognitive functions and decision-making abilities.",
+        "The accident left him with injuries that could impair his mobility.",
+        "Excessive use of electronic devices may impair vision over time."
+      ]
+    },
+    {
+      "word": "Exhilarating",
+      "definition": "making one feel very happy, animated, or elated; invigorating",
+      "urduMeaning": "خوشی دے یا ہوشیار بناتا ہے",
+      "exampleSentences": [
+        "The roller coaster ride was exhilarating, filled with twists and turns.",
+        "The breathtaking scenery of the mountains provided an exhilarating hiking experience.",
+        "Participating in the championship was an exhilarating moment for the athletes."
+      ]
+    },
+    {
+      "word": "Impenetrable",
+      "definition": "impossible to pass through, enter, or see through; not easily understood or solved",
+      "urduMeaning": "ناقابل نفوذ یا سمجھ میں آنے والا",
+      "exampleSentences": [
+        "The dense forest was nearly impenetrable, with thick vegetation blocking the path.",
+        "The spy agency maintained an impenetrable security system to safeguard classified information.",
+        "The author's writing style, though brilliant, could be impenetrable for some readers."
+      ]
+    },
+    {
+      "word": "Explicable",
+      "definition": "capable of being explained or accounted for; understandable",
+      "urduMeaning": "واضح یا سمجھ میں آنے والا",
+      "exampleSentences": [
+        "The scientist provided an explicable explanation for the complex phenomenon.",
+        "In certain cases, the behavior of individuals may not be easily explicable.",
+        "The teacher made the difficult concept more explicable by using simple examples."
+      ]
+    },
+    {
+      "word": "Exhaustive",
+      "definition": "comprehensive and thorough; including all possibilities or details",
+      "urduMeaning": "مکمل یا جامع",
+      "exampleSentences": [
+        "The researcher conducted an exhaustive study of the historical archives.",
+        "The exhaustive list of ingredients provided a detailed overview of the recipe.",
+        "The detective conducted an exhaustive investigation to uncover all the facts."
+      ]
+    },
+    {
+      "word": "Impart",
+      "definition": "to communicate or disclose; to give or bestow, especially a quality or characteristic",
+      "urduMeaning": "منتقل کرنا یا دینا",
+      "exampleSentences": [
+        "The teacher sought to impart knowledge and wisdom to her students.",
+        "His experiences abroad helped impart a global perspective to his worldview.",
+        "Parents often strive to impart values and virtues to their children."
+      ]
+    },
+    {
+      "word": "Imperative",
+      "definition": "of vital importance; crucial; giving an authoritative command or instruction",
+      "urduMeaning": "ضروری یا حکم",
+      "exampleSentences": [
+        "It is imperative to address climate change to ensure the well-being of future generations.",
+        "In times of crisis, leaders must make imperative decisions for the greater good.",
+        "The teacher issued an imperative to complete the assignment by the deadline."
+      ]
+    },
+    {
+      "word": "Forbearance",
+      "definition": "patient self-control; restraint and tolerance in the face of provocation",
+      "urduMeaning": "صبر یا حوصلہ",
+      "exampleSentences": [
+        "The diplomat showed great forbearance in negotiating a peaceful resolution.",
+        "Practicing forbearance in challenging situations can lead to personal growth.",
+        "Cultural diversity requires mutual forbearance and understanding."
+      ]
+    },
+    {
+      "word": "Impartial",
+      "definition": "not favoring one side over another; unbiased; treating all parties fairly",
+      "urduMeaning": "بے طرف یا نا جانب دار",
+      "exampleSentences": [
+        "The judge ensured an impartial trial by avoiding any conflicts of interest.",
+        "A news reporter should strive to provide an impartial account of events.",
+        "An impartial mediator is essential for resolving conflicts in a fair manner."
+      ]
+    },
+    {
+      "word": "Expel",
+      "definition": "to force someone to leave a place, especially a school or country; to eject or discharge",
+      "urduMeaning": "نکالنا یا خارج کرنا",
+      "exampleSentences": [
+        "The school decided to expel the student for repeated disciplinary violations.",
+        "Countries may expel diplomats in response to political tensions.",
+        "The volcano's eruption caused it to expel ash and smoke into the atmosphere."
+      ]
+    },
+    {
+      "word": "Hindsight",
+      "definition": "understanding of a situation or event only after it has happened; looking back in reflection",
+      "urduMeaning": "پچھلی عقل",
+      "exampleSentences": [
+        "With hindsight, she realized that the decision was not the best choice.",
+        "Hindsight often reveals the consequences and lessons of past actions.",
+        "In hindsight, he acknowledged the value of the advice he had received."
+      ]
+    },
+    {
+      "word": "Fluid",
+      "definition": "a substance that flows and can change its shape; smooth and graceful in motion or transition",
+      "urduMeaning": "سیال یا روانہ",
+      "exampleSentences": [
+        "Water is a common example of a fluid that takes the shape of its container.",
+        "The dancer moved with fluid grace, captivating the audience.",
+        "The artist aimed to capture the fluidity of nature in the painting."
+      ]
+    },
+    {
+      "word": "Fluctuation",
+      "definition": "an irregular rising and falling or variation in quantity, value, or quality",
+      "urduMeaning": "تذبذب یا تغیر",
+      "exampleSentences": [
+        "The stock market experienced fluctuations throughout the day.",
+        "Fluctuations in temperature can affect the growth of certain crops.",
+        "The athlete's performance showed noticeable fluctuations during the competition."
+      ]
+    },
+    {
+      "word": "Extensive",
+      "definition": "covering a large area; wide in scope or range; comprehensive",
+      "urduMeaning": "وسیع یا بڑا",
+      "exampleSentences": [
+        "The researcher conducted an extensive study on the effects of climate change.",
+        "The library has an extensive collection of rare books and manuscripts.",
+        "The explorers embarked on an extensive journey to map uncharted territories."
+      ]
+    },
+    {
+      "word": "Impede",
+      "definition": "to obstruct, hinder, or delay the progress of something; to slow down or prevent",
+      "urduMeaning": "رکاوٹ ڈالنا یا روکنا",
+      "exampleSentences": [
+        "Heavy traffic can impede the flow of vehicles on the highway.",
+        "The construction work temporarily impeded access to the main entrance.",
+        "It's essential to address obstacles that may impede the achievement of goals."
+      ]
+    },
+    {
+      "word": "Fragment",
+      "definition": "a small, broken, or detached piece; an incomplete or isolated portion",
+      "urduMeaning": "ٹکڑا یا حصہ",
+      "exampleSentences": [
+        "The archaeologists discovered a fragment of an ancient pottery vessel.",
+        "The writer used a fragment of dialogue to create suspense in the story.",
+        "The shattered glass lay in fragments on the floor after the accident."
+      ]
+    },
+    
+  ]
+}
+
+
 export const chapter0: Chapter = {
   passages: [
     {
