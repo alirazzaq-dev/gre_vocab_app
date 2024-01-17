@@ -1930,8 +1930,263 @@ export const chapter4: Chapter = {
         "The shattered glass lay in fragments on the floor after the accident."
       ]
     },
+    {
+      "word": "Forerunner",
+      "definition": "a person or thing that precedes and indicates the approach of another; a precursor",
+      "urduMeaning": "پیشوا یا پیشگوئی",
+      "exampleSentences": [
+        "The sudden increase in temperature was a forerunner of the summer heat.",
+        "In literature, the sonnet is considered a forerunner to modern poetry forms.",
+        "Technological advancements in the field are often forerunners to new inventions."
+      ]
+    },
+    {
+      "word": "Fallacy",
+      "definition": "a mistaken belief, especially one based on unsound argument or incorrect reasoning",
+      "urduMeaning": "غلط فہمی یا گمراہ کن خیال",
+      "exampleSentences": [
+        "The idea that success always leads to happiness is a fallacy debunked by many studies.",
+        "The politician's argument was based on a fallacy that distorted the facts.",
+        "Critical thinking skills help individuals identify and avoid logical fallacies in arguments."
+      ]
+    },
+    {
+      "word": "Grinding",
+      "definition": "the act of reducing something to small particles or powder by crushing or abrasion; characterized by hard work or perseverance",
+      "urduMeaning": "چکنائی یا محنت",
+      "exampleSentences": [
+        "The grinding of coffee beans produces the fine powder used in making espresso.",
+        "The student's grinding study routine paid off with excellent exam results.",
+        "The factory workers endured the grinding task of assembling products for long hours."
+      ]
+    },
+    {
+      "word": "Foster",
+      "definition": "to promote the growth or development of something; to nurture or encourage",
+      "urduMeaning": "پالنا یا بڑھانا",
+      "exampleSentences": [
+        "The organization works to foster innovation and creativity in the community.",
+        "Parents play a crucial role in fostering a child's emotional and intellectual well-being.",
+        "The mentor sought to foster the talents of the aspiring artist."
+      ]
+    },
+    {
+      "word": "Implausible",
+      "definition": "not seeming reasonable or probable; not likely to be true",
+      "urduMeaning": "غیر معقول یا قابل قبول نہ ہونا",
+      "exampleSentences": [
+        "The detective found the suspect's alibi to be implausible and inconsistent.",
+        "The story presented by the witness appeared implausible and lacked credibility.",
+        "In science fiction, some plot twists may be intriguing but ultimately implausible in reality."
+      ]
+    },
+    {
+      "word": "Haphazard",
+      "definition": "lacking any definite plan or order; random; chaotic",
+      "urduMeaning": "بے ترتیب یا کسی منصوبے کے بغیر",
+      "exampleSentences": [
+        "The items in the drawer were arranged in a haphazard manner, making it difficult to find anything.",
+        "The construction site appeared haphazard, with tools and materials scattered everywhere.",
+        "Their decision-making process seemed haphazard, lacking a clear strategy or direction."
+      ]
+    },
+    {
+      "word": "Frail",
+      "definition": "physically weak and delicate; easily broken or damaged; lacking in strength",
+      "urduMeaning": "کمزور یا نازک",
+      "exampleSentences": [
+        "The elderly woman was frail and needed assistance with daily tasks.",
+        "The frail bridge could not withstand the force of the raging river.",
+        "Despite her frail appearance, she possessed inner strength and resilience."
+      ]
+    },
+    {
+      "word": "Foreshadow",
+      "definition": "to indicate or suggest something, especially a future event, beforehand",
+      "urduMeaning": "پیشگوئی یا اندازہ",
+      "exampleSentences": [
+        "The ominous clouds foreshadowed an approaching storm.",
+        "In literature, certain symbols may foreshadow upcoming events in the plot.",
+        "The mysterious phone call seemed to foreshadow a significant development in the story."
+      ]
+    },
+    {
+      "word": "Forthright",
+      "definition": "direct and outspoken; straightforward; honest and sincere",
+      "urduMeaning": "کھلم کھلا یا صاف",
+      "exampleSentences": [
+        "She appreciated his forthright communication style, which left no room for ambiguity.",
+        "The manager was forthright in addressing the team's performance issues.",
+        "Being forthright in negotiations can build trust between parties."
+      ]
+    },
+    {
+      "word": "Facilitate",
+      "definition": "to make an action or process easier; to assist or make something possible",
+      "urduMeaning": "آسان یا ممکن بنانا",
+      "exampleSentences": [
+        "The new software was designed to facilitate data analysis and report generation.",
+        "Training programs are implemented to facilitate skill development among employees.",
+        "Efficient communication can facilitate understanding and collaboration in a team."
+      ]
+    },
+    {
+      "word": "Fanciful",
+      "definition": "existing only in the imagination; whimsical or capricious; not based on reality",
+      "urduMeaning": "خیالی یا بے بنیاد",
+      "exampleSentences": [
+        "The artist's painting depicted a fanciful world with magical creatures and vibrant colors.",
+        "Her fanciful stories captivated the children's imaginations during storytime.",
+        "The architect's design for the building was both innovative and fanciful."
+      ]
+    },
+    {
+      "word": "Immutable",
+      "definition": "unchangeable over time; unalterable; not subject to change",
+      "urduMeaning": "غیر قابل تبدیل یا ثابت",
+      "exampleSentences": [
+        "The laws of physics are considered immutable and universal.",
+        "Despite technological advancements, the principles of mathematics remain immutable.",
+        "The company's core values are immutable and guide decision-making."
+      ]
+    },
+    {
+      "word": "Imitate",
+      "definition": "to copy or mimic the actions, appearance, or mannerisms of someone or something",
+      "urduMeaning": "نقل کرنا یا مقلد کرنا",
+      "exampleSentences": [
+        "Children often imitate the behavior of their parents and peers.",
+        "The comedian had a talent for imitating famous personalities with accuracy.",
+        "Artists may imitate the styles of renowned painters as a form of homage."
+      ]
+    },
+    {
+      "word": "Extrinsic",
+      "definition": "coming from outside; not an essential or inherent part; external",
+      "urduMeaning": "بیرونی یا خارجی",
+      "exampleSentences": [
+        "Motivation can be intrinsic or extrinsic, depending on whether it comes from within or external factors.",
+        "The extrinsic factors, such as weather conditions, affected the success of the outdoor event.",
+        "In sports, extrinsic rewards like trophies are external recognitions of achievement."
+      ]
+    },
+    {
+      "word": "Imprecise",
+      "definition": "not exact or accurate; lacking precision; vague or unclear",
+      "urduMeaning": "غیر واضح یا غیر معین",
+      "exampleSentences": [
+        "The map was imprecise, making it challenging to navigate the unfamiliar terrain.",
+        "Due to the imprecise measurements, the construction project faced delays.",
+        "The witness provided an imprecise account of the events, leading to confusion."
+      ]
+    },
+    {
+      "word": "Imminent",
+      "definition": "about to happen; impending; near in time",
+      "urduMeaning": "قریب الوقت یا متوقع",
+      "exampleSentences": [
+        "The storm clouds indicated that rain was imminent.",
+        "The team took immediate action to prevent the imminent threat of a security breach.",
+        "The company faced the imminent release of a competing product in the market."
+      ]
+    },
+    {
+      "word": "Extend",
+      "definition": "to make longer or larger in size or scope; to stretch out or reach out",
+      "urduMeaning": "توسیع کرنا یا بڑھانا",
+      "exampleSentences": [
+        "The company decided to extend its product line to attract a broader customer base.",
+        "She used a ladder to extend her reach and access the high shelf.",
+        "The government announced plans to extend the deadline for tax filing."
+      ]
+    },
+    {
+      "word": "Impassive",
+      "definition": "showing no emotion or feeling; not easily excited or moved",
+      "urduMeaning": "بے حس یا بے جذبات",
+      "exampleSentences": [
+        "The poker player remained impassive, not revealing any emotions despite a challenging hand.",
+        "The leader's impassive demeanor during the crisis reassured the team.",
+        "The actor's impassive expression added mystery to the character."
+      ]
+    },
+    {
+      "word": "Extravagant",
+      "definition": "exceeding what is reasonable or appropriate; lacking restraint; excessive",
+      "urduMeaning": "ضرورت سے زیادہ یا فضول خرچ",
+      "exampleSentences": [
+        "The wedding ceremony was extravagant, with elaborate decorations and gourmet catering.",
+        "She criticized his extravagant spending on luxury items rather than essential needs.",
+        "The fashion show featured extravagant designs that pushed the boundaries of creativity."
+      ]
+    },
+    {
+      "word": "Implication",
+      "definition": "a possible future effect or result; the act of suggesting or hinting at something",
+      "urduMeaning": "اشارہ یا تاکید",
+      "exampleSentences": [
+        "The decision to cut funding had significant implications for the research project.",
+        "Her statement had political implications that sparked debates in the media.",
+        "The detective carefully analyzed the evidence to understand the implication of the crime."
+      ]
+    },
+    {
+      "word": "Hamper",
+      "definition": "to hinder or impede the progress or movement of something; to restrict or limit",
+      "urduMeaning": "رکاوٹ ڈالنا یا مشکل یا عائد کرنا",
+      "exampleSentences": [
+        "The heavy traffic jam hampered the delivery trucks from reaching their destination on time.",
+        "Unexpected weather conditions can hamper outdoor events and activities.",
+        "The lack of funding may hamper the implementation of the new project."
+      ]
+    },
+    {
+      "word": "Formulate",
+      "definition": "to create or develop a strategy, plan, or concept by careful thought and effort",
+      "urduMeaning": "تخلیق یا بنانا",
+      "exampleSentences": [
+        "The team worked together to formulate a comprehensive business plan for the upcoming year.",
+        "Scientists strive to formulate theories that explain observed phenomena.",
+        "It took months to formulate the new policy with input from various stakeholders."
+      ]
+    },
+    {
+      "word": "Hinder",
+      "definition": "to create obstacles or difficulties; to slow down or impede progress",
+      "urduMeaning": "روکنا یا مشکل یا عائد کرنا",
+      "exampleSentences": [
+        "The construction on the main road hindered the flow of traffic in the city.",
+        "Lack of resources can hinder the development of small businesses.",
+        "Negative attitudes can hinder team collaboration and productivity."
+      ]
+    },
+    {
+      "word": "Flaw",
+      "definition": "a defect or imperfection; a mistake or weakness that impairs quality",
+      "urduMeaning": "عیب یا خامی",
+      "exampleSentences": [
+        "The diamond had a flaw that affected its clarity and value.",
+        "Even the best-designed plans may have a flaw that needs correction.",
+        "His argument had a logical flaw that undermined its persuasiveness."
+      ]
+    },
+    {
+      "word": "Fragile",
+      "definition": "easily broken, damaged, or destroyed; delicate; vulnerable",
+      "urduMeaning": "نازک یا کمزور",
+      "exampleSentences": [
+        "Handle the antique vase with care; it is very fragile and can break easily.",
+        "The fragile ecosystem of the island is threatened by climate change.",
+        "The patient was in a fragile state after the surgery and required gentle treatment."
+      ]
+    }
     
   ]
+}
+
+export const chapter5: Chapter = {
+  passages: [],
+  words: []
 }
 
 
