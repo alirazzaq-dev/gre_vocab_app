@@ -12,6 +12,7 @@ import { playAudio } from '@/utils';
 import useSwipe from "@/Components/Swipe/useSwipe";
 import { motion } from "framer-motion"
 import { Chapter, chapters } from '@/data/chapters';
+import ReactCardFlip from 'react-card-flip';
 
 
 
@@ -31,12 +32,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 
-export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:string }) => {
+export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: string }) => {
 
   const fontSize = useSelector((state: RootState) => state.fontSize);
   const focusMode = useSelector((state: RootState) => state.focusMode);
   // const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const dispatch = useDispatch();
   const modalDisclosure = useDisclosure();
@@ -67,18 +68,6 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:st
         default:
           break;
       }
-      // if(e.key === "ArrowLeft"){
-      //   dispatch(updateFocusModePrevious())
-      // }
-      // else if(e.key === "ArrowRight"){
-      //   dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))
-      // }
-      // else if(e.key === " "){
-      //   dispatch(updateFocusMeaning())
-      // }
-      // else if(e.key === "Shift"){
-      //   dispatch(changeFocusMode())
-      // }      
     }
 
     document.addEventListener('keydown', handleKeyDown);
@@ -142,26 +131,39 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:st
               initial={{ opacity: 0.5, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
             >
-              <Card
-                mx="auto"
-                minH={{ base: "full", md: "400px" }}
-                w={{ base: "full", md: "400px" }}
-                fontSize={{ base: "20px", md: "36px" }}
-                p={{ base: "12px", md: "24px" }}
-              >
 
-                {
-                  !focusMode.showMeaning && (
+              <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+
+                <Card
+                  mx="auto"
+                  h={{ base: "full", md: "600px" }}
+                  w={{ base: "full", md: "400px" }}
+                  fontSize={{ base: "20px", md: "36px" }}
+                  p={{ base: "12px", md: "24px" }}
+                >
+
+                  {
+                    // !focusMode.showMeaning && (
                     <Center h={{ base: "300px", md: "400px" }}>
                       <Text fontSize="4xl" fontWeight={700}>
                         {word.word}
                       </Text>
                     </Center>
-                  )
-                }
+                    // )
+                  }
+                </Card>
 
-                {
-                  focusMode.showMeaning && (
+                <Card
+                  mx="auto"
+                  h={{ base: "full", md: "500px" }}
+                  w={{ base: "full", md: "400px" }}
+                  fontSize={{ base: "20px", md: "36px" }}
+                  p={{ base: "12px", md: "24px" }}
+                >
+
+
+                  {
+                    // focusMode.showMeaning && (
                     <Box h="full" fontSize="16px" >
                       <HStack minH={{ base: "full", md: "400px" }}>
                         <VStack >
@@ -199,10 +201,13 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:st
                         </VStack>
                       </HStack>
                     </Box>
-                  )
-                }
+                    // )
+                  }
+                </Card>
 
-              </Card>
+              </ReactCardFlip>
+
+
             </motion.div>
 
 
@@ -215,15 +220,24 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:st
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button w="20" onClick={() => { dispatch(updateFocusModePrevious()); }}>
+              <Button w="20" onClick={() => {
+                dispatch(updateFocusModePrevious());
+                setIsFlipped(false);
+              }}>
                 <IoChevronBack />
               </Button>
-              <Button w="20" onClick={() => { dispatch(updateFocusMeaning()); }}>
+              <Button w="20" onClick={() => {
+                dispatch(updateFocusMeaning());
+                setIsFlipped(prevState => !prevState);
+              }}>
                 <Text fontSize="16px">
                   {focusMode.showMeaning ? "word" : "detail"}
                 </Text>
               </Button>
-              <Button w="20" onClick={() => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })); }}>
+              <Button w="20" onClick={() => {
+                dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }));
+                setIsFlipped(false);
+              }}>
                 <IoChevronForward />
               </Button>
             </HStack>
