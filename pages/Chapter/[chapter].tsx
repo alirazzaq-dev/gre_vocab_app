@@ -32,11 +32,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 
-export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: string }) => {
+const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: string }) => {
 
   const fontSize = useSelector((state: RootState) => state.fontSize);
   const focusMode = useSelector((state: RootState) => state.focusMode);
-  // const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
   const [isFlipped, setIsFlipped] = useState(false);
 
   const dispatch = useDispatch();
@@ -136,7 +135,7 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: s
 
                 <Card
                   mx="auto"
-                  h={{ base: "full", md: "600px" }}
+                  h={{ base: "full", md: "500px" }}
                   w={{ base: "full", md: "400px" }}
                   fontSize={{ base: "20px", md: "36px" }}
                   p={{ base: "12px", md: "24px" }}
@@ -144,7 +143,7 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: s
 
                   {
                     // !focusMode.showMeaning && (
-                    <Center h={{ base: "300px", md: "400px" }}>
+                    <Center h={{ base: "300px", md: "500px" }}>
                       <Text fontSize="4xl" fontWeight={700}>
                         {word.word}
                       </Text>
@@ -164,8 +163,8 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: s
 
                   {
                     // focusMode.showMeaning && (
-                    <Box h="full" fontSize="16px" >
-                      <HStack minH={{ base: "full", md: "400px" }}>
+                    // <Box h="full" fontSize="16px" >
+                      <HStack fontSize="16px" minH={{ base: "full", md: "400px" }}>
                         <VStack >
 
                           <HStack w="full">
@@ -200,7 +199,6 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: s
                           </OrderedList>
                         </VStack>
                       </HStack>
-                    </Box>
                     // )
                   }
                 </Card>
@@ -260,4 +258,4 @@ export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: s
 }
 
 
-// export default Chapter;
+export default Comp;
