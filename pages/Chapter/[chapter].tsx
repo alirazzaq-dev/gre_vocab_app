@@ -2,8 +2,8 @@ import WordModal from '@/Components/Modals/WordModal';
 import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
 import { changeFocusMode, setSelectedWord, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
-import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, ScaleFade, Tag, Text, Tooltip, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
-import { GetServerSideProps, GetStaticPaths, GetStaticPathsContext, GetStaticProps, InferGetStaticPropsType } from 'next';
+import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, Tag, Text, Tooltip, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
+import { GetStaticProps } from 'next';
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { IoChevronForward } from "react-icons/io5";
@@ -13,7 +13,6 @@ import useSwipe from "@/Components/Swipe/useSwipe";
 import { motion } from "framer-motion"
 import { Chapter, chapters } from '@/data/chapters';
 import ReactCardFlip from 'react-card-flip';
-
 
 
 export const getStaticPaths = async () => {
@@ -31,23 +30,20 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return { props: { chapter, chapterNumber } }
 }
 
-
-const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: string }) => {
-
-  const fontSize = useSelector((state: RootState) => state.fontSize);
-  const focusMode = useSelector((state: RootState) => state.focusMode);
-  const [isFlipped, setIsFlipped] = useState(false);
+const ChapterX = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: string }) => {
 
   const dispatch = useDispatch();
+  const fontSize = useSelector((state: RootState) => state.fontSize);
+  const focusMode = useSelector((state: RootState) => state.focusMode);
   const modalDisclosure = useDisclosure();
 
+  const [isFlipped, setIsFlipped] = useState(false);
   const bg = useColorModeValue("primary.light", "primary.dark");
 
-  const swipeHandlers = useSwipe(
-    {
-      onSwipedLeft: () => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })),
-      onSwipedRight: () => dispatch(updateFocusModePrevious())
-    });
+  const swipeHandlers = useSwipe({
+    onSwipedLeft: () => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })); setIsFlipped(false); },
+    onSwipedRight: () => { dispatch(updateFocusModePrevious()); setIsFlipped(false); }
+  });
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -76,7 +72,6 @@ const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: str
       document.removeEventListener('keydown', handleKeyDown);
     }
   }, []);
-
 
   return (
     <Box border="0px solid red" bg={bg} >
@@ -118,7 +113,6 @@ const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: str
       {
         focusMode.active && chapter.words.map((word, key) => (
           <Box
-            // border="1px solid red"
             key={key}
             py={{ base: "8px", md: "10px" }}
             w="full"
@@ -164,41 +158,41 @@ const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: str
                   {
                     // focusMode.showMeaning && (
                     // <Box h="full" fontSize="16px" >
-                      <HStack fontSize="16px" minH={{ base: "full", md: "400px" }}>
-                        <VStack >
+                    <HStack fontSize="16px" minH={{ base: "full", md: "400px" }}>
+                      <VStack >
 
-                          <HStack w="full">
-                            <Text> {word.word}</Text>
-                            <Center cursor="pointer" onClick={() => playAudio(word.word)}>
-                              🔊
-                            </Center>
-                          </HStack>
+                        <HStack w="full">
+                          <Text> {word.word}</Text>
+                          <Center cursor="pointer" onClick={() => playAudio(word.word)}>
+                            🔊
+                          </Center>
+                        </HStack>
 
-                          <Text w="full">
-                            Description: {word.definition}
-                          </Text>
+                        <Text w="full">
+                          Description: {word.definition}
+                        </Text>
 
-                          <Text w="full">
-                            Urdu Meaning: {word.urduMeaning}
-                          </Text>
+                        <Text w="full">
+                          Urdu Meaning: {word.urduMeaning}
+                        </Text>
 
-                          <Text w="full">
-                            Sentences:
-                          </Text>
+                        <Text w="full">
+                          Sentences:
+                        </Text>
 
-                          <OrderedList w="full">
-                            {
-                              word.exampleSentences.map((sentence, key) => {
-                                return (
-                                  <ListItem key={key} ml="10px">
-                                    {sentence}
-                                  </ListItem>
-                                )
-                              })
-                            }
-                          </OrderedList>
-                        </VStack>
-                      </HStack>
+                        <OrderedList w="full">
+                          {
+                            word.exampleSentences.map((sentence, key) => {
+                              return (
+                                <ListItem key={key} ml="10px">
+                                  {sentence}
+                                </ListItem>
+                              )
+                            })
+                          }
+                        </OrderedList>
+                      </VStack>
+                    </HStack>
                     // )
                   }
                 </Card>
@@ -254,8 +248,7 @@ const Comp = ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber: str
 
     </Box >
   )
-
 }
 
 
-export default Comp;
+export default ChapterX;
