@@ -3,7 +3,7 @@ import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState } from '@/store';
 import { changeFocusMode, setSelectedWord, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
 import { Box, Button, Card, Center, Flex, HStack, ListItem, OrderedList, ScaleFade, Tag, Text, Tooltip, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, GetStaticPaths, GetStaticPathsContext, GetStaticProps, InferGetStaticPropsType } from 'next';
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { IoChevronForward } from "react-icons/io5";
@@ -11,23 +11,31 @@ import { IoChevronBack } from "react-icons/io5";
 import { playAudio } from '@/utils';
 import useSwipe from "@/Components/Swipe/useSwipe";
 import { motion } from "framer-motion"
+import { Chapter, chapters } from '@/data/chapters';
 
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { chapter } = context.query as { chapter: string };
-  return {
-    props: {
-      chapterNumber: chapter
-    }
-  }
 
+export const getStaticPaths = async () => {
+  const paths = chapters.map((_, index) => ({
+    params: { chapter: String(index + 1) },
+  }))
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false }
 }
 
-const Chapter = (data: { chapterNumber: string }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const chapterNumber = params?.chapter;
+  const chapter = chapters[Number(chapterNumber) - 1]
+  return { props: { chapter, chapterNumber } }
+}
+
+
+export default ({ chapter, chapterNumber }: { chapter: Chapter, chapterNumber:string }) => {
 
   const fontSize = useSelector((state: RootState) => state.fontSize);
   const focusMode = useSelector((state: RootState) => state.focusMode);
-  const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
+  // const chapter = useSelector((state: RootState) => state.chapters[Number(data.chapterNumber) - 1]);
   const [isOpen, setIsOpen] = useState(true);
 
   const dispatch = useDispatch();
@@ -86,7 +94,7 @@ const Chapter = (data: { chapterNumber: string }) => {
     <Box border="0px solid red" bg={bg} >
 
       <Box border="0px solid red">
-        <Text> Chapter : {data.chapterNumber} ({chapter.words.length} words)</Text>
+        <Text> Chapter : {chapterNumber} ({chapter.words.length} words)</Text>
       </Box>
 
       {/* Focus Mode OFf */}
@@ -207,7 +215,7 @@ const Chapter = (data: { chapterNumber: string }) => {
               maxW="400px"
               justifyContent="space-between"
             >
-              <Button w="20"  onClick={() => { dispatch(updateFocusModePrevious()); }}>
+              <Button w="20" onClick={() => { dispatch(updateFocusModePrevious()); }}>
                 <IoChevronBack />
               </Button>
               <Button w="20" onClick={() => { dispatch(updateFocusMeaning()); }}>
@@ -237,4 +245,5 @@ const Chapter = (data: { chapterNumber: string }) => {
 
 }
 
-export default Chapter;
+
+// export default Chapter;
