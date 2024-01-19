@@ -64,6 +64,7 @@ export const counterSlice = createSlice({
         [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
       }
       state.chapters[chapterIndex].words = shuffledWords;
+      state.focusMode.index = 0;
     },
     setSelectedWord: (state, action: PayloadAction<Word>) => {
       state.selectedWord = action.payload;
