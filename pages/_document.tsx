@@ -4,16 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* <title> GRE Vocab App </title> */}
-
-        {/* <meta name="description" content="GRE volab Application" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" /> */}
-
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <meta name="theme-color" content="#fff" />
-
       </Head>
       <body>
         <Main />

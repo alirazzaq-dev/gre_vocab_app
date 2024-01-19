@@ -11,7 +11,6 @@ export interface VocabularyApp {
     showMeaning: boolean;
   },
   selectedWord: Word,
-
 }
 
 const initialState: VocabularyApp = {
@@ -25,7 +24,6 @@ const initialState: VocabularyApp = {
   selectedWord: chapters[0].words[0],
 }
 
-
 export const counterSlice = createSlice({
   name: 'VocabularyApp',
   initialState,
@@ -37,7 +35,6 @@ export const counterSlice = createSlice({
       state.focusMode.index = 0
     },
     changeFocusMode: (state) => {
-      // state.focusMode = { active: !state.focusMode.active, index: 0, showMeaning: false }
       state.focusMode.active = !state.focusMode.active;
       state.focusMode.showMeaning = false
     },
@@ -61,12 +58,12 @@ export const counterSlice = createSlice({
     },
     shuffleChapter: (state, action: PayloadAction<number>) => {
       const chapterIndex = action.payload - 1;
-      let shuffledChapter = [...current(state.chapters[chapterIndex].words)];
-      for (let i = shuffledChapter.length - 1; i > 0; i--) {
+      let shuffledWords = [...current(state.chapters[chapterIndex].words)];
+      for (let i = shuffledWords.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffledChapter[i], shuffledChapter[j]] = [shuffledChapter[j], shuffledChapter[i]];
+        [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
       }
-      state.chapters[chapterIndex].words = shuffledChapter;
+      state.chapters[chapterIndex].words = shuffledWords;
     },
     setSelectedWord: (state, action: PayloadAction<Word>) => {
       state.selectedWord = action.payload;
