@@ -33,8 +33,13 @@ export const counterSlice = createSlice({
     setFontSize: (state, action: PayloadAction<number>) => {
       state.fontSize = action.payload
     },
+    makeIndexZero: (state) => {
+      state.focusMode.index = 0
+    },
     changeFocusMode: (state) => {
-      state.focusMode = { active: !state.focusMode.active, index: 0, showMeaning: false }
+      // state.focusMode = { active: !state.focusMode.active, index: 0, showMeaning: false }
+      state.focusMode.active = !state.focusMode.active;
+      state.focusMode.showMeaning = false
     },
     updateFocusModeNext: (state, action: PayloadAction<{ chapterLength: number }>) => {
       if (state.focusMode.index < action.payload.chapterLength - 1) {
@@ -78,7 +83,8 @@ export const {
   updateFocusModeNext,
   setSelectedWord,
   updateFocusModePrevious,
-  updateFocusMeaning
+  updateFocusMeaning,
+  makeIndexZero
 } = counterSlice.actions
 
 export default counterSlice.reducer
