@@ -1,6 +1,6 @@
 import PassageAccordion from '@/Components/PassageAccordion';
 import { RootState, store } from '@/store';
-import { changeFocusMode, makeIndexZero, updateFocusMeaning, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
+import { changeFocusMode, makeIndexZero, updateFocusFlip, updateFocusModeNext, updateFocusModePrevious } from '@/store/slice';
 import { Box, Text, useColorModeValue } from '@chakra-ui/react';
 import { GetStaticProps } from 'next';
 import React, { useEffect } from 'react'
@@ -40,7 +40,7 @@ const ChapterX = ({ chapterNumber }: { chapterNumber: string }) => {
           dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))
           break;
         case " ":
-          dispatch(updateFocusMeaning())
+          dispatch(updateFocusFlip())
           break;
         case "Shift":
           dispatch(changeFocusMode())

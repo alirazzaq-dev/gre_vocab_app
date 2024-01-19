@@ -8,7 +8,8 @@ export interface VocabularyApp {
   focusMode: {
     active: boolean;
     index: number;
-    showMeaning: boolean;
+    // showMeaning: boolean;
+    isFlipped: boolean;
   },
   selectedWord: Word,
 }
@@ -19,7 +20,8 @@ const initialState: VocabularyApp = {
   focusMode: {
     active: true,
     index: 0,
-    showMeaning: false,
+    // showMeaning: false,
+    isFlipped: false
   },
   selectedWord: chapters[0].words[0],
 }
@@ -36,25 +38,29 @@ export const counterSlice = createSlice({
     },
     changeFocusMode: (state) => {
       state.focusMode.active = !state.focusMode.active;
-      state.focusMode.showMeaning = false
+      // state.focusMode.showMeaning = false
+      state.focusMode.isFlipped = false
     },
     updateFocusModeNext: (state, action: PayloadAction<{ chapterLength: number }>) => {
       if (state.focusMode.index < action.payload.chapterLength - 1) {
-        state.focusMode.showMeaning = false;
+        // state.focusMode.showMeaning = false;
+        state.focusMode.isFlipped = false
         state.focusMode.index++
       }
     },
     updateFocusModePrevious: (state) => {
       if (state.focusMode.index > 0) {
-        state.focusMode.showMeaning = false;
+        // state.focusMode.showMeaning = false;
+        state.focusMode.isFlipped = false
         state.focusMode.index--
       }
     },
     updateFocusNext: (state, action: PayloadAction<number>) => {
       state.focusMode.index = action.payload
     },
-    updateFocusMeaning: (state) => {
-      state.focusMode.showMeaning = !state.focusMode.showMeaning;
+    updateFocusFlip: (state) => {
+      // state.focusMode.showMeaning = !state.focusMode.showMeaning;
+      state.focusMode.isFlipped = !state.focusMode.isFlipped;
     },
     shuffleChapter: (state, action: PayloadAction<number>) => {
       const chapterIndex = action.payload - 1;
@@ -65,7 +71,8 @@ export const counterSlice = createSlice({
       }
       state.chapters[chapterIndex].words = shuffledWords;
       state.focusMode.index = 0;
-      state.focusMode.showMeaning = false;
+      // state.focusMode.showMeaning = false;
+      state.focusMode.isFlipped = false
     },
     setSelectedWord: (state, action: PayloadAction<Word>) => {
       state.selectedWord = action.payload;
@@ -82,7 +89,7 @@ export const {
   updateFocusModeNext,
   setSelectedWord,
   updateFocusModePrevious,
-  updateFocusMeaning,
+  updateFocusFlip,
   makeIndexZero
 } = counterSlice.actions
 

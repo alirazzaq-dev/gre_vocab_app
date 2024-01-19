@@ -1,9 +1,9 @@
 import { Chapter } from '@/data/chapters';
-import { updateFocusModePrevious, updateFocusModeNext, updateFocusMeaning } from '@/store/slice';
+import { updateFocusModePrevious, updateFocusModeNext, updateFocusFlip } from '@/store/slice';
 import { playAudio } from '@/utils';
 import { Text, Card, Center, HStack, VStack, OrderedList, ListItem, Progress, Button, Box } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import React, { useState } from 'react'
+import React from 'react'
 import ReactCardFlip from 'react-card-flip';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 import useSwipe from '../Swipe/useSwipe';
@@ -15,16 +15,13 @@ const FocusModeOn = ({ chapter }: { chapter: Chapter }) => {
     const dispatch = useDispatch();
     const focusMode = useSelector((state: RootState) => state.focusMode);
 
-    const [isFlipped, setIsFlipped] = useState(false);
-
     const swipeHandlers = useSwipe({
-        onSwipedLeft: () => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })); setIsFlipped(false); },
-        onSwipedRight: () => { dispatch(updateFocusModePrevious()); setIsFlipped(false); }
+        onSwipedLeft: () => { dispatch(updateFocusModeNext({ chapterLength: chapter.words.length })) },
+        onSwipedRight: () => { dispatch(updateFocusModePrevious()) }
     });
 
-    const handleMeaning = () => {
-        dispatch(updateFocusMeaning());
-        setIsFlipped(prevState => !prevState);
+    const handleFlip = () => {
+        dispatch(updateFocusFlip());
     }
 
     return (
@@ -46,18 +43,17 @@ const FocusModeOn = ({ chapter }: { chapter: Chapter }) => {
                             initial={{ opacity: 0.5, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                         >
-                            <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+                            <ReactCardFlip isFlipped={focusMode.isFlipped} flipDirection="horizontal">
 
                                 <Card
                                     mx="auto"
                                     h={{ base: "70vh", md: "500px" }}
                                     fontSize={{ base: "20px", md: "36px" }}
                                     p={{ base: "12px", md: "24px" }}
-                                    onDoubleClick={handleMeaning}
+                                    onDoubleClick={handleFlip}
                                 >
 
                                     {
-                                        // !focusMode.showMeaning && (
                                         <Center h={{ base: "70vh", md: "500px" }}>
                                             <Text fontSize="4xl" fontWeight={700}>
                                                 {word.word}
@@ -73,12 +69,11 @@ const FocusModeOn = ({ chapter }: { chapter: Chapter }) => {
                                     w={{ base: "full", md: "400px" }}
                                     fontSize={{ base: "20px", md: "36px" }}
                                     p={{ base: "12px", md: "24px" }}
-                                    onDoubleClick={handleMeaning}
+                                    onDoubleClick={handleFlip}
                                 >
 
 
                                     {
-                                        // focusMode.showMeaning && (
                                         <HStack fontSize="16px" minH={{ base: "70vh", md: "400px" }}>
                                             <VStack >
 
@@ -134,21 +129,15 @@ const FocusModeOn = ({ chapter }: { chapter: Chapter }) => {
                 maxW="400px"
                 justifyContent="space-between"
             >
-                <Button w="20" onClick={() => {
-                    dispatch(updateFocusModePrevious());
-                    setIsFlipped(false);
-                }}>
+                <Button w="20" onClick={() => dispatch(updateFocusModePrevious())}>
                     <IoChevronBack />
                 </Button>
-                <Button w="20" onClick={handleMeaning}>
+                <Button w="20" onClick={handleFlip}>
                     <Text fontSize="16px">
-                        {focusMode.showMeaning ? "word" : "meaning"}
+                        {focusMode.isFlipped ? "word" : "meaning"}
                     </Text>
                 </Button>
-                <Button w="20" onClick={() => {
-                    dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }));
-                    setIsFlipped(false);
-                }}>
+                <Button w="20" onClick={() => dispatch(updateFocusModeNext({ chapterLength: chapter.words.length }))}>
                     <IoChevronForward />
                 </Button>
             </HStack>
