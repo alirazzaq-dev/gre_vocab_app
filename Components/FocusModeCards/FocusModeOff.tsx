@@ -15,7 +15,7 @@ const FocusModeOff = ({ chapter }: { chapter: Chapter }) => {
     const modalDisclosure = useDisclosure();
 
     return (
-        <Flex flexWrap="wrap" border="0px solid red" hidden={focusMode.active}>
+        <Flex flexWrap="wrap" border="0px solid red" hidden={focusMode.active} userSelect="none">
             {
                 !focusMode.active && chapter.words.map((word, key) => {
                     return (

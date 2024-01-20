@@ -25,7 +25,7 @@ const FocusModeOn = ({ chapter }: { chapter: Chapter }) => {
     }
 
     return (
-        <Box hidden={!focusMode.active} w="full"  border="0px solid red"> 
+        <Box hidden={!focusMode.active} w="full"  border="0px solid red" userSelect="none"> 
 
             {
                 chapter.words.map((word, key) => (
