@@ -2186,7 +2186,261 @@ export const chapter4: Chapter = {
 
 export const chapter5: Chapter = {
   passages: [],
-  words: []
+  words: [
+    {
+      "word": "Indigenous",
+      "definition": "native to a particular region or environment; originating or produced in a specific area",
+      "urduMeaning": "اصل یا مقامی",
+      "exampleSentences": [
+        "The indigenous people of the Amazon rainforest have a deep connection to their land.",
+        "Efforts are being made to preserve the indigenous cultures and languages facing extinction.",
+        "Certain plants and animals are indigenous to specific islands and cannot be found elsewhere."
+      ]
+    },
+    {
+      "word": "Integrity",
+      "definition": "the quality of being honest and having strong moral principles; the state of being whole and undivided",
+      "urduMeaning": "اصالت یا ایمانداری",
+      "exampleSentences": [
+        "The leader was known for his integrity and commitment to ethical behavior.",
+        "The integrity of the research findings was crucial for gaining trust in the scientific community.",
+        "Personal integrity involves consistency between one's values and actions."
+      ]
+    },
+    {
+      "word": "Inevitable",
+      "definition": "certain to happen; unavoidable; bound to occur",
+      "urduMeaning": "ناگزیر یا مسلم",
+      "exampleSentences": [
+        "Change is inevitable, and adapting to it is essential for growth.",
+        "With the spread of technology, the inevitable shift towards a digital economy is underway.",
+        "Despite their efforts, the team faced the inevitable challenges that come with ambitious projects."
+      ]
+    },
+    {
+      "word": "Indistinguishable",
+      "definition": "impossible to differentiate or distinguish; identical or very similar",
+      "urduMeaning": "ناقابل تمییز",
+      "exampleSentences": [
+        "The twins looked so similar that they were virtually indistinguishable from each other.",
+        "The counterfeit currency was crafted to be indistinguishable from genuine bills.",
+        "In some languages, certain sounds may be indistinguishable to non-native speakers."
+      ]
+    },
+    {
+      "word": "Indifference",
+      "definition": "lack of interest, concern, or sympathy; apathy",
+      "urduMeaning": "لاپروہی یا بے تاثری",
+      "exampleSentences": [
+        "The politician's indifference to the needs of the community led to a decline in support.",
+        "The employee's indifference towards the company's goals affected overall productivity.",
+        "Indifference to environmental issues can have serious consequences for future generations."
+      ]
+    },
+    {
+      "word": "Irrelevant",
+      "definition": "not connected or related to the matter at hand; not applicable",
+      "urduMeaning": "غیر متعلق یا نا موجب",
+      "exampleSentences": [
+        "The speaker went off-topic and discussed irrelevant issues during the meeting.",
+        "When answering exam questions, it's crucial to avoid providing irrelevant information.",
+        "In a focused discussion, it's essential to filter out irrelevant details and stay on point."
+      ]
+    },
+    {
+      "word": "Inconsistent",
+      "definition": "not in agreement or harmony; lacking uniformity; contradictory",
+      "urduMeaning": "غیر متفق یا بے ہم آہنگ",
+      "exampleSentences": [
+        "The company's inconsistent policies led to confusion among employees.",
+        "His statements were inconsistent, and he seemed to change his position frequently.",
+        "A reliable data set should be consistent in its measurements and observations."
+      ]
+    },
+    {
+      "word": "Meticulous",
+      "definition": "showing great attention to detail; thorough and precise",
+      "urduMeaning": "دقتی یا محنتی",
+      "exampleSentences": [
+        "The artist was meticulous in every brushstroke, creating a masterpiece.",
+        "A meticulous review of the document revealed no errors or omissions.",
+        "A meticulous planner, she considered every aspect of the project to ensure success."
+      ]
+    },
+    {
+      "word": "Mediocrity",
+      "definition": "the state or quality of being mediocre; the condition of being average or ordinary",
+      "urduMeaning": "معمولی یا متوسطی",
+      "exampleSentences": [
+        "The coach was dissatisfied with the team's mediocrity and pushed for improvement.",
+        "Striving for excellence is important to avoid settling for mediocrity.",
+        "The company's commitment to innovation prevented it from falling into mediocrity in the industry."
+      ]
+    },
+    {
+      "word": "Interdependence",
+      "definition": "the mutual reliance or reliance of two or more entities on each other",
+      "urduMeaning": "تعلق یا تابعداری",
+      "exampleSentences": [
+        "In a globalized economy, countries often experience interdependence in trade and commerce.",
+        "The success of the partnership relied on the interdependence of the two companies.",
+        "The ecosystem's health is maintained through the interdependence of its various species."
+      ]
+    },
+    {
+      "word": "Indiscernible",
+      "definition": "impossible to see or perceive clearly; not distinguishable",
+      "urduMeaning": "غیر واضح یا ناقابل پہچان",
+      "exampleSentences": [
+        "Due to the heavy fog, the distant landmarks became indiscernible.",
+        "The details in the painting were so fine that they appeared indiscernible without magnification.",
+        "The witness claimed that the culprit's face was indiscernible in the dimly lit room."
+      ]
+    },
+    {
+      "word": "Meager",
+      "definition": "lacking in quantity or quality; inadequate; insufficient",
+      "urduMeaning": "کم یا ضعیف",
+      "exampleSentences": [
+        "The refugee camp had only meager supplies of food and water.",
+        "After weeks of drought, the farmers faced a meager harvest of crops.",
+        "His meager salary made it challenging to cover basic living expenses."
+      ]
+    },
+    {
+      "word": "Impulse",
+      "definition": "a sudden strong desire or urge to act; a spontaneous and impulsive action",
+      "urduMeaning": "جذبہ یا تشویش",
+      "exampleSentences": [
+        "On a whim, she followed her impulse and booked a last-minute flight.",
+        "His impulse to help others led him to volunteer at the local community center.",
+        "Resisting the impulse to spend impulsively is crucial for financial stability."
+      ]
+    },
+    {
+      "word": "Irreverent",
+      "definition": "showing a lack of respect, especially towards something considered sacred or holy",
+      "urduMeaning": "غیر ادبی یا بے ادب",
+      "exampleSentences": [
+        "The comedian's irreverent jokes about religious figures offended some audience members.",
+        "It is important to avoid making irreverent comments in sensitive situations.",
+        "His irreverent attitude towards authority figures often landed him in trouble."
+      ]
+    },
+    {
+      "word": "Inventive",
+      "definition": "having the ability to create or design new things; creative and innovative",
+      "urduMeaning": "تخلیقی یا نیا آغاز",
+      "exampleSentences": [
+        "The inventor was known for his inventive mind, constantly developing new technologies.",
+        "The company encourages its employees to be inventive and propose creative solutions.",
+        "In the field of art, being inventive is essential for pushing boundaries and creating original works."
+      ]
+    },
+    {
+      "word": "Inconstant",
+      "definition": "likely to change or vary; not consistent or reliable",
+      "urduMeaning": "تبدیل یا غیر مستقر",
+      "exampleSentences": [
+        "Her inconstant mood swings made it challenging for others to predict her reactions.",
+        "The weather in the region is inconstant, with frequent shifts in temperature and conditions.",
+        "Inconstant market trends can affect the success of investment strategies."
+      ]
+    },
+    {
+      "word": "Instinctive",
+      "definition": "prompted by natural instinct; done without conscious thought",
+      "urduMeaning": "فطرتی یا بلا سوچے سمجھے",
+      "exampleSentences": [
+        "The bird's instinctive migration patterns are guided by the changing seasons.",
+        "Her instinctive reaction to danger was to seek shelter and hide.",
+        "Instinctive behaviors in animals are often essential for survival in the wild."
+      ]
+    },
+    {
+      "word": "Intuitive",
+      "definition": "understood or known without the need for conscious reasoning; based on intuition",
+      "urduMeaning": "بے آہنگ یا بغیر سوچے",
+      "exampleSentences": [
+        "Some people have an intuitive understanding of complex concepts without formal training.",
+        "Her intuitive decision-making skills allowed her to navigate challenging situations effectively.",
+        "The artist's intuitive approach to painting resulted in unique and captivating works."
+      ]
+    },
+    {
+      "word": "Menacing",
+      "definition": "threatening or suggestive of danger; likely to cause harm or fear",
+      "urduMeaning": "خطرناک یا دھمکی",
+      "exampleSentences": [
+        "The dark clouds and strong winds were menacing signs of an approaching storm.",
+        "The aggressive stance of the wild animal appeared menacing to the hikers.",
+        "The menacing tone of the letter raised concerns among the recipients."
+      ]
+    },
+    {
+      "word": "Irresistible",
+      "definition": "too attractive or appealing to be resisted; impossible to refuse or avoid",
+      "urduMeaning": "لبھانے والا یا ناقابل مسترد",
+      "exampleSentences": [
+        "The aroma of fresh-baked cookies was irresistible, drawing everyone to the kitchen.",
+        "His charming smile and charisma made him nearly irresistible to those around him.",
+        "The offer was so irresistible that customers couldn't resist taking advantage of the discount."
+      ]
+    },
+    {
+      "word": "Misconstrue",
+      "definition": "to interpret or understand incorrectly; to misinterpret",
+      "urduMeaning": "غلط سمجھنا یا ترکیب دینا",
+      "exampleSentences": [
+        "His comments were misconstrued, leading to unnecessary confusion.",
+        "It's important to communicate clearly to avoid the risk of being misconstrued.",
+        "The media often misconstrues statements, leading to misinformation."
+      ]
+    },
+    {
+      "word": "Mild",
+      "definition": "gentle in nature or behavior; not harsh or severe; moderate",
+      "urduMeaning": "نرم یا معمولی",
+      "exampleSentences": [
+        "She had a mild manner and always approached conflicts with a calm demeanor.",
+        "The doctor recommended a mild exercise routine for the patient's recovery.",
+        "The soup had a mild flavor, pleasing those who preferred less spice."
+      ]
+    },
+    {
+      "word": "Ineffable",
+      "definition": "too great or extreme to be expressed or described in words; indescribable",
+      "urduMeaning": "لفظوں میں نا آئیہ یا نا قابل وضاحت",
+      "exampleSentences": [
+        "The beauty of the sunset over the mountains was ineffable, leaving the onlookers speechless.",
+        "The emotions experienced in that moment were ineffable and beyond verbal expression.",
+        "Some spiritual experiences are ineffable and can only be felt on a profound level."
+      ]
+    },
+    {
+      "word": "Intrigue",
+      "definition": "to arouse curiosity or interest; to fascinate; a secret or underhanded scheme",
+      "urduMeaning": "دلچسپی یا کرنسی",
+      "exampleSentences": [
+        "The mysterious stranger intrigued the townspeople, who wondered about his background.",
+        "The plot of the novel was designed to intrigue readers and keep them guessing.",
+        "Political intrigues often involve covert actions and manipulative strategies."
+      ]
+    },
+    {
+      "word": "Inexplicable",
+      "definition": "impossible to explain or understand; unexplainable",
+      "urduMeaning": "غیر قابل وضاحت یا سمجھ",
+      "exampleSentences": [
+        "The sudden disappearance of the artifact remained inexplicable to archaeologists.",
+        "Her inexplicable behavior left her friends puzzled and concerned.",
+        "The phenomenon was so unusual and unexpected that it seemed inexplicable by current scientific understanding."
+      ]
+    }
+  
+  
+  
+  ]
 }
 
 
