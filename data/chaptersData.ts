@@ -2180,7 +2180,7 @@ export const chapter4: Chapter = {
         "The patient was in a fragile state after the surgery and required gentle treatment."
       ]
     }
-    
+
   ]
 }
 
@@ -2436,13 +2436,259 @@ export const chapter5: Chapter = {
         "Her inexplicable behavior left her friends puzzled and concerned.",
         "The phenomenon was so unusual and unexpected that it seemed inexplicable by current scientific understanding."
       ]
+    },
+    {
+      "word": "Mitigate",
+      "definition": "to make less severe, painful, or harsh; to alleviate or lessen",
+      "urduMeaning": "کم کرنا یا خفا ہونا",
+      "exampleSentences": [
+        "Planting trees can help mitigate the effects of climate change by absorbing carbon dioxide.",
+        "The doctor prescribed medication to mitigate the patient's pain and discomfort.",
+        "Efforts are being made to mitigate the impact of natural disasters through early warning systems."
+      ]
+    },
+    {
+      "word": "Metaphor",
+      "definition": "a figure of speech in which a word or phrase is applied to an object or action to which it is not literally applicable; a symbolic expression",
+      "urduMeaning": "مجازی اظہار یا تشہیر",
+      "exampleSentences": [
+        "The metaphor 'time is a thief' conveys the idea that time takes away moments and experiences.",
+        "In literature, metaphors are often used to enhance the imagery and convey deeper meanings.",
+        "The use of metaphors can make complex concepts more accessible and engaging for readers."
+      ]
+    },
+    {
+      "word": "Intelligible",
+      "definition": "able to be understood or comprehended; clear and coherent",
+      "urduMeaning": "قابل سمجھ یا واضح",
+      "exampleSentences": [
+        "The speaker made an effort to be intelligible, ensuring that the audience could follow the presentation.",
+        "The instructions should be written in a way that is intelligible to users of all levels.",
+        "In scientific research, findings need to be presented in an intelligible manner for peer review."
+      ]
+    },
+    {
+      "word": "Inflammatory",
+      "definition": "arousing anger, hostility, or strong emotion; tending to provoke inflammation",
+      "urduMeaning": "جذباتی یا آتش فشاں",
+      "exampleSentences": [
+        "The inflammatory remarks by the politician escalated tensions and fueled public outrage.",
+        "Media coverage with inflammatory headlines can contribute to misinformation and conflict.",
+        "Inflammatory responses in the body are a natural part of the immune system's defense against infections."
+      ]
+    },
+    {
+      "word": "Instability",
+      "definition": "the state of being unstable; lack of stability or steadiness",
+      "urduMeaning": "عدم استحکام یا پریشانی",
+      "exampleSentences": [
+        "The political instability in the region led to economic uncertainty and unrest.",
+        "The structural instability of the building posed a safety concern for residents.",
+        "Financial markets can experience fluctuations and instability due to various factors."
+      ]
+    },
+    {
+      "word": "Malleable",
+      "definition": "capable of being shaped or molded; adaptable; easily influenced",
+      "urduMeaning": "قابل شکل یا مول کرنے والا",
+      "exampleSentences": [
+        "Gold is a malleable metal that can be hammered into thin sheets.",
+        "Her malleable personality allowed her to adapt to different social situations.",
+        "Leadership styles should be malleable to accommodate diverse team dynamics."
+      ]
+    },
+    {
+      "word": "Improbable",
+      "definition": "not likely to happen or be true; unlikely; doubtful",
+      "urduMeaning": "ممکنہ نہ یا شکیل",
+      "exampleSentences": [
+        "The success of their ambitious project seemed improbable given the limited resources.",
+        "Winning the lottery is improbable, considering the odds against it.",
+        "Despite facing improbable odds, the underdog team managed to secure a victory."
+      ]
+    },
+    {
+      "word": "Infer",
+      "definition": "to deduce or conclude information from evidence and reasoning; to derive as a conclusion",
+      "urduMeaning": "استنباط یا نتیجہ اخذ کرنا",
+      "exampleSentences": [
+        "From the data provided, scientists can infer trends and patterns in climate change.",
+        "By analyzing the witness statements, the detective tried to infer the sequence of events.",
+        "One can infer the author's perspective by examining the tone and language used in the text."
+      ]
+    },
+    {
+      "word": "Minutiae",
+      "definition": "small, precise, or trivial details; minor or insignificant particulars",
+      "urduMeaning": "دقیقہ یا مختصر تفصیلات",
+      "exampleSentences": [
+        "The contract included all the necessary minutiae, ensuring clarity on terms and conditions.",
+        "The historian delved into the minutiae of daily life during the historical period.",
+        "While some focus on the big picture, others pay attention to the minutiae that shape the overall outcome."
+      ]
+    },
+    {
+      "word": "Inaccessible",
+      "definition": "difficult or impossible to reach, approach, or obtain; not easily reachable",
+      "urduMeaning": "رسائی ممکن نہ ہونے والا",
+      "exampleSentences": [
+        "The remote mountain village was inaccessible during the winter months due to heavy snowfall.",
+        "The confidential files were stored in an inaccessible location to maintain security.",
+        "Some areas of the forest remain inaccessible to researchers due to challenging terrain."
+      ]
+    },
+    {
+      "word": "Irreversible",
+      "definition": "not able to be changed, undone, or reversed; permanent",
+      "urduMeaning": "غیر قابل واپسی یا تبدیل",
+      "exampleSentences": [
+        "The environmental damage caused by pollution may be irreversible.",
+        "Some decisions have irreversible consequences, requiring careful consideration.",
+        "Medical procedures aim to address issues in a way that is reversible, but some conditions are irreversible."
+      ]
+    },
+    {
+      "word": "Mimic",
+      "definition": "to imitate or copy the actions, speech, or appearance of someone or something",
+      "urduMeaning": "تقلید یا نقل کرنا",
+      "exampleSentences": [
+        "The actor could mimic the voices of various celebrities with remarkable accuracy.",
+        "Some animals use mimicry to imitate more dangerous species and avoid predators.",
+        "Her ability to mimic accents made her popular among friends for entertaining impersonations."
+      ]
+    },
+    {
+      "word": "Interference",
+      "definition": "the action of interfering or getting involved in the affairs or activities of others",
+      "urduMeaning": "مداخلت یا مختلف",
+      "exampleSentences": [
+        "The interference of external factors affected the accuracy of the experiment.",
+        "Government interference in the economy can have both positive and negative consequences.",
+        "Parents should avoid unnecessary interference in their children's decision-making process."
+      ]
+    },
+    {
+      "word": "Melancholy",
+      "definition": "a feeling of deep sadness or sorrow; a gloomy state of mind",
+      "urduMeaning": "غمگین یا افسردہ",
+      "exampleSentences": [
+        "The melancholy melody of the music evoked memories of lost love.",
+        "She was overcome with melancholy as she walked through the deserted town.",
+        "The rainy weather seemed to enhance the melancholy atmosphere of the old cemetery."
+      ]
+    },
+    {
+      "word": "Ineffectual",
+      "definition": "not producing the desired effect; incapable of achieving the intended result",
+      "urduMeaning": "ناکارہ یا بے اثر",
+      "exampleSentences": [
+        "Despite their efforts, the campaign proved ineffectual in changing public opinion.",
+        "The medicine was deemed ineffectual in treating the severe symptoms of the disease.",
+        "Ineffectual leadership can lead to a lack of direction and poor decision-making."
+      ]
+    },
+    {
+      "word": "Inescapable",
+      "definition": "impossible to avoid or evade; inevitable",
+      "urduMeaning": "نا گزر",
+      "exampleSentences": [
+        "The consequences of the decision were inescapable and had a profound impact.",
+        "As the storm approached, the inescapable reality of evacuation became clear.",
+        "Inescapable truths often require facing difficult realities and making tough choices."
+      ]
+    },
+    {
+      "word": "Mantle",
+      "definition": "a loose sleeveless cloak or shawl; a layer or covering that envelops or surrounds",
+      "urduMeaning": "لباس یا چادر",
+      "exampleSentences": [
+        "She wore a flowing mantle to protect herself from the chilly evening breeze.",
+        "The Earth's mantle is a layer beneath the crust that plays a crucial role in geological processes.",
+        "The artist used a mantle of fog to create a mysterious atmosphere in the painting."
+      ]
+    },
+    {
+      "word": "Maligned",
+      "definition": "spoken ill of; criticized or slandered; unfairly accused",
+      "urduMeaning": "بدنام یا ملامت یافتہ",
+      "exampleSentences": [
+        "Despite her good intentions, the politician was often maligned by her opponents.",
+        "The novel was maligned by some critics, but readers found it to be a compelling story.",
+        "Public figures are often maligned in the media, facing scrutiny and negative portrayals."
+      ]
+    },
+    {
+      "word": "Impregnable",
+      "definition": "unable to be captured or entered by force; unconquerable",
+      "urduMeaning": "غیر قابل حملہ یا فتح",
+      "exampleSentences": [
+        "The ancient fortress was considered impregnable due to its strategic location and strong defenses.",
+        "The encryption system was designed to be impregnable to cyber attacks.",
+        "The general believed that the mountainous terrain made the position impregnable against enemy forces."
+      ]
+    },
+    {
+      "word": "Indispensable",
+      "definition": "absolutely necessary or essential; cannot be done without",
+      "urduMeaning": "لائق یا بہت ضروری",
+      "exampleSentences": [
+        "Communication skills are indispensable in today's interconnected world.",
+        "In a crisis, teamwork becomes indispensable for achieving a common goal.",
+        "The expert's advice proved to be indispensable in solving the complex problem."
+      ]
+    },
+    {
+      "word": "Lucrative",
+      "definition": "producing a great deal of profit; financially rewarding",
+      "urduMeaning": "منافع دہ یا منافع بخش",
+      "exampleSentences": [
+        "Investing in real estate can be a lucrative business if done wisely.",
+        "The entrepreneur discovered a lucrative market niche for handmade artisanal products.",
+        "Career opportunities in technology can be highly lucrative due to the demand for skilled professionals."
+      ]
+    },
+    {
+      "word": "Lucid",
+      "definition": "clearly expressed and easily understood; mentally sound and rational",
+      "urduMeaning": "واضح یا دانائی",
+      "exampleSentences": [
+        "The professor delivered a lucid explanation of the complex scientific concept.",
+        "Even in stressful situations, she remained calm and lucid in her decision-making.",
+        "A well-organized presentation with lucid visuals enhances audience comprehension."
+      ]
+    },
+    {
+      "word": "Manifest",
+      "definition": "clear and obvious to the eye or mind; to display or show plainly",
+      "urduMeaning": "واضح یا ظاہر ہونا",
+      "exampleSentences": [
+        "The symptoms of the disease began to manifest themselves after a few days.",
+        "The artist's talent manifested in the vibrant colors and intricate details of the painting.",
+        "The company's commitment to sustainability is manifest in its eco-friendly practices."
+      ]
+    },
+    {
+      "word": "Marginal",
+      "definition": "relating to or situated at the edge or margin; minor or insignificant",
+      "urduMeaning": "سرحدی یا حاشیہ وار",
+      "exampleSentences": [
+        "The species thrives in marginal habitats, adapting to extreme conditions.",
+        "The impact of the new policy on the economy is expected to be marginal.",
+        "She made only marginal improvements to the existing design."
+      ]
+    },
+    {
+      "word": "Indulge",
+      "definition": "to give in to desires or wishes; to allow oneself to enjoy something",
+      "urduMeaning": "شوقین یا خوشی",
+      "exampleSentences": [
+        "After a week of hard work, she decided to indulge in a relaxing spa day.",
+        "It's okay to indulge in occasional treats, but moderation is key for a healthy lifestyle.",
+        "He would often indulge his curiosity by exploring new places and trying different cuisines."
+      ]
     }
-  
-  
-  
   ]
 }
-
 
 export const chapter0: Chapter = {
   passages: [
@@ -2993,5 +3239,3 @@ export const chapter0: Chapter = {
     }
   ]
 }
-
-
