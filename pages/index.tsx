@@ -21,7 +21,7 @@ export default function Home() {
         [...Array(chapters.length)].map((_, key) => {
           const chapterNumber = key + 1;
           return (
-            <Flex justify="space-between" w={{md: "300px"}} mx="auto" key={key} border="1px solid grey" my="10px" p="10px" >
+            <Flex justify="space-between" w={{ md: "300px" }} mx="auto" key={key} border="1px solid grey" my="10px" p="10px" >
               <Text
                 cursor="pointer"
                 onClick={() => {
@@ -36,21 +36,21 @@ export default function Home() {
                 cursor="pointer"
                 onClick={() => {
                   dispatch(updateQuizChapter({ chapter: chapters[key], quizNumber: chapterNumber }))
-                  // quizModalDisclosure.onOpen();
+                  quizModalDisclosure.onOpen();
                 }}
               >
                 quiz
               </Tag>
 
-              <QuizModal
-                isOpen={quizModalDisclosure.isOpen}
-                onClose={quizModalDisclosure.onClose}
-              />
 
             </Flex>
           )
         })
       }
+      <QuizModal
+        isOpen={quizModalDisclosure.isOpen}
+        onClose={quizModalDisclosure.onClose}
+      />
     </Box>
   )
 }
