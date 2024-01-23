@@ -11,7 +11,7 @@ const QuizModal = ({ isOpen, onClose }:
   }
 ) => {
 
-  const {quiz, handleAnswer, handleNext, handleStartQuiz, quizData} = useQuizHook(isOpen);
+  const { quiz, handleAnswer, handleNext, handleStartQuiz, quizData } = useQuizHook(isOpen);
 
   return (
     <>
@@ -58,6 +58,7 @@ const QuizModal = ({ isOpen, onClose }:
                           question.options.map((option, index) => {
                             return (
                               <ListItem
+                                userSelect="none"
                                 cursor={!question.isAnswered ? "pointer" : "not-allowed"}
                                 p="5px"
                                 my="10px"
@@ -69,7 +70,7 @@ const QuizModal = ({ isOpen, onClose }:
                                 bgColor={
                                   !question.isAnswered ? "transparent" :
                                     question.userAsnwer && option == question.answer ? "green.500" :
-                                      option == question.answer ? "green.500" :
+                                      option == question.answer ? "green.300" :
                                         question.userAsnwer == option ? "red.500" : "transparent"
                                 }
                               >
@@ -84,8 +85,12 @@ const QuizModal = ({ isOpen, onClose }:
                       </OrderedList>
 
                       <br />
-                      <VStack spacing={0} m="20px">
-                        <Text hidden={!question.isAnswered} > {question.answer == question.userAsnwer ? "correct!" : "incorrect!"} </Text>
+                      <VStack m="20px">
+
+                        <Box h="20px">
+                          <Text hidden={!question.isAnswered} > {question.answer == question.userAsnwer ? "correct!" : "incorrect!"} </Text>
+                        </Box>
+
                         <Button size="sm" isDisabled={!question.isAnswered} onClick={handleNext}>
                           {
                             quizData.currentQuestionIndex == quizData.questions.length - 1 ? "Finish" : "Next"

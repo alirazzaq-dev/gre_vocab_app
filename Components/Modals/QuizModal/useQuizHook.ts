@@ -535,6 +535,9 @@ const useQuizHook = (isOpen: boolean) => {
 
   const handleAnswer = (questionId: number, answer: string) => {
 
+    const queston = quizData.questions.find((e) => e.id == questionId) as Question;
+    if(queston.isAnswered) return;
+    
     setQuizData((data) => {
       const newData = data.questions.map((question) => {
         if (question.id == questionId && !question.isAnswered) {
@@ -545,7 +548,6 @@ const useQuizHook = (isOpen: boolean) => {
       return { ...data, questions: newData } as QuizData;
     })
 
-    const queston = quizData.questions.find((e) => e.id == questionId) as Question;
     queston.answer == answer ?
       setQuizData((e) => ({ ...e, corretAnswers: e.corretAnswers + 1, })) :
       setQuizData((e) => ({ ...e, incorrectAnswers: e.incorrectAnswers + 1 }))
