@@ -27,9 +27,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <ChakraProvider theme={theme}>
         <Provider store={store}>
-          <Box bg={bg} h="100vh" mx={{base: "5px", md: "0px"}}>
+          <Box bg={bg} h="100vh" mx={{ base: "5px", md: "0px" }}>
             <Header />
-            <Box p={{base: "4px", md: "16px"}} bg={bg} border="0px solid red">
+            <Box p={{ base: "4px", md: "16px" }} bg={bg} border="0px solid red">
               <Component {...pageProps} />
             </Box>
           </Box>

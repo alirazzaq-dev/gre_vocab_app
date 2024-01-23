@@ -10,3 +10,5 @@ export const playAudio = async (word: string) => {
         console.log("No audio found for: ", word);
     }
 }
+
+export const capitalize = (s: string) => s[0].toUpperCase() + s.slice(1);

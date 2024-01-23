@@ -8,7 +8,6 @@ export interface VocabularyApp {
   focusMode: {
     active: boolean;
     index: number;
-    // showMeaning: boolean;
     isFlipped: boolean;
   },
   selectedWord: Word,
@@ -24,7 +23,6 @@ const initialState: VocabularyApp = {
   focusMode: {
     active: true,
     index: 0,
-    // showMeaning: false,
     isFlipped: false
   },
   selectedWord: chapters[0].words[0],
@@ -46,19 +44,16 @@ export const counterSlice = createSlice({
     },
     changeFocusMode: (state) => {
       state.focusMode.active = !state.focusMode.active;
-      // state.focusMode.showMeaning = false
       state.focusMode.isFlipped = false
     },
     updateFocusModeNext: (state, action: PayloadAction<{ chapterLength: number }>) => {
       if (state.focusMode.index < action.payload.chapterLength - 1) {
-        // state.focusMode.showMeaning = false;
         state.focusMode.isFlipped = false
         state.focusMode.index++
       }
     },
     updateFocusModePrevious: (state) => {
       if (state.focusMode.index > 0) {
-        // state.focusMode.showMeaning = false;
         state.focusMode.isFlipped = false
         state.focusMode.index--
       }
@@ -67,7 +62,6 @@ export const counterSlice = createSlice({
       state.focusMode.index = action.payload
     },
     updateFocusFlip: (state) => {
-      // state.focusMode.showMeaning = !state.focusMode.showMeaning;
       state.focusMode.isFlipped = !state.focusMode.isFlipped;
     },
     shuffleChapter: (state, action: PayloadAction<number>) => {
@@ -79,13 +73,12 @@ export const counterSlice = createSlice({
       }
       state.chapters[chapterIndex].words = shuffledWords;
       state.focusMode.index = 0;
-      // state.focusMode.showMeaning = false;
       state.focusMode.isFlipped = false
     },
     setSelectedWord: (state, action: PayloadAction<Word>) => {
       state.selectedWord = action.payload;
     },
-    updateQuizChapter: (state, action: PayloadAction<{chapter: Chapter, quizNumber: number}>) => {
+    updateQuizChapter: (state, action: PayloadAction<{ chapter: Chapter, quizNumber: number }>) => {
       state.quiz.quizChapter = action.payload.chapter;
       state.quiz.quizNumber = action.payload.quizNumber;
     }

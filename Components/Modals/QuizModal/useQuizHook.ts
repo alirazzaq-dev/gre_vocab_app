@@ -1,11 +1,6 @@
-import { Modal, Text, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Box, HStack, OrderedList, ListItem, Center, ModalFooter, Button, VStack } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
-import { updateFocusModeNext } from '@/store/slice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
-import axios from 'axios';
-import { playAudio } from '@/utils';
-import { Chapter, Word } from '@/data/chapters';
 
 type Question = {
   id: number;
@@ -529,12 +524,7 @@ const words = [
   }
 ]
 
-const QuizModal = ({ isOpen, onClose }:
-  {
-    isOpen: boolean,
-    onClose: () => void;
-  }
-) => {
+const useQuizHook = (isOpen: boolean) => {
 
   const quiz = (useSelector((state: RootState) => state.quiz));
   const [quizData, setQuizData] = useState<QuizData>(defaultQuizData)
@@ -546,140 +536,41 @@ const QuizModal = ({ isOpen, onClose }:
   const handleAnswer = (questionId: number, answer: string) => {
 
     setQuizData((data) => {
-
       const newData = data.questions.map((question) => {
-        if (question.id == questionId) {
+        if (question.id == questionId && !question.isAnswered) {
           return { ...question, isAnswered: true, userAsnwer: answer }
         }
         return question
       })
-
       return { ...data, questions: newData } as QuizData;
-    
     })
 
-    const newCurrentQuestionIndex = quizData.currentQuestionIndex + 1;
     const queston = quizData.questions.find((e) => e.id == questionId) as Question;
-
-    // currentQuestionIndex: newCurrentQuestionIndex
-
     queston.answer == answer ?
-      setQuizData((e) => ({ ...e, corretAnswers: e.corretAnswers + 1,})) :
+      setQuizData((e) => ({ ...e, corretAnswers: e.corretAnswers + 1, })) :
       setQuizData((e) => ({ ...e, incorrectAnswers: e.incorrectAnswers + 1 }))
-
-
-
   }
 
   const handleNext = () => {
     setQuizData((e) => ({ ...e, currentQuestionIndex: e.currentQuestionIndex + 1 }))
 
-    if(quizData.currentQuestionIndex == quizData.questions.length - 1) {
+    if (quizData.currentQuestionIndex == quizData.questions.length - 1) {
       setQuizData((e) => ({ ...e, isEnded: true }))
     }
   }
-
 
   useEffect(() => {
     setQuizData(defaultQuizData);
   }, [isOpen])
 
-  return (
-    <>
-      <Modal
-        isOpen={isOpen}
-        onClose={() => onClose()}
-      >
-        <ModalOverlay color="green" backdropFilter='blur(15px)' />
+  return {
+    quiz,
+    quizData,
+    handleStartQuiz,
+    handleAnswer,
+    handleNext
+  }
 
-        <ModalContent minW={{ base: "300px", lg: "800px" }} minH="300px" my="auto">
-          <ModalHeader>
-
-            <Box>
-              <Text> Quiz # {quiz.quizNumber}</Text>
-              {/* <Text> questions: {quiz.quizChapter?.words.length} </Text> */}
-            </Box>
-
-          </ModalHeader>
-          <ModalCloseButton />
-
-          <ModalBody>
-
-            <Box>
-              {
-                !quizData.isInProgress && (
-                  <Center h="200px">
-                    <Button size="sm" onClick={handleStartQuiz}> Start Quiz</Button>
-                  </Center>
-                )
-              }
-
-              {
-                quizData.isInProgress && !quizData.isEnded &&
-                quizData.questions.map((question, index) => {
-                  return (
-                    <Box border="1px solid red" key={index} hidden={question.id != quizData.currentQuestionIndex}>
-                      <Text> Q:{index + 1}/{quizData.questions.length}: {question.question} </Text>
-                      {
-                        question.options.map((option, index) => {
-                          return (
-                            <Box>
-                              <Button
-                                key={index}
-                                my="10px"
-                                overflowWrap="break-word"
-                                display="block"
-                                onClick={() => handleAnswer(question.id, option)}
-                                bgColor={
-                                  // !question.isAnswered ?  "gray.500" :
-                                  question.isAnswered && question.answer == option ? "green.500" : "gray.500"
-                                }
-                              >
-                                <Text w="full">
-                                  {index + 1}: {option}
-                                </Text>
-                                
-                              </Button>
-                            </Box>
-                          )
-                        })
-                      }
-
-                      <br />
-                      <VStack hidden={!question.isAnswered}>
-                        <Text> {question.answer == question.userAsnwer ? "correct": "incorrect"} </Text>
-                        <Button size="sm" onClick={handleNext}> Next </Button>
-                      </VStack>
-                    </Box>
-                  )
-                })
-              }
-
-              {
-                quizData.isEnded && (
-                  <VStack h="200px">
-                    <Text> Quiz Ended</Text>
-                    <Text> Correct Answers: {quizData.corretAnswers} </Text>
-                    <Text> Incorrect Answers: {quizData.incorrectAnswers} </Text>
-                  </VStack>
-                )
-              }
-
-            </Box>
-
-
-          </ModalBody>
-
-          {/* <ModalFooter>
-            <Button size="sm">
-               Next
-            </Button>
-          </ModalFooter> */}
-
-        </ModalContent>
-      </Modal>
-    </>
-  )
 }
 
-export default QuizModal
+export default useQuizHook

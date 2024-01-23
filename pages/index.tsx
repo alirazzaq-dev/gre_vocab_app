@@ -21,8 +21,11 @@ export default function Home() {
         [...Array(chapters.length)].map((_, key) => {
           const chapterNumber = key + 1;
           return (
-            <Flex justify="space-between" w={{ md: "300px" }} mx="auto" key={key} border="1px solid grey" my="10px" p="10px" >
+            <Flex justify="space-between" w={{ md: "300px" }} mx="auto" key={key} border="1px solid grey" my="10px"  >
               <Text
+                fontWeight="bold"
+                p="10px"
+                bgColor="gray.500"
                 cursor="pointer"
                 onClick={() => {
                   router.push(`/Chapter/${chapterNumber}`)
@@ -32,7 +35,7 @@ export default function Home() {
               </Text>
 
               <Tag
-                ml="20px"
+                m="5px"
                 cursor="pointer"
                 onClick={() => {
                   dispatch(updateQuizChapter({ chapter: chapters[key], quizNumber: chapterNumber }))
