@@ -1,9 +1,7 @@
 import { Modal, Text, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Box, HStack, OrderedList, ListItem, Center } from '@chakra-ui/react'
 import React from 'react'
-import { updateFocusModeNext } from '@/store/slice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
-import axios from 'axios';
 import { playAudio } from '@/utils';
 
 const WordModal = ({ isOpen, onClose }:

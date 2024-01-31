@@ -11,9 +11,9 @@ export interface VocabularyApp {
     isFlipped: boolean;
   },
   selectedWord: Word,
-  quiz: {
+  quizInfo: {
     quizNumber: number;
-    quizChapter: Chapter | null
+    quizChapter: Chapter
   }
 }
 
@@ -26,9 +26,9 @@ const initialState: VocabularyApp = {
     isFlipped: false
   },
   selectedWord: chapters[0].words[0],
-  quiz: {
+  quizInfo: {
     quizNumber: 0,
-    quizChapter: null
+    quizChapter: chapters[0]
   }
 }
 
@@ -79,8 +79,8 @@ export const counterSlice = createSlice({
       state.selectedWord = action.payload;
     },
     updateQuizChapter: (state, action: PayloadAction<{ chapter: Chapter, quizNumber: number }>) => {
-      state.quiz.quizChapter = action.payload.chapter;
-      state.quiz.quizNumber = action.payload.quizNumber;
+      state.quizInfo.quizChapter = action.payload.chapter;
+      state.quizInfo.quizNumber = action.payload.quizNumber;
     }
   },
 

@@ -1,21 +1,7 @@
 import { Chapter } from "./chapters";
 
-
 export const chapter1: Chapter = {
-  passages: [
-    {
-      "title": "Unraveling the Tapestry of Human Interaction",
-      "passage": "The human experience is an intricate amalgamation of emotions, desires, and motivations. On the surface, social interactions may appear accessible, governed by seemingly benign conventions. Yet, beneath the apparent calm, a myriad of forces can abet in shaping our interactions, often in baffling and arduous ways.<br><br>From the aesthetic choices we make in clothing and body language to the subtle nuances of tone and inflection, we constantly emit signals that can be anticipated and interpreted by others. These interpretations, however, are rarely objective. Our own biases and ascribed identities can lead to asymmetry in understanding, creating opportunities for miscommunication and betrayal.<br><br>Understanding the complexities of human interaction requires venturing beyond the austere facade of social norms. It demands critical thinking, empathy, and a willingness to grapple with the antithetical forces that play within us and between us. Only then can we hope to navigate the arduous terrain of social life with altruistic intentions and build truly accessible connections."
-    },
-    {
-      "title": "Pushing the Boundaries of Scientific Inquiry",
-      "passage": "Scientific progress often begins with a simple assertion: a challenge to the apparent status quo, a belief in the existence of the anomalous. Driven by an insatiable ambition to unveil the hidden workings of the universe, scientists embark on arduous journeys of antidote-seeking, searching for solutions to the enigmas that beset our understanding.<br><br>The scientific method, while rigorous and amenable to replication, is itself not impervious to human biases and preconceived notions. Confirmation bias, for example, can lead researchers to unknowingly abet their own hypotheses, overlooking baffling data that may betray a different truth.<br><br>To push the boundaries of scientific inquiry, we must embrace acute observation, critical thinking, and a healthy dose of apathy towards established dogmas. By amplifying the voices of dissent and encouraging the exploration of atypical phenomena, we can create an environment where the antidote to ignorance is continuously sought and the light of understanding shines ever brighter, illuminating the hidden secrets of our world.",
-    },
-    {
-      "title": "The Enigmatic Power of Words",
-      "passage": "Words, those deceptively simple symbols, carry within them the power to captivate and befuddle, to illuminate and obscure. Their meanings, far from acute and fixed, are fluid and context-dependent, shaped by the nuances of tone, antithesis, and allusion.<br><br>A master communicator understands this inherent ambiguity. They wield words with the precision of a surgeon, carefully choosing each syllable to evoke the desired aesthetic response. They employ humor and irony to blunt harsh truths and amplify hidden meanings. They navigate the minefield of double entendre and cultural asymmetry with grace and clarity.<br><br>Yet, even the most skilled communicator can stumble upon the treacherous shoals of misunderstanding. A poorly chosen word, a misinterpreted bluntness, an abashed silence – any of these can lead to antagonism and irreparable fissures in connection.<br><br>The true power of language lies not in its ability to dictate meaning, but in its capacity to spark the fires of inquiry, beset us with questions, and ultimately, draw us closer to the antithetical perspectives that enrich our understanding of the world.",
-    }
-  ],
+  passages: [],
   words: [
     {
       "word": "Bitter",
@@ -285,6 +271,12 @@ export const chapter1: Chapter = {
         "The mountain peak had a blunt, almost rounded summit, contrasting with the surrounding jagged cliffs."
       ]
     },
+  ]
+}
+
+export const chapter2: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Boon",
       "definition": "Something that is very helpful or beneficial.",
@@ -556,7 +548,7 @@ export const chapter1: Chapter = {
   ]
 }
 
-export const chapter2: Chapter = {
+export const chapter3: Chapter = {
   passages: [],
   words: [
     {
@@ -860,6 +852,12 @@ export const chapter2: Chapter = {
           "The museum's collection features works by conservative artists who adhered to traditional painting styles."
         ],
     },
+  ]
+}
+
+export const chapter4: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Defensible",
       "definition": "Capable of being defended or justified; reasonable and able to be supported with evidence.",
@@ -1170,7 +1168,7 @@ export const chapter2: Chapter = {
   ]
 }
 
-export const chapter3: Chapter = {
+export const chapter5: Chapter = {
   passages: [],
   words: [
     {
@@ -1423,6 +1421,12 @@ export const chapter3: Chapter = {
         "Cultural delicacies are often associated with special occasions and celebrations."
       ]
     },
+  ]
+}
+
+export const chapter6: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Despair",
       "definition": "the complete loss or absence of hope; a state of utter hopelessness",
@@ -1677,7 +1681,7 @@ export const chapter3: Chapter = {
   ]
 }
 
-export const chapter4: Chapter = {
+export const chapter7: Chapter = {
   passages: [],
   words: [
     {
@@ -1930,6 +1934,12 @@ export const chapter4: Chapter = {
         "The shattered glass lay in fragments on the floor after the accident."
       ]
     },
+  ]
+}
+
+export const chapter8: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Forerunner",
       "definition": "a person or thing that precedes and indicates the approach of another; a precursor",
@@ -2184,7 +2194,7 @@ export const chapter4: Chapter = {
   ]
 }
 
-export const chapter5: Chapter = {
+export const chapter9: Chapter = {
   passages: [],
   words: [
     {
@@ -2437,6 +2447,12 @@ export const chapter5: Chapter = {
         "The phenomenon was so unusual and unexpected that it seemed inexplicable by current scientific understanding."
       ]
     },
+  ]
+}
+
+export const chapter10: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Mitigate",
       "definition": "to make less severe, painful, or harsh; to alleviate or lessen",
@@ -2687,10 +2703,11 @@ export const chapter5: Chapter = {
         "He would often indulge his curiosity by exploring new places and trying different cuisines."
       ]
     }
+
   ]
 }
 
-export const chapter0: Chapter = {
+export const chapter11: Chapter = {
   passages: [
     {
       "title": "Political Intrigues",
@@ -2967,6 +2984,12 @@ export const chapter0: Chapter = {
           "She struggled to assimilate the complex legal document, needing help to decipher its meaning."
         ],
     },
+  ]
+}
+
+export const chapter12: Chapter = {
+  passages: [],
+  words: [
     {
       "word": "Brevity",
       "definition": "Conciseness and clarity in expression; the quality of being short and to the point.",

@@ -25,11 +25,13 @@ export default function Home() {
               <Text
                 fontWeight="bold"
                 p="10px"
+                w="50%"
                 bgColor="gray.500"
                 cursor="pointer"
                 onClick={() => {
                   router.push(`/Chapter/${chapterNumber}`)
                 }}
+                textAlign="center"
               >
                 Chapter: {chapterNumber}
               </Text>

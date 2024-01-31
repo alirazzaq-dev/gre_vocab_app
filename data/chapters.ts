@@ -1,4 +1,7 @@
-import { chapter0, chapter1, chapter2, chapter3, chapter4, chapter5 } from "./chaptersData";
+import { 
+    chapter1, chapter2, chapter3, chapter4, chapter5, chapter6, 
+    chapter7, chapter8, chapter9, chapter10, chapter11, chapter12, 
+} from "./chaptersData";
 
 export type Chapter = {words: Word[], passages: Passage[]};
 
@@ -15,10 +18,14 @@ export type Passage = {
 }
 
 export const chapters: Chapter[] = [
+    {...chapter1, words: chapter1.words.slice(0, 5)},
     chapter1,
     chapter2,
     chapter3,
     chapter4,
-    chapter5,
-    chapter0
+    chapter5, chapter6,
+    chapter7, chapter8,
+    chapter9, chapter10,
+    chapter11, chapter12,
+
 ]
