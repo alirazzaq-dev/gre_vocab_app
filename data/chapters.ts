@@ -18,7 +18,7 @@ export type Passage = {
 }
 
 export const chapters: Chapter[] = [
-    {...chapter1, words: chapter1.words.slice(0, 5)},
+    // {...chapter1, words: chapter1.words.slice(0, 5)},
     chapter1,
     chapter2,
     chapter3,
