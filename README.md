@@ -2,8 +2,6 @@
 *A focused, distraction‑free way to master GRE vocabulary—built by a test‑taker who couldn’t find a tool that actually worked.*
 
 **Live demo → [gre‑vocab‑app.vercel.app](https://gre-vocab-app.vercel.app)**  
-*(mobile‑responsive; PWA install prompt on first visit)*
-
 ---
 
 ## 🎯 Why I built this
@@ -22,11 +20,8 @@ So I scratched my own itch and open‑sourced the result.
 | Feature                      | What it does                                                                  |
 | ---------------------------- | ----------------------------------------------------------------------------- |
 | **Spaced‑repetition engine** | Leitner‑style buckets; intervals auto‑expand as you nail words.               |
-| **Custom lists**             | Import CSV or paste any word block → the app fetches definitions & synonyms.  |
 | **Context sentences**        | Each word shows 2 hand‑picked GRE‑level usages, not generic dictionary lines. |
 | **Progress heat‑map**        | Tiny GitHub‑style grid shows daily review streaks.                            |
-| **Offline PWA**              | Add to home screen; works on the subway / airplane mode.                      |
-| **Sync (optional)**          | Sign in with GitHub; words & streaks backup to Supabase.                      |
 
 *(Upcoming)* Audio pronunciation & dark mode toggle.
 
@@ -35,9 +30,6 @@ So I scratched my own itch and open‑sourced the result.
 ## 🏗️ Tech stack
 - **Next.js 13 (App Router) + TypeScript**  
 - **Tailwind CSS** for fast UI and theming  
-- **Zustand** state store (makes the SRS engine portable)  
-- **Supabase** (Postgres + Row Level Security) for optional cloud sync  
-- **PWA**: `next-pwa` + Workbox offline caching  
 - **Vercel** CI / CD (preview URLs on every PR)
 
 ---
